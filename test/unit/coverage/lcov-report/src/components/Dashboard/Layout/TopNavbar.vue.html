@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src\components\Dashboard\Layout\TopNavbar.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">all files</a> / <a href="index.html">src/components/Dashboard/Layout/</a> TopNavbar.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/7</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/7</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+  &lt;nav class="navbar navbar-default"&gt;
+    &lt;div class="container-fluid"&gt;
+      &lt;!--&lt;div class="navbar-minimize"&gt;
+        &lt;button id="minimizeSidebar" class="btn btn-fill btn-icon" @click.prevent="toggleSidebarMinimize"&gt;
+          &lt;i v-if="isSidebarMinimized" class="ti-menu-alt"&gt;&lt;/i&gt;
+          &lt;i v-else class="ti-more-alt"&gt;&lt;/i&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;--&gt;
+      &lt;div class="navbar-header"&gt;
+        &lt;button type="button" class="navbar-toggle" @click.prevent="toggleSidebar"&gt;
+          &lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
+          &lt;span class="icon-bar bar1"&gt;&lt;/span&gt;
+          &lt;span class="icon-bar bar2"&gt;&lt;/span&gt;
+          &lt;span class="icon-bar bar3"&gt;&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;a class="navbar-brand" href="#charts"&gt;{{routeName}}&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class="collapse navbar-collapse"&gt;
+        &lt;form class="navbar-form navbar-left navbar-search-form" role="search"&gt;
+          &lt;div class="input-group"&gt;
+            &lt;span class="input-group-addon"&gt;&lt;i class="fa fa-search"&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;input type="text" value="" class="form-control" placeholder="Search..."&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;
+        &lt;ul class="nav navbar-nav navbar-right"&gt;
+          &lt;li&gt;
+            &lt;a href="#stats" class="dropdown-toggle btn-magnify" data-toggle="dropdown"&gt;
+              &lt;i class="ti-panel"&gt;&lt;/i&gt;
+              &lt;p&gt;Stats&lt;/p&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="dropdown" :class="{open:activeNotifications}" @click="toggleNotificationDropDown"&gt;
+            &lt;a href="#notifications" class="dropdown-toggle btn-rotate" data-toggle="dropdown"&gt;
+              &lt;i class="ti-bell"&gt;&lt;/i&gt;
+              &lt;p class="notification"&gt;5 Notifications
+                &lt;b class="caret"&gt;&lt;/b&gt;&lt;/p&gt;
+            &lt;/a&gt;
+            &lt;ul class="dropdown-menu"&gt;
+              &lt;li&gt;&lt;a href="#not1"&gt;Notification 1&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="#not2"&gt;Notification 2&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="#not3"&gt;Notification 3&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="#not4"&gt;Notification 4&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="#another"&gt;Another notification&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href="#settings" class="btn-rotate"&gt;
+              &lt;i class="ti-settings"&gt;&lt;/i&gt;
+              &lt;p class="hidden-md hidden-lg"&gt;
+                Settings
+              &lt;/p&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
+&lt;/template&gt;
+&lt;script&gt;
+  import {mapGetters, mapActions} from 'vuex';
+  export default{
+    computed: {
+      ...mapGetters(['showSidebar', 'isSidebarMinimized']),
+      routeName(){
+        const {name} <span class="cstat-no" title="statement not covered" >= this.$rout</span>e;
+<span class="cstat-no" title="statement not covered" >        return this.capitalizeFirstLetter(name)</span>;
+      }
+    },
+    data(){
+<span class="cstat-no" title="statement not covered" >      return {</span>
+        activeNotifications: false
+      }
+    },
+    methods: {
+      ...mapActions(['setShowSidebar', 'setSideBarMinimized']),
+      capitalizeFirstLetter(string) {
+<span class="cstat-no" title="statement not covered" >        return string.charAt(0).toUpperCase() + string.slice(1)</span>;
+      },
+      toggleNotificationDropDown(){
+<span class="cstat-no" title="statement not covered" >        this.activeNotifications = !this.activeNotifications</span>;
+      },
+      toggleSidebar(){
+<span class="cstat-no" title="statement not covered" >        this.setShowSidebar(!this.showSidebar)</span>;
+      },
+      toggleSidebarMinimize(){
+<span class="cstat-no" title="statement not covered" >        this.setSideBarMinimized(!this.isSidebarMinimized)</span>;
+      }
+    },
+  }
+&lt;/script&gt;
+&lt;style&gt;
+&lt;/style&gt;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sat Apr 29 2017 02:37:47 GMT+0300 (GTB Daylight Time)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

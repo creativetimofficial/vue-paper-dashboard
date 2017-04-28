@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src\vuex\actions.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">src/vuex/</a> actions.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">4.65% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>2/43</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/35</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/13</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">4.65% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>2/43</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import Vue from 'vue'
+import toastr from 'toastr'
+import {router} from './../routes/routes'
+&nbsp;
+const requestTypes = {
+  GET: 'get',
+  PUT: 'put',
+  POST: 'post',
+  DELETE: 'delete'
+};
+&nbsp;
+var actions = {};
+&nbsp;
+function fetchData({commit, state}, commitType, route, params) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  makeRequest(commit, state, commitType, route, params, requestTypes.GET)</span>
+}
+&nbsp;
+function postData({commit, state}, commitType, route, params) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  makeRequest(commit, state, commitType, route, params, requestTypes.POST)</span>
+}
+&nbsp;
+function putData({commit, state}, commitType, route, params) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  makeRequest(commit, state, commitType, route, params, requestTypes.PUT)</span>
+}
+function deleteData({commit, state}, commitType, route, params) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  makeRequest(commit, state, commitType, route, params, requestTypes.DELETE)</span>
+}
+&nbsp;
+function makeRequest(commit, state, commitType, route, params, requestType) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  if (state.token) {</span>
+<span class="cstat-no" title="statement not covered" >    Vue.http.headers.common['authorization'] = state.token;</span>
+  }
+<span class="cstat-no" title="statement not covered" >  commit(types.SET_ERROR_MESSAGE, "");</span>
+<span class="cstat-no" title="statement not covered" >  if (requestType != requestTypes.GET) {</span>
+<span class="cstat-no" title="statement not covered" >    Vue.http[requestType](route, params.data).then((response) =&gt; <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >      handleSuccess(response);</span>
+    }, (response) =&gt; <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      handleError(response, commit, state);</span>
+    })
+  } else {
+<span class="cstat-no" title="statement not covered" >    Vue.http[requestType](route).then((response) =&gt; <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >      handleSuccess(response);</span>
+    }, (response) =&gt; <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      handleError(response, commit, state);</span>
+<span class="cstat-no" title="statement not covered" >      if (params &amp;&amp; params.errorMessage) {</span>
+        var messageHeader = <span class="cstat-no" title="statement not covered" >params.messageHeader ? params.messageHeader : 'Something went wrong!';</span>
+<span class="cstat-no" title="statement not covered" >        toastr.error(messageHeader, params.errorMessage, {timeOut: 1500})</span>
+      }
+    })
+  }
+&nbsp;
+  function handleSuccess(response) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >    if (commitType &amp;&amp; commitType !== types.NO_COMMIT) {</span>
+      var commitData = <span class="cstat-no" title="statement not covered" >requestType == requestTypes.DELETE ? params : response.data;</span>
+<span class="cstat-no" title="statement not covered" >      commit(commitType, commitData);</span>
+    }
+<span class="cstat-no" title="statement not covered" >    callSuccessCallback(params, response);</span>
+<span class="cstat-no" title="statement not covered" >    if (params &amp;&amp; params.message) {</span>
+      var messageHeader = <span class="cstat-no" title="statement not covered" >params.messageHeader ? params.messageHeader : params.message;</span>
+<span class="cstat-no" title="statement not covered" >      toastr.success(params.message, messageHeader, {timeout: 1000})</span>
+    }
+  }
+}
+&nbsp;
+function handleError(response, commit, state) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  if (response.data &amp;&amp; response.data.message) {</span>
+<span class="cstat-no" title="statement not covered" >    commit(types.SET_ERROR_MESSAGE, response.data.message);</span>
+<span class="cstat-no" title="statement not covered" >    toastr.error(response.data.message, "Something went wrong!");</span>
+  }
+  else {
+    var msg = <span class="cstat-no" title="statement not covered" >"Could not connect to the server";</span>
+<span class="cstat-no" title="statement not covered" >    if (response.status != 0) {</span>
+<span class="cstat-no" title="statement not covered" >      msg = response.statusText;</span>
+    }
+<span class="cstat-no" title="statement not covered" >    if (response.status == 401) {</span>
+<span class="cstat-no" title="statement not covered" >      msg = "It seems that you are not authorized! Logging you out...";</span>
+<span class="cstat-no" title="statement not covered" >      commit(types.SET_REDIRECT_TO_LOGIN, true);</span>
+<span class="cstat-no" title="statement not covered" >      setTimeout(() =&gt; <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >        router.push({path: "/"});</span>
+<span class="cstat-no" title="statement not covered" >        msg = "Your session has expired. Please login again";</span>
+<span class="cstat-no" title="statement not covered" >        commit(types.SET_ERROR_MESSAGE, msg)</span>
+      }, 1500);
+    }
+<span class="cstat-no" title="statement not covered" >    commit(types.SET_ERROR_MESSAGE, msg);</span>
+<span class="cstat-no" title="statement not covered" >    toastr.error(msg, "Something went wrong!", {timeOut: 1500});</span>
+  }
+}
+function callSuccessCallback(params, response) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >  if (params &amp;&amp; params.successCallback &amp;&amp; typeof params.successCallback == 'function')</span>
+<span class="cstat-no" title="statement not covered" >    params.successCallback(response.data);</span>
+}
+export {
+  actions
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sat Apr 29 2017 02:37:47 GMT+0300 (GTB Daylight Time)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>
