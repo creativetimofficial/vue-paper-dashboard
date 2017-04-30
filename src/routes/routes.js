@@ -44,6 +44,11 @@ const routes = [
         name: 'typography',
         component: view('Typography')
       },
+      {
+        path: 'table-list',
+        name: 'table-list',
+        component: view('TableList')
+      },
     ]
   },
   {path: '*', component: NotFound}

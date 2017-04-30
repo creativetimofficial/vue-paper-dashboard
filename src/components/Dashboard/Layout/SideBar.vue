@@ -51,6 +51,11 @@
             path: "/admin/stats",
           },
           {
+            name: "Table List",
+            icon:"ti-view-list-alt",
+            path:"/admin/table-list"
+          },
+          {
             name: "Typography",
             icon: 'ti-text',
             path: "/admin/typography",

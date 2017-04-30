@@ -14,7 +14,7 @@
           <span class="icon-bar bar2"></span>
           <span class="icon-bar bar3"></span>
         </button>
-        <a class="navbar-brand" href="#charts">{{routeName}}</a>
+        <a class="navbar-brand">{{routeName}}</a>
       </div>
       <div class="collapse navbar-collapse">
         <form class="navbar-form navbar-left navbar-search-form" role="search">
@@ -25,13 +25,13 @@
         </form>
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="#stats" class="dropdown-toggle btn-magnify" data-toggle="dropdown">
+            <a href="#" class="dropdown-toggle btn-magnify" data-toggle="dropdown">
               <i class="ti-panel"></i>
               <p>Stats</p>
             </a>
           </li>
-          <li class="dropdown" :class="{open:activeNotifications}" @click="toggleNotificationDropDown">
-            <a href="#notifications" class="dropdown-toggle btn-rotate" data-toggle="dropdown">
+          <li class="dropdown" :class="{open:activeNotifications}" @click="toggleNotificationDropDown" v-click-outside="closeDropDown">
+            <a href="#" class="dropdown-toggle btn-rotate" data-toggle="dropdown">
               <i class="ti-bell"></i>
               <p class="notification">5 Notifications
                 <b class="caret"></b></p>
@@ -45,7 +45,7 @@
             </ul>
           </li>
           <li>
-            <a href="#settings" class="btn-rotate">
+            <a href="#" class="btn-rotate">
               <i class="ti-settings"></i>
               <p class="hidden-md hidden-lg">
                 Settings
@@ -79,6 +79,9 @@
       },
       toggleNotificationDropDown(){
         this.activeNotifications = !this.activeNotifications;
+      },
+      closeDropDown(){
+        this.activeNotifications = false;
       },
       toggleSidebar(){
         this.setShowSidebar(!this.showSidebar);
