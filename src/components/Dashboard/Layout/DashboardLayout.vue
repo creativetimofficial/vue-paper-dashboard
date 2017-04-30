@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="nav-open">
     <side-bar>
 
     </side-bar>
