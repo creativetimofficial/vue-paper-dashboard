@@ -60,9 +60,8 @@ const routes = [
  * @param  {string} name  the filename (basename) of the view to load.
  */
 function view(name) {
-  return function (resolve) {
-    require(['../components/Dashboard/Views/' + name + '.vue'], resolve);
-  }
+   var res= require('../components/Dashboard/Views/' + name + '.vue');
+   return res;
 };
 
 export default routes;
