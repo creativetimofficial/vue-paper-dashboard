@@ -29,6 +29,13 @@ const router = new VueRouter({
 //vuex store
 import store from './vuex/store'
 
+//global library setup
+Object.defineProperty(Vue.prototype, '$Chartist', {
+  get() {
+    return this.$root.Chartist;
+  }
+});
+
 new Vue({
   el: '#app',
   render: h => h(App),
@@ -39,11 +46,6 @@ new Vue({
   },
 });
 
-//global library setup
-Object.defineProperty(Vue.prototype, '$Chartist', {
-  get() {
-    return this.$root.Chartist;
-  }
-});
+
 
 Vue.http.options.xhr = {withCredentials: true}

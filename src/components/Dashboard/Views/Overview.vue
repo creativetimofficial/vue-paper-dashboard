@@ -104,6 +104,9 @@
             axisX: {
               showGrid: false,
             },
+            lineSmooth: this.$Chartist.Interpolation.simple({
+              divisor: 3
+            }),
             showLine: true,
             showPoint: false,
           }
