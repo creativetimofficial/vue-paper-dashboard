@@ -1,9 +1,9 @@
 <template>
-  <div class="nav-open">
-    <side-bar>
+  <div :class="{'nav-open': showSidebar}">
+    <side-bar type="sidebar">
 
     </side-bar>
-    <div class="main-panel">
+    <div class="main-panel" :class="{'push-left': showSidebar}">
       <top-navbar></top-navbar>
 
       <dashboard-content>
@@ -12,6 +12,8 @@
 
       <content-footer></content-footer>
     </div>
+    <side-bar type="navbar"></side-bar>
+    <div id="bodyClick"></div>
   </div>
 </template>
 <style lang="scss">
@@ -27,6 +29,9 @@
   export default{
     data(){
       return {}
+    },
+    computed: {
+      ...mapGetters(['showSidebar', 'isSidebarMinimized']),
     },
     components: {
       SideBar,

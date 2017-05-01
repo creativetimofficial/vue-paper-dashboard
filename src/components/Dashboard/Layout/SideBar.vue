@@ -1,5 +1,5 @@
 <template>
-  <div class="sidebar" :data-background-color="backgroundColor" :data-active-color="activeColor">
+  <div :class="sidebarClasses" :data-background-color="backgroundColor" :data-active-color="activeColor">
     <!--
           Tip 1: you can change the color of the sidebar's background using: data-background-color="white | black"
           Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
@@ -10,7 +10,7 @@
       </a>
     </div>
     <div class="sidebar-wrapper">
-      <ul class="nav">
+      <ul :class="navClasses">
         <!--By default vue-router adds an active class to each route link. This way the links are colored when clicked-->
         <router-link v-for="(link,index) in sidebarLinks" :to="link.path" tag="li">
           <a>
@@ -29,6 +29,10 @@
   import {mapGetters} from 'vuex'
   export default{
     props: {
+      type: {
+        type: String,
+        default: "sidebar" // sidebar | navbar
+      },
       backgroundColor: {
         type: String,
         default: 'black' //white | black
@@ -37,6 +41,22 @@
         type: String,
         default: 'danger' //primary | info | success | warning | danger
       },
+    },
+    computed: {
+      sidebarClasses(){
+        if (this.type === 'sidebar') {
+          return 'sidebar'
+        } else {
+          return 'collapse navbar-collapse off-canvas-sidebar';
+        }
+      },
+      navClasses(){
+        if (this.type === 'sidebar') {
+          return 'nav'
+        } else {
+          return 'nav navbar-nav';
+        }
+      }
     },
     data(){
       return {
@@ -52,8 +72,8 @@
           },
           {
             name: "Table List",
-            icon:"ti-view-list-alt",
-            path:"/admin/table-list"
+            icon: "ti-view-list-alt",
+            path: "/admin/table-list"
           },
           {
             name: "Typography",

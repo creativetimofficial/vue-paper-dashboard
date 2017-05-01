@@ -65,7 +65,7 @@
     }
   }
 
-  body > .navbar-collapse.collapse {
+  body .navbar-collapse.collapse {
     display: none !important;
   }
 
@@ -150,7 +150,7 @@
     .sidebar-wrapper {
       position: relative;
       z-index: 3;
-      overflow-y: scroll;
+      //overflow-y: scroll;
       height: 100%;
       box-shadow: inset 1px 0px 0px 0px $medium-gray;
     }
@@ -251,6 +251,9 @@
       height: 1px;
       margin: 10px 0;
     }
+  }
+  .main-panel.push-left{
+    right:230px;
   }
   .nav-open .navbar-collapse {
     @include transform-translate-x(0px);

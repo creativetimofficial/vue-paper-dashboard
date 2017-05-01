@@ -21,7 +21,6 @@ import App from './App'
 //router setup
 import routes from './routes/routes'
 const router = new VueRouter({
-  mode: 'history',
   routes, // short for routes: routes
   linkActiveClass: "active"
 });

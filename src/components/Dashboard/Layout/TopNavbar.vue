@@ -8,7 +8,7 @@
         </button>
       </div>-->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" @click.prevent="toggleSidebar">
+        <button type="button" class="navbar-toggle" :class="{toggled:showSidebar}" @click.prevent="toggleSidebar" >
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar bar1"></span>
           <span class="icon-bar bar2"></span>
@@ -85,6 +85,9 @@
       },
       toggleSidebar(){
         this.setShowSidebar(!this.showSidebar);
+      },
+      hideSidebar(){
+        this.setShowSidebar(false);
       },
       toggleSidebarMinimize(){
         this.setSideBarMinimized(!this.isSidebarMinimized);
