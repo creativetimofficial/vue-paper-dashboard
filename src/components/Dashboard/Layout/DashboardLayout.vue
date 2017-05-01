@@ -1,5 +1,5 @@
 <template>
-  <div :class="{'nav-open': showSidebar}">
+  <div :class="{'nav-open': showSidebar}" class="wrapper">
     <side-bar type="sidebar">
 
     </side-bar>
