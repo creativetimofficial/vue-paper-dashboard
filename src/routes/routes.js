@@ -1,7 +1,15 @@
-//Authentication components
 import DashboardLayout from '../components/Dashboard/Layout/DashboardLayout.vue'
 //GeneralViews
 import NotFound from '../components/GeneralViews/NotFoundPage.vue'
+
+//Admin pages
+import Overview from '../components/Dashboard/Views/Overview.vue'
+import UserProfile from '../components/Dashboard/Views/UserProfile.vue'
+import Notifications from '../components/Dashboard/Views/Notifications.vue'
+import Icons from '../components/Dashboard/Views/Icons.vue'
+import Maps from '../components/Dashboard/Views/Maps.vue'
+import Typography from '../components/Dashboard/Views/Typography.vue'
+import TableList from '../components/Dashboard/Views/TableList.vue'
 
 const routes = [
   {
@@ -17,37 +25,37 @@ const routes = [
       {
         path: 'overview',
         name: 'overview',
-        component: view('Overview')
+        component: Overview
       },
       {
         path: 'stats',
         name: 'stats',
-        component: view('UserProfile')
+        component: UserProfile
       },
       {
         path: 'notifications',
         name: 'notifications',
-        component: view('Notifications')
+        component: Notifications
       },
       {
         path: 'icons',
         name: 'icons',
-        component: view('Icons')
+        component: Icons
       },
       {
         path: 'maps',
         name: 'maps',
-        component: view('Maps')
+        component: Maps
       },
       {
         path: 'typography',
         name: 'typography',
-        component: view('Typography')
+        component: Typography
       },
       {
         path: 'table-list',
         name: 'table-list',
-        component: view('TableList')
+        component: TableList
       },
     ]
   },
@@ -58,10 +66,10 @@ const routes = [
  * Asynchronously load view (Webpack Lazy loading compatible)
  * The specified component must be inside the Views folder
  * @param  {string} name  the filename (basename) of the view to load.
- */
 function view(name) {
    var res= require('../components/Dashboard/Views/' + name + '.vue');
    return res;
-};
+};**/
+
 
 export default routes;
