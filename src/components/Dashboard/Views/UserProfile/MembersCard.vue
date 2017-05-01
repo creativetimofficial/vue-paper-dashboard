@@ -35,17 +35,17 @@
         title: 'Team members',
         members: [
           {
-            image: '/static/img/faces/face-0.jpg',
+            image: 'static/img/faces/face-0.jpg',
             name: 'Dj Khaled',
             status: 'Offline'
           },
           {
-            image: '/static/img/faces/face-1.jpg',
+            image: 'static/img/faces/face-1.jpg',
             name: 'Creative Tim',
             status: 'Available'
           },
           {
-            image: '/static/img/faces/face-1.jpg',
+            image: 'static/img/faces/face-1.jpg',
             name: 'Flume',
             status: 'Busy'
           }

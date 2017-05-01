@@ -20,7 +20,7 @@
     </div>
 
     <!--Charts-->
-    <div class="row" v-if="usersChart">
+    <div class="row">
 
       <div class="col-xs-12">
         <chart-card :chart-data="usersChart.data" :chart-options="usersChart.options">
@@ -48,7 +48,7 @@
       ChartCard,
     },
     /**
-     * Chart data used to render stats, charts and percentage circles. Should be replaced with server data
+     * Chart data used to render stats, charts. Should be replaced with server data
      */
     data(){
       return {
@@ -104,9 +104,6 @@
             axisX: {
               showGrid: false,
             },
-            lineSmooth: this.$Chartist.Interpolation.simple({
-              divisor: 3
-            }),
             showLine: true,
             showPoint: false,
           }
