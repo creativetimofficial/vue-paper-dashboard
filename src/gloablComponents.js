@@ -1,4 +1,4 @@
-import fgInput from './components/Inputs/formGroupInput.vue'
+import fgInput from './components/UIComponents/Inputs/formGroupInput.vue'
 
 var GlobalComponents = {
   install(Vue) {

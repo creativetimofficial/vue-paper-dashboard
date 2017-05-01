@@ -11,9 +11,8 @@ function getRenderedComponent (Component, propsData) {
   Object.defineProperty(Vue.prototype, '$Chartist', {
     get () { return this.$root._Chartist }
   })
-  const Ctor = Vue.extend(Component)
-  const vm = new Ctor({ propsData }).$mount()
-  return vm;
+
+  return mount(Component, propsData)
 }
 
 describe('Overview.vue', () => {

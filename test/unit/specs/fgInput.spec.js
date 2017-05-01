@@ -1,26 +1,22 @@
 import Vue from 'vue'
-import fgInput from 'src/components/Inputs/formGroupInput.vue'
-window.triggerEvent = function triggerEvent (target, event, process) {
-  var e = document.createEvent('HTMLEvents')
-  e.initEvent(event, true, true)
-  if (process) process(e)
-  target.dispatchEvent(e)
-}
+import fgInput from 'components/UIComponents/Inputs/formGroupInput.vue'
 
-function getRenderedComponent(Component, propsData) {
+
+function getRenderedComponent(Component) {
   var vm = new Vue({
-    template:`<div><fg-input v-model="msg"></fg-input></div>`,
-    components:{
-      'fg-input':Component
+    template: `<div><fg-input v-model="msg"></fg-input></div>`,
+    components: {
+      'fg-input': Component
     },
-    data:{
-      msg:"hello",
+    data: {
+      msg: "hello",
     }
   }).$mount()
   return vm;
 }
 
 describe('formGroupInput.vue', () => {
+
   it('should work with v-model', done => {
     var vm = getRenderedComponent(fgInput);
     const input = vm.$el.querySelector('input')
@@ -29,10 +25,19 @@ describe('formGroupInput.vue', () => {
     //change input value
     input.value = 'world'
     triggerEvent(input, 'input')
-
-    vm.$nextTick(()=>{
+    waitForUpdate(() => {
       expect(vm.msg).to.equal('world')
-      done();
-    })
+    }).end(done)
   })
+
+  it('should accept input attributes', () => {
+    var vm = mount(fgInput, {attributes: {type: "password", name: "password", placeholder: "User password", required:true}});
+    const input = vm.$el.querySelector('input')
+
+    expect(input.type).to.equal("password")
+    expect(input.name).to.equal("password")
+    expect(input.placeholder).to.equal("User password")
+    expect(input.required).to.equal(true)
+  })
+
 })

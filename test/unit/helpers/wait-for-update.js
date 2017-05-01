@@ -1,5 +1,4 @@
 import Vue from 'vue'
-
 // helper for async assertions.
 // Use like this:
 //

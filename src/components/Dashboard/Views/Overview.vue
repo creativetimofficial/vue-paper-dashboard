@@ -40,8 +40,8 @@
   </div>
 </template>
 <script>
-  import StatsCard from './../../Cards/StatsCard.vue'
-  import ChartCard from './../../Cards/ChartCard.vue'
+  import StatsCard from 'components/UIComponents/Cards/StatsCard.vue'
+  import ChartCard from 'components/UIComponents/Cards/ChartCard.vue'
   export default{
     components: {
       StatsCard,
