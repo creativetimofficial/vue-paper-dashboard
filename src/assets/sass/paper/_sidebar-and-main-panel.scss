@@ -8,9 +8,9 @@
   background-position: center center;
   .sidebar-wrapper {
     position: relative;
-    max-height: none;
-    min-height: 100%;
-    overflow: hidden;
+    height:100%;
+    overflow-y: auto;
+    overflow-x: hidden;
     width: 260px;
     z-index: 4;
     box-shadow: inset -1px 0px 0px 0px $medium-gray;
@@ -36,7 +36,7 @@
   font-weight: 200;
 
   .logo {
-    padding: 18px 0px;
+    padding-top:40px;
     margin: 0 20px;
 
     p {
@@ -58,7 +58,7 @@
   }
 
   .nav {
-    margin-top: 20px;
+    //margin-top: 20px;
 
     li {
       > a {
@@ -195,6 +195,9 @@
 }
 
 .sidebar{
+  position: absolute;
   overflow: hidden;
-  position: fixed;
+  overflow-y: hidden;
 }
+
+

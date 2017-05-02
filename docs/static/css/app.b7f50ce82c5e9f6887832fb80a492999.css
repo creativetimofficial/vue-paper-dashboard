@@ -7064,9 +7064,9 @@ hr {
 }
 .sidebar .sidebar-wrapper {
     position: relative;
-    max-height: none;
-    min-height: 100%;
-    overflow: hidden;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
     width: 260px;
     z-index: 4;
     box-shadow: inset -1px 0px 0px 0px #DDDDDD;
@@ -7090,7 +7090,7 @@ hr {
 }
 .sidebar .logo,
   .off-canvas-sidebar .logo {
-    padding: 18px 0px;
+    padding-top: 40px;
     margin: 0 20px;
 }
 .sidebar .logo p,
@@ -7110,64 +7110,60 @@ hr {
       font-weight: 400;
       line-height: 30px;
 }
-.sidebar .nav,
-  .off-canvas-sidebar .nav {
-    margin-top: 20px;
-}
 .sidebar .nav li > a,
-    .off-canvas-sidebar .nav li > a {
-      margin: 10px 0px;
-      padding-left: 25px;
-      padding-right: 25px;
-      opacity: .7;
+  .off-canvas-sidebar .nav li > a {
+    margin: 10px 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+    opacity: .7;
 }
 .sidebar .nav li:hover > a,
-    .off-canvas-sidebar .nav li:hover > a {
-      opacity: 1;
+  .off-canvas-sidebar .nav li:hover > a {
+    opacity: 1;
 }
 .sidebar .nav li.active > a,
-    .off-canvas-sidebar .nav li.active > a {
-      color: #7A9E9F;
-      opacity: 1;
+  .off-canvas-sidebar .nav li.active > a {
+    color: #7A9E9F;
+    opacity: 1;
 }
 .sidebar .nav li.active > a:before,
-      .off-canvas-sidebar .nav li.active > a:before {
-        border-right: 17px solid #DDDDDD;
-        border-top: 17px solid transparent;
-        border-bottom: 17px solid transparent;
-        content: "";
-        display: inline-block;
-        position: absolute;
-        right: 0;
-        top: 8px;
+    .off-canvas-sidebar .nav li.active > a:before {
+      border-right: 17px solid #DDDDDD;
+      border-top: 17px solid transparent;
+      border-bottom: 17px solid transparent;
+      content: "";
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 8px;
 }
 .sidebar .nav li.active > a:after,
-      .off-canvas-sidebar .nav li.active > a:after {
-        border-right: 17px solid #f4f3ef;
-        border-top: 17px solid transparent;
-        border-bottom: 17px solid transparent;
-        content: "";
-        display: inline-block;
-        position: absolute;
-        right: -1px;
-        top: 8px;
+    .off-canvas-sidebar .nav li.active > a:after {
+      border-right: 17px solid #f4f3ef;
+      border-top: 17px solid transparent;
+      border-bottom: 17px solid transparent;
+      content: "";
+      display: inline-block;
+      position: absolute;
+      right: -1px;
+      top: 8px;
 }
 .sidebar .nav p,
-    .off-canvas-sidebar .nav p {
-      margin: 0;
-      line-height: 30px;
-      font-size: 12px;
-      font-weight: 600;
-      text-transform: uppercase;
+  .off-canvas-sidebar .nav p {
+    margin: 0;
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 .sidebar .nav i,
-    .off-canvas-sidebar .nav i {
-      font-size: 24px;
-      float: left;
-      margin-right: 15px;
-      line-height: 30px;
-      width: 30px;
-      text-align: center;
+  .off-canvas-sidebar .nav i {
+    font-size: 24px;
+    float: left;
+    margin-right: 15px;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
 }
 .sidebar:after, .sidebar:before,
   .off-canvas-sidebar:after,
@@ -7187,6 +7183,23 @@ hr {
   .off-canvas-sidebar:before,
   .off-canvas-sidebar[data-background-color="white"]:after,
   .off-canvas-sidebar[data-background-color="white"]:before {
+    background-color: #FFFFFF;
+}
+.sidebar #style-3::-webkit-scrollbar-track, .sidebar[data-background-color="white"] #style-3::-webkit-scrollbar-track,
+  .off-canvas-sidebar #style-3::-webkit-scrollbar-track,
+  .off-canvas-sidebar[data-background-color="white"] #style-3::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #FFFFFF;
+    background-color: #FFFFFF;
+}
+.sidebar #style-3::-webkit-scrollbar, .sidebar[data-background-color="white"] #style-3::-webkit-scrollbar,
+  .off-canvas-sidebar #style-3::-webkit-scrollbar,
+  .off-canvas-sidebar[data-background-color="white"] #style-3::-webkit-scrollbar {
+    width: 6px;
+    background-color: #66615B;
+}
+.sidebar #style-3::-webkit-scrollbar-thumb, .sidebar[data-background-color="white"] #style-3::-webkit-scrollbar-thumb,
+  .off-canvas-sidebar #style-3::-webkit-scrollbar-thumb,
+  .off-canvas-sidebar[data-background-color="white"] #style-3::-webkit-scrollbar-thumb {
     background-color: #FFFFFF;
 }
 .sidebar .logo, .sidebar[data-background-color="white"] .logo,
@@ -7217,6 +7230,20 @@ hr {
 .sidebar[data-background-color="black"]:after, .sidebar[data-background-color="black"]:before,
   .off-canvas-sidebar[data-background-color="black"]:after,
   .off-canvas-sidebar[data-background-color="black"]:before {
+    background-color: #212120;
+}
+.sidebar[data-background-color="black"] #style-3::-webkit-scrollbar-track,
+  .off-canvas-sidebar[data-background-color="black"] #style-3::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #212120;
+    background-color: #212120;
+}
+.sidebar[data-background-color="black"] #style-3::-webkit-scrollbar,
+  .off-canvas-sidebar[data-background-color="black"] #style-3::-webkit-scrollbar {
+    width: 6px;
+    background-color: #FFFFFF;
+}
+.sidebar[data-background-color="black"] #style-3::-webkit-scrollbar-thumb,
+  .off-canvas-sidebar[data-background-color="black"] #style-3::-webkit-scrollbar-thumb {
     background-color: #212120;
 }
 .sidebar[data-background-color="black"] .logo,
@@ -7293,8 +7320,9 @@ hr {
   -webkit-overflow-scrolling: touch;
 }
 .sidebar {
+  position: absolute;
   overflow: hidden;
-  position: fixed;
+  overflow-y: hidden;
 }
 .btn,
 .navbar .navbar-nav > li > a.btn {
@@ -12296,4 +12324,5 @@ h6 {
 
 
 
-/*# sourceMappingURL=app.43feb22cc4012704f867259086f5441f.css.map*/
+
+/*# sourceMappingURL=app.b7f50ce82c5e9f6887832fb80a492999.css.map*/

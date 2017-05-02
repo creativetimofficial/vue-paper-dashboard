@@ -1,19 +1,17 @@
 <template>
-  <div :class="{'nav-open': showSidebar}" class="wrapper">
+  <div class="wrapper">
     <side-bar type="sidebar">
 
     </side-bar>
-    <div class="main-panel" :class="{'push-left': showSidebar}">
+    <div class="main-panel">
       <top-navbar></top-navbar>
 
-      <dashboard-content>
+      <dashboard-content @click.native="toggleSidebar">
 
       </dashboard-content>
 
       <content-footer></content-footer>
     </div>
-    <side-bar type="navbar"></side-bar>
-    <div id="bodyClick"></div>
   </div>
 </template>
 <style lang="scss">
@@ -38,6 +36,15 @@
       TopNavbar,
       ContentFooter,
       DashboardContent
+    },
+    methods: {
+      ...mapActions(['setShowSidebar', 'setSideBarMinimized']),
+      toggleSidebar(){
+        if (this.showSidebar) {
+            debugger
+          this.setShowSidebar(false);
+        }
+      },
     },
   }
 </script>
