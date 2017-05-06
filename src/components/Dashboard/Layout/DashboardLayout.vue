@@ -23,13 +23,13 @@
   import TopNavbar from './TopNavbar.vue'
   import ContentFooter from './ContentFooter.vue'
   import DashboardContent from './Content.vue'
-  import {mapActions, mapGetters} from 'vuex'
+  import {mapMutations, mapGetters} from 'vuex'
   export default{
     data(){
       return {}
     },
     computed: {
-      ...mapGetters(['showSidebar', 'isSidebarMinimized']),
+      ...mapGetters(['showSidebar']),
     },
     components: {
       SideBar,
@@ -38,10 +38,9 @@
       DashboardContent
     },
     methods: {
-      ...mapActions(['setShowSidebar', 'setSideBarMinimized']),
+      ...mapMutations(['setShowSidebar']),
       toggleSidebar(){
         if (this.showSidebar) {
-            debugger
           this.setShowSidebar(false);
         }
       },

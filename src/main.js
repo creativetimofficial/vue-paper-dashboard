@@ -45,7 +45,3 @@ new Vue({
     Chartist: Chartist
   },
 });
-
-
-
-Vue.http.options.xhr = {withCredentials: true}

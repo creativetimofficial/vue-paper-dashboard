@@ -16,7 +16,7 @@ Note: Work in Progress!
   * [x] Tables
   * [ ] Notifications (jQuery based now)
 * [ ] Add docs regarding implementation details
-* [ ] Cleanup vuex implementantion
+* [x] Cleanup vuex implementantion
 * [x] Unit tests for custom components
 
 ## Build Setup

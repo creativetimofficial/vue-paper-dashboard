@@ -58,7 +58,7 @@
   </nav>
 </template>
 <script>
-  import {mapGetters, mapActions} from 'vuex';
+  import {mapGetters, mapMutations} from 'vuex';
   export default{
     computed: {
       ...mapGetters(['showSidebar', 'isSidebarMinimized']),
@@ -73,7 +73,7 @@
       }
     },
     methods: {
-      ...mapActions(['setShowSidebar', 'setSideBarMinimized']),
+      ...mapMutations(['setShowSidebar']),
       capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
       },
