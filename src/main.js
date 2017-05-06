@@ -6,9 +6,10 @@ import GlobalComponents from './gloablComponents'
 
 //library imports
 import Chartist from 'chartist'
-import 'es6-promise/auto'
+//remove bootstrap-notify in favor of some vue based notifications component
 import 'bootstrap-notify'
 import 'bootstrap/dist/css/bootstrap.css'
+import 'es6-promise/auto'
 
 //plugin setup
 Vue.use(VueRouter);

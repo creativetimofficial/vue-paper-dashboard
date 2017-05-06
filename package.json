@@ -20,13 +20,8 @@
     "es6-promise": "^4.1.0",
     "google-maps": "^3.2.1",
     "jquery": "^3.2.1",
-    "jquery-ui": "^1.12.1",
-    "sweet-modal-vue": "^1.1.0",
-    "toastr": "^2.1.2",
     "v-click-outside": "0.0.8",
     "vue": "^2.3.0",
-    "vue-form-generator": "^2.0.0-beta3",
-    "vue-resource": "^1.0.3",
     "vue-router": "^2.2.0",
     "vuex": "^2.1.1"
   },
