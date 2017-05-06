@@ -39,7 +39,7 @@ Note: Work in Progress!
   ```js
   Object.defineProperty(Vue.prototype, '$Chartist', {
     get() {
-      return this.$root.Chartist;
+      return Chartist;
     }
   });
   ```
