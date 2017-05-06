@@ -288,8 +288,8 @@ th {
 @font-face {
   font-family: 'Glyphicons Halflings';
 
-  src: url(/static/fonts/glyphicons-halflings-regular.f4769f9.eot);
-  src: url(/static/fonts/glyphicons-halflings-regular.f4769f9.eot?#iefix) format('embedded-opentype'), url(/static/fonts/glyphicons-halflings-regular.448c34a.woff2) format('woff2'), url(/static/fonts/glyphicons-halflings-regular.fa27723.woff) format('woff'), url(/static/fonts/glyphicons-halflings-regular.e18bbf6.ttf) format('truetype'), url(/static/img/glyphicons-halflings-regular.8988968.svg#glyphicons_halflingsregular) format('svg');
+  src: url(static/fonts/glyphicons-halflings-regular.f4769f9.eot);
+  src: url(static/fonts/glyphicons-halflings-regular.f4769f9.eot?#iefix) format('embedded-opentype'), url(static/fonts/glyphicons-halflings-regular.448c34a.woff2) format('woff2'), url(static/fonts/glyphicons-halflings-regular.fa27723.woff) format('woff'), url(static/fonts/glyphicons-halflings-regular.e18bbf6.ttf) format('truetype'), url(static/img/glyphicons-halflings-regular.8988968.svg#glyphicons_halflingsregular) format('svg');
 }
 .glyphicon {
   position: relative;
@@ -7126,28 +7126,6 @@ hr {
     color: #7A9E9F;
     opacity: 1;
 }
-.sidebar .nav li.active > a:before,
-    .off-canvas-sidebar .nav li.active > a:before {
-      border-right: 17px solid #DDDDDD;
-      border-top: 17px solid transparent;
-      border-bottom: 17px solid transparent;
-      content: "";
-      display: inline-block;
-      position: absolute;
-      right: 0;
-      top: 8px;
-}
-.sidebar .nav li.active > a:after,
-    .off-canvas-sidebar .nav li.active > a:after {
-      border-right: 17px solid #f4f3ef;
-      border-top: 17px solid transparent;
-      border-bottom: 17px solid transparent;
-      content: "";
-      display: inline-block;
-      position: absolute;
-      right: -1px;
-      top: 8px;
-}
 .sidebar .nav p,
   .off-canvas-sidebar .nav p {
     margin: 0;
@@ -10078,6 +10056,16 @@ h6 {
 
 
 
+.moving-arrow {
+  border-right: 17px solid #f4f3ef;
+  border-top: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  display: inline-block;
+  position: absolute;
+  left: 243px;
+  top: 95px;
+  transition: all 0.5s cubic-bezier(0.29, 1.42, 0.79, 1);
+}
 
 
 
@@ -10198,6 +10186,12 @@ h6 {
 
 
 
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .1s
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0
+}
 
 
 
@@ -12325,4 +12319,38 @@ h6 {
 
 
 
-/*# sourceMappingURL=app.b7f50ce82c5e9f6887832fb80a492999.css.map*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*# sourceMappingURL=app.53078822e623ea89c289ce3c4a803e5a.css.map*/
