@@ -7,7 +7,9 @@ designed for vue js.The dashboard includes vue-router and vuex
 
 Live [DEMO](https://cristijora.github.io/vue-paper-dashboard)
 
-Note: Work in Progress!
+![](http://i.imgur.com/3iC1hOs.gif)
+
+Note: Work in Progress on the unchecked parts from the TODO list
 ## Todo
 * [ ] Implement all components in Vue
   * [x] Sidebar
