@@ -1,5 +1,6 @@
 # Auto detect text files and perform LF normalization
 *.scss linguist-language=Vue
+*.css linguist-language=Vue
 
 # Standard to msysgit
 *.doc	 diff=astextplain
