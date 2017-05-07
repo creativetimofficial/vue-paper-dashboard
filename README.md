@@ -14,7 +14,7 @@ Note: Work in Progress!
   * [x] Charts
   * [x] Form
   * [x] Tables
-  * [ ] Notifications (jQuery based now)
+  * [x] Custom Vue Notifications (WIP on notification layout)
 * [ ] Add docs regarding implementation details
 * [x] Cleanup vuex implementantion
 * [x] Unit tests for custom components
