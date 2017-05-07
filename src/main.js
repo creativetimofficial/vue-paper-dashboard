@@ -1,21 +1,19 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import VueResource from 'vue-resource'
 import vClickOutside from 'v-click-outside'
 import GlobalComponents from './gloablComponents'
+import Notifications from './components/UIComponents/NotificationPlugin'
 
 //library imports
 import Chartist from 'chartist'
-//remove bootstrap-notify in favor of some vue based notifications component
-import 'bootstrap-notify'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'es6-promise/auto'
 
 //plugin setup
 Vue.use(VueRouter);
-Vue.use(VueResource);
 Vue.use(GlobalComponents);
-Vue.use(vClickOutside)
+Vue.use(vClickOutside);
+Vue.use(Notifications);
 
 import App from './App'
 

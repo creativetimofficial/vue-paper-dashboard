@@ -2,8 +2,7 @@
   <div class="card">
     <div class="header">
       <h4 class="title">Notifications</h4>
-      <p class="category">Handcrafted by our friend <a target="_blank" href="https://github.com/mouse0270">Robert McIntosh</a>. Please checkout the <a
-        href="http://bootstrap-notify.remabledesigns.com/" target="_blank">full documentation.</a></p>
+      <p class="category">Custom Vue notifications plugin</p>
     </div>
     <div class="content">
       <div class="row">
@@ -61,54 +60,57 @@
         </div>
         <div class="row">
           <div class="col-md-3">
-            <button class="btn btn-default btn-block" @click="notify('top','left')">Top Left</button>
+            <button class="btn btn-default btn-block" @click="notifyVue('top', 'left')">Top Left</button>
           </div>
           <div class="col-md-3">
-            <button class="btn btn-default btn-block" @click="notify('top','center')">Top Center</button>
+            <button class="btn btn-default btn-block" @click="notifyVue('top', 'center')">Top Center</button>
           </div>
           <div class="col-md-3">
-            <button class="btn btn-default btn-block" @click="notify('top','right')">Top Right</button>
+            <button class="btn btn-default btn-block" @click="notifyVue('top', 'right')">Top Right</button>
           </div>
         </div>
         <div class="row">
           <div class="col-md-3">
-            <button class="btn btn-default btn-block" @click="notify('bottom','left')">Bottom Left</button>
+            <button class="btn btn-default btn-block" @click="notifyVue('bottom', 'left')">Bottom Left</button>
           </div>
           <div class="col-md-3">
-            <button class="btn btn-default btn-block" @click="notify('bottom','center')">Bottom Center</button>
+            <button class="btn btn-default btn-block" @click="notifyVue('bottom', 'center')">Bottom Center</button>
           </div>
           <div class="col-md-3">
-            <button class="btn btn-default btn-block" @click="notify('bottom','right')">Bottom Right</button>
+            <button class="btn btn-default btn-block" @click="notifyVue('bottom', 'right')">Bottom Right</button>
           </div>
+
         </div>
       </div>
     </div>
   </div>
 </template>
 <script>
+  import PaperNotification from 'src/components/UIComponents/NotificationPlugin/Notification.vue'
   export default{
     data(){
       return {
-        type: ['', 'info', 'success', 'warning', 'danger']
+        type: ['', 'info', 'success', 'warning', 'danger'],
+        notifications: {
+          topCenter: false
+        }
       }
     },
+    components: {
+      PaperNotification
+    },
     methods: {
-      notify(from, align){
+      notifyVue(verticalAlign, horizontalAlign){
         var color = Math.floor((Math.random() * 4) + 1);
-
-        $.notify({
-          icon: "ti-gift",
-          message: "Welcome to <b>Paper Dashboard</b> - a beautiful freebie for every web developer."
-
-        }, {
-          type: this.type[color],
-          timer: 4000,
-          placement: {
-            from: from,
-            align: align
-          }
-        });
-      }
+        this.$notifications.notify(
+          {
+            message: 'Welcome to <b>Paper Dashboard</b> - a beautiful freebie for every web developer.',
+            icon: 'ti-gift',
+            horizontalAlign: horizontalAlign,
+            verticalAlign: verticalAlign,
+            type: this.type[color],
+          })
+      },
     },
   }
 </script>

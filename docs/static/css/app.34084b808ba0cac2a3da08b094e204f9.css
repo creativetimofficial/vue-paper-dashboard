@@ -23,6 +23,94 @@
 
 
 
+
+.list-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+.list-enter-active, .list-leave-active {
+  transition: all 1s;
+}
+.list-enter, .list-leave-to {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+/*      light colors - used for select dropdown         */
+.fade-enter-active[data-v-034734e4], .fade-leave-active[data-v-034734e4] {
+  transition: opacity .3s;
+}
+.fade-enter[data-v-034734e4], .fade-leave-to[data-v-034734e4] {
+  opacity: 0;
+}
+.alert[data-v-034734e4] {
+  border: 0;
+  border-radius: 0;
+  color: #FFFFFF;
+  padding: 10px 15px;
+  font-size: 14px;
+  z-index: 100;
+  display: inline-block;
+  position: fixed;
+  transition: all 0.5s ease-in-out;
+}
+.alert.center[data-v-034734e4] {
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+}
+.alert.left[data-v-034734e4] {
+    left: 20px;
+}
+.alert.right[data-v-034734e4] {
+    right: 20px;
+}
+.container .alert[data-v-034734e4] {
+    border-radius: 4px;
+}
+.navbar .alert[data-v-034734e4] {
+    border-radius: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 85px;
+    width: 100%;
+    z-index: 3;
+}
+.navbar:not(.navbar-transparent) .alert[data-v-034734e4] {
+    top: 70px;
+}
+.alert .alert-icon[data-v-034734e4] {
+    font-size: 30px;
+    margin-right: 5px;
+}
+.alert .close ~ span[data-v-034734e4] {
+    display: block;
+    max-width: 89%;
+}
+.alert[data-notify="container"][data-v-034734e4] {
+    width: 350px;
+    padding: 10px 10px 10px 20px;
+    border-radius: 4px;
+}
+.alert.alert-with-icon[data-v-034734e4] {
+    padding-left: 65px;
+}
+.alert-info[data-v-034734e4] {
+  background-color: #7CE4FE;
+  color: #3091B2;
+}
+.alert-success[data-v-034734e4] {
+  background-color: #8EF3C5;
+  color: #42A084;
+}
+.alert-warning[data-v-034734e4] {
+  background-color: #FFE28C;
+  color: #BB992F;
+}
+.alert-danger[data-v-034734e4] {
+  background-color: #FF8F5E;
+  color: #B33C12;
+}
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -8280,7 +8368,7 @@ textarea.form-control {
   border: 0;
   border-radius: 0;
   font-size: 16px;
-  z-index: 3;
+  z-index: 0;
 }
 .navbar .navbar-brand {
     font-weight: 600;
@@ -12353,4 +12441,6 @@ h6 {
 
 
 
-/*# sourceMappingURL=app.53078822e623ea89c289ce3c4a803e5a.css.map*/
+
+
+/*# sourceMappingURL=app.34084b808ba0cac2a3da08b094e204f9.css.map*/

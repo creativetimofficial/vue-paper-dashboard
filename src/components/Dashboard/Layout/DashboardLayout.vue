@@ -3,6 +3,9 @@
     <side-bar type="sidebar">
 
     </side-bar>
+    <notifications>
+
+    </notifications>
     <div class="main-panel">
       <top-navbar></top-navbar>
 

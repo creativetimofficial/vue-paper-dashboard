@@ -19,13 +19,13 @@ module.exports = {
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
   },
-  plugins: [
+ /* plugins: [
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",
       jquery: "jquery"
     })
-  ],
+  ],*/
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     modules: [
