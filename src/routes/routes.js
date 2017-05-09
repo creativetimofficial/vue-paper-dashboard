@@ -1,8 +1,8 @@
 import DashboardLayout from '../components/Dashboard/Layout/DashboardLayout.vue'
-//GeneralViews
+// GeneralViews
 import NotFound from '../components/GeneralViews/NotFoundPage.vue'
 
-//Admin pages
+// Admin pages
 import Overview from 'src/components/Dashboard/Views/Overview.vue'
 import UserProfile from 'src/components/Dashboard/Views/UserProfile.vue'
 import Notifications from 'src/components/Dashboard/Views/Notifications.vue'
@@ -56,10 +56,10 @@ const routes = [
         path: 'table-list',
         name: 'table-list',
         component: TableList
-      },
+      }
     ]
   },
-  {path: '*', component: NotFound}
+  { path: '*', component: NotFound }
 ]
 
 /**
@@ -71,5 +71,4 @@ function view(name) {
    return res;
 };**/
 
-
-export default routes;
+export default routes
