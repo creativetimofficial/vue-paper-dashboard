@@ -2,9 +2,11 @@
   <div data-notify="container" class="col-xs-11 col-sm-4 alert open" role="alert" :class="[verticalAlign, horizontalAlign, alertType]" :style="customPosition" data-notify-position="top-center">
     <button type="button" aria-hidden="true" class="close" data-notify="dismiss" style="position: absolute; right: 10px; top: 5px; z-index: 1033;" @click="close">×
     </button>
-    <div class="row">
-      <span v-if="hasIcon" class="col-xs-2 alert-icon" :class="icon"></span>
-      <div>
+    <div class="row sub-container">
+      <div v-if="hasIcon" class="col-xs-2">
+        <span class="alert-icon" :class="icon"></span>
+      </div>
+      <div :class="hasIcon ? 'col-xs-10' : 'col-xs-12'">
         <slot name="message">
           <div v-html="message"></div>
         </slot>
@@ -142,6 +144,10 @@ export default {
     width: 350px;
     padding: 10px 10px 10px 20px;
     border-radius: $border-radius-base;
+    .sub-container {
+      padding-right: 20px;
+      clear: both;
+    }
   }
 
   &.alert-with-icon {
