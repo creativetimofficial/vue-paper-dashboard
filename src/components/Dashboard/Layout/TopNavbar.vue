@@ -8,7 +8,7 @@
         </button>
       </div>-->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" @click="toggleSidebar">
+        <button type="button" class="navbar-toggle" :class="{toggled:showSidebar}" @click="toggleSidebar">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar bar1"></span>
           <span class="icon-bar bar2"></span>
