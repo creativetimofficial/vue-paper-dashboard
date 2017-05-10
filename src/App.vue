@@ -18,6 +18,4 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@import './assets/sass/paper-dashboard.scss';
-</style>
+<style lang="scss"></style>
