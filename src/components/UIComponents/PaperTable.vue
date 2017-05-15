@@ -21,40 +21,40 @@
   </div>
 </template>
 <script>
-export default {
-  props: {
-    columns: Array,
-    data: Array,
-    type: {
-      type: String, // striped | hover
-      default: 'Striped'
-    },
-    title: {
-      type: String,
-      default: 'Striped Table'
-    },
-    subTitle: {
-      type: String,
-      default: 'Here is a subtitle for this table'
+  export default {
+    props: {
+      columns: Array,
+      data: Array,
+      type: {
+        type: String, // striped | hover
+        default: 'Striped'
+      },
+      title: {
+        type: String,
+        default: 'Striped Table'
+      },
+      subTitle: {
+        type: String,
+        default: 'Here is a subtitle for this table'
 
-    }
-  },
-  computed: {
-    tableClass () {
-      return `table-${this.type}`
-    }
-  },
-  methods: {
-    hasValue (item, column) {
-      return item[column.toLowerCase()] !== 'undefined'
+      }
     },
-    itemValue (item, column) {
-      return item[column.toLowerCase()]
+    computed: {
+      tableClass () {
+        return `table-${this.type}`
+      }
+    },
+    methods: {
+      hasValue (item, column) {
+        return item[column.toLowerCase()] !== 'undefined'
+      },
+      itemValue (item, column) {
+        return item[column.toLowerCase()]
+      }
     }
   }
-}
 
 </script>
 <style>
-
+  
 </style>

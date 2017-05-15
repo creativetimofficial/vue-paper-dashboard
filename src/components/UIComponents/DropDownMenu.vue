@@ -28,30 +28,30 @@
   </li>
 </template>
 <script>
-export default {
-  props: {
-    title: String,
-    icon: {
-      type: String,
-      default: 'ti-bell'
-    }
-  },
-  data () {
-    return {
-      activeNotifications: false
-    }
-  },
-  methods: {
-    toggleNotificationDropDown () {
-      this.activeNotifications = !this.activeNotifications
+  export default {
+    props: {
+      title: String,
+      icon: {
+        type: String,
+        default: 'ti-bell'
+      }
     },
-    closeDropDown () {
-      this.activeNotifications = false
+    data () {
+      return {
+        activeNotifications: false
+      }
+    },
+    methods: {
+      toggleNotificationDropDown () {
+        this.activeNotifications = !this.activeNotifications
+      },
+      closeDropDown () {
+        this.activeNotifications = false
+      }
     }
   }
-}
 
 </script>
 <style>
-
+  
 </style>

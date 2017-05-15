@@ -6,16 +6,16 @@
 </template>
 
 <script>
-import SideBar from './components/Dashboard/Layout/SideBar.vue'
-import { mapGetters } from 'vuex'
-export default {
-  computed: {
-    ...mapGetters(['showSidebar', 'isSidebarMinimized'])
-  },
-  components: {
-    SideBar
+  import SideBar from './components/Dashboard/Layout/SideBar.vue'
+  import { mapGetters } from 'vuex'
+  export default {
+    computed: {
+      ...mapGetters(['showSidebar', 'isSidebarMinimized'])
+    },
+    components: {
+      SideBar
+    }
   }
-}
 </script>
 
 <style lang="scss"></style>

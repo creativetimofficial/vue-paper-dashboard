@@ -7,19 +7,19 @@
   </div>
 </template>
 <script>
-export default {
-  props: {
-    attributes: Object,
-    default: () => {
-      return {
-        type: 'text'
-      }
-    },
-    value: [String, Number]
+  export default {
+    props: {
+      attributes: Object,
+      default: () => {
+        return {
+          type: 'text'
+        }
+      },
+      value: [String, Number]
+    }
   }
-}
 
 </script>
 <style>
-
+  
 </style>

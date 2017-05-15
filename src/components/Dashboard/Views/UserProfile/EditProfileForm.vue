@@ -19,7 +19,7 @@
             </fg-input>
           </div>
         </div>
-
+  
         <div class="row">
           <div class="col-md-6">
             <fg-input :attributes="{type:'text',label:'First Name', placeholder:'First Name'}" v-model="user.firstName">
@@ -30,14 +30,14 @@
             </fg-input>
           </div>
         </div>
-
+  
         <div class="row">
           <div class="col-md-12">
             <fg-input :attributes="{type:'text',label:'Address', placeholder:'Home Address'}" v-model="user.address">
             </fg-input>
           </div>
         </div>
-
+  
         <div class="row">
           <div class="col-md-4">
             <fg-input :attributes="{type:'text',label:'City', placeholder:'City'}" v-model="user.city">
@@ -52,14 +52,14 @@
             </fg-input>
           </div>
         </div>
-
+  
         <div class="row">
           <div class="col-md-12">
             <div class="form-group">
               <label>About Me</label>
               <textarea rows="5" class="form-control border-input" placeholder="Here can be your description" v-model="user.aboutMe">
-
-                    </textarea>
+  
+              </textarea>
             </div>
           </div>
         </div>
@@ -98,5 +98,5 @@
 
 </script>
 <style>
-
+  
 </style>

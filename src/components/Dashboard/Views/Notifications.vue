@@ -30,26 +30,30 @@
           <h5>Notification states</h5>
           <div class="alert alert-info">
             <button type="button" aria-hidden="true" class="close">×</button>
-            <span><b> Info - </b> This is a regular notification made with ".alert-info"</span>
+            <span>
+              <b> Info - </b> This is a regular notification made with ".alert-info"</span>
           </div>
           <div class="alert alert-success">
             <button type="button" aria-hidden="true" class="close">×</button>
-            <span><b> Success - </b> This is a regular notification made with ".alert-success"</span>
+            <span>
+              <b> Success - </b> This is a regular notification made with ".alert-success"</span>
           </div>
           <div class="alert alert-warning">
             <button type="button" aria-hidden="true" class="close">×</button>
-            <span><b> Warning - </b> This is a regular notification made with ".alert-warning"</span>
+            <span>
+              <b> Warning - </b> This is a regular notification made with ".alert-warning"</span>
           </div>
           <div class="alert alert-danger">
             <button type="button" aria-hidden="true" class="close">×</button>
-            <span><b> Danger - </b> This is a regular notification made with ".alert-danger"</span>
+            <span>
+              <b> Danger - </b> This is a regular notification made with ".alert-danger"</span>
           </div>
         </div>
       </div>
-
+  
       <br>
       <br>
-
+  
       <div class="places-buttons">
         <div class="row">
           <div class="col-md-9">
@@ -79,7 +83,7 @@
           <div class="col-md-3">
             <button class="btn btn-default btn-block" @click="notifyVue('bottom', 'right')">Bottom Right</button>
           </div>
-
+  
         </div>
       </div>
     </div>
@@ -116,5 +120,5 @@
 
 </script>
 <style>
-
+  
 </style>

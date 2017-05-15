@@ -3,7 +3,8 @@
     <div class="card">
       <div class="header">
         <h4 class="title">Paper Dashboard Headings</h4>
-        <p class="category">Created using <a href="https://www.google.com/fonts/specimen/Muli">Muli</a> Font Family</p>
+        <p class="category">Created using
+          <a href="https://www.google.com/fonts/specimen/Muli">Muli</a> Font Family</p>
       </div>
       <div class="content">
         <div class="typo-line">
@@ -31,16 +32,15 @@
             <p class="category">Header 6</p>Paper Dashboard Heading </h6>
         </div>
         <div class="typo-line">
-          <p><span class="category">Paragraph</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-            nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+          <p>
+            <span class="category">Paragraph</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
           </p>
         </div>
         <div class="typo-line">
           <p class="category">Quote</p>
           <blockquote>
             <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-              aliquam erat volutpat. Ut wisi enim ad minim veniam.
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
             </p>
             <small>
               Steve Jobs, CEO Apple
@@ -55,8 +55,8 @@
         </div>
         <div class="typo-line">
           <!--
-             there are also "text-info", "text-success", "text-warning", "text-danger" clases for the text
-             -->
+               there are also "text-info", "text-success", "text-warning", "text-danger" clases for the text
+               -->
           <p class="category">Coloured Text</p>
           <p class="text-primary">
             Text Primary - Light Bootstrap Table Heading and complex bootstrap dashboard you've ever seen on the internet.
@@ -76,7 +76,8 @@
         </div>
         <div class="typo-line">
           <h2>
-            <p class="category">Small Tag</p>Header with small subtitle <br>
+            <p class="category">Small Tag</p>Header with small subtitle
+            <br>
             <small>".small" is a tag for the headers</small>
           </h2>
         </div>
@@ -147,8 +148,10 @@
         <div class="typo-line">
           <p class="category">Code</p>
           <p>
-            This is <code>.css-class-as-code</code>, an example of an inline code element. Wrap inline code within a <code>
-            &lt;code&gt;...&lt;/code&gt;</code>tag.</p>
+            This is
+            <code>.css-class-as-code</code>, an example of an inline code element. Wrap inline code within a
+            <code>
+              &lt;code&gt;...&lt;/code&gt;</code>tag.</p>
           <pre>1. #This is an example of preformatted text. 2. #Here is another line of code</pre>
         </div>
       </div>
@@ -160,5 +163,5 @@
 
 </script>
 <style>
-
+  
 </style>

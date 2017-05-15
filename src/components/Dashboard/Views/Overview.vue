@@ -1,6 +1,6 @@
 <template>
   <div>
-
+  
     <!--Stats cards-->
     <div class="row">
       <div class="col-lg-3 col-sm-6" v-for="stats in statsCards">
@@ -18,15 +18,16 @@
         </stats-card>
       </div>
     </div>
-
+  
     <!--Charts-->
     <div class="row">
-
+  
       <div class="col-xs-12">
         <chart-card :chart-data="usersChart.data" :chart-options="usersChart.options">
           <span slot="title">Users behavior</span>
           <span slot="subTitle"> 24 Hours performance</span>
-          <span slot="footer"><i class="ti-reload"></i> Updated 3 minutes ago</span>
+          <span slot="footer">
+            <i class="ti-reload"></i> Updated 3 minutes ago</span>
           <div slot="legend">
             <i class="fa fa-circle text-info"></i> Open
             <i class="fa fa-circle text-danger"></i> Click
@@ -34,9 +35,9 @@
           </div>
         </chart-card>
       </div>
-
+  
     </div>
-
+  
   </div>
 </template>
 <script>
@@ -117,5 +118,5 @@
 
 </script>
 <style>
-
+  
 </style>

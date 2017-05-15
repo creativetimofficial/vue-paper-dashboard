@@ -15,11 +15,15 @@
             <div class="col-xs-6">
               {{member.name}}
               <br>
-              <span :class="getStatusClass(member.status)"><small>{{member.status}}</small></span>
+              <span :class="getStatusClass(member.status)">
+                <small>{{member.status}}</small>
+              </span>
             </div>
-
+  
             <div class="col-xs-3 text-right">
-              <button class="btn btn-sm btn-success btn-icon"><i class="fa fa-envelope"></i></button>
+              <button class="btn btn-sm btn-success btn-icon">
+                <i class="fa fa-envelope"></i>
+              </button>
             </div>
           </div>
         </li>
@@ -69,5 +73,5 @@
 
 </script>
 <style>
-
+  
 </style>

@@ -1,24 +1,24 @@
 <template>
   <div class="wrapper">
     <side-bar type="sidebar">
-
+  
     </side-bar>
     <notifications>
-
+  
     </notifications>
     <div class="main-panel">
       <top-navbar></top-navbar>
-
+  
       <dashboard-content @click.native="toggleSidebar">
-
+  
       </dashboard-content>
-
+  
       <content-footer></content-footer>
     </div>
   </div>
 </template>
 <style lang="scss">
-
+  
 </style>
 <script>
   import SideBar from './SideBar.vue'

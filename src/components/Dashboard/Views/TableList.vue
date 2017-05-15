@@ -4,19 +4,19 @@
       <div class="col-md-12">
         <div class="card">
           <paper-table :title="table1.title" :sub-title="table1.subTitle" :data="table1.data" :columns="table1.columns">
-
+  
           </paper-table>
         </div>
       </div>
-
+  
       <div class="col-md-12">
         <div class="card card-plain">
           <paper-table type="hover" :title="table1.title" :sub-title="table1.subTitle" :data="table1.data" :columns="table1.columns">
-
+  
           </paper-table>
         </div>
       </div>
-
+  
     </div>
   </div>
 </template>
@@ -83,5 +83,5 @@
 
 </script>
 <style>
-
+  
 </style>

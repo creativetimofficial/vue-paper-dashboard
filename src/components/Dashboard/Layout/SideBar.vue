@@ -1,9 +1,9 @@
 <template>
   <div :class="sidebarClasses" :data-background-color="backgroundColor" :data-active-color="activeColor">
     <!--
-          Tip 1: you can change the color of the sidebar's background using: data-background-color="white | black"
-          Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
-      -->
+            Tip 1: you can change the color of the sidebar's background using: data-background-color="white | black"
+            Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
+        -->
     <!-- -->
     <div class="sidebar-wrapper" id="style-3">
       <div class="logo">
@@ -16,14 +16,14 @@
         <router-link v-for="(link,index) in sidebarLinks" :to="link.path" tag="li" :ref="link.name">
           <a>
             <i :class="link.icon"></i>
-
+  
             <p>{{link.name}}
             </p>
           </a>
         </router-link>
       </ul>
       <moving-arrow :move-y="arrowMovePx">
-
+  
       </moving-arrow>
     </div>
   </div>
@@ -152,5 +152,5 @@
 
 </script>
 <style>
-
+  
 </style>
