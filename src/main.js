@@ -38,8 +38,8 @@ Object.defineProperty(Vue.prototype, '$Chartist', {
   }
 })
 
-// initialize application
-var app = new Vue({
+/* eslint-disable no-new */
+new Vue({
   el: '#app',
   render: h => h(App),
   router,
