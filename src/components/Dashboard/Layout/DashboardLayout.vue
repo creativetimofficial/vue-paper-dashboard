@@ -1,38 +1,37 @@
 <template>
   <div class="wrapper">
     <side-bar type="sidebar">
-
+  
     </side-bar>
     <notifications>
-
+  
     </notifications>
     <div class="main-panel">
       <top-navbar></top-navbar>
-
+  
       <dashboard-content @click.native="toggleSidebar">
-
+  
       </dashboard-content>
-
+  
       <content-footer></content-footer>
     </div>
   </div>
 </template>
 <style lang="scss">
-
-
+  
 </style>
 <script>
   import SideBar from './SideBar.vue'
   import TopNavbar from './TopNavbar.vue'
   import ContentFooter from './ContentFooter.vue'
   import DashboardContent from './Content.vue'
-  import {mapMutations, mapGetters} from 'vuex'
-  export default{
-    data(){
+  import { mapMutations, mapGetters } from 'vuex'
+  export default {
+    data () {
       return {}
     },
     computed: {
-      ...mapGetters(['showSidebar']),
+      ...mapGetters(['showSidebar'])
     },
     components: {
       SideBar,
@@ -42,11 +41,12 @@
     },
     methods: {
       ...mapMutations(['setShowSidebar']),
-      toggleSidebar(){
+      toggleSidebar () {
         if (this.showSidebar) {
-          this.setShowSidebar(false);
+          this.setShowSidebar(false)
         }
-      },
-    },
+      }
+    }
   }
+
 </script>

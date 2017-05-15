@@ -7,10 +7,10 @@
 
 <script>
   import SideBar from './components/Dashboard/Layout/SideBar.vue'
-  import {mapGetters} from "vuex";
+  import { mapGetters } from 'vuex'
   export default {
     computed: {
-      ...mapGetters(['showSidebar', 'isSidebarMinimized']),
+      ...mapGetters(['showSidebar', 'isSidebarMinimized'])
     },
     components: {
       SideBar
@@ -18,7 +18,4 @@
   }
 </script>
 
-<style lang="scss">
-  @import './assets/sass/paper-dashboard.scss';
-
-</style>
+<style lang="scss"></style>

@@ -12,7 +12,7 @@
           </button>
           <router-link :to="{path:'/'}" class="navbar-brand">Site title</router-link>
         </div>
-
+  
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navigation-example-2">
           <ul class="nav navbar-nav navbar-right">
@@ -20,8 +20,10 @@
               <router-link :to="{path:'/'}">Home</router-link>
             </li>
           </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-->
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-->
     </nav>
     <div class="wrapper wrapper-full-page section content">
       <div class="">
@@ -48,7 +50,8 @@
           </ul>
         </nav>
         <div class="copyright pull-right">
-          &copy; 2017, made with <i class="fa fa-heart heart"></i> by Paper admin
+          &copy; 2017, made with
+          <i class="fa fa-heart heart"></i> by Paper admin
         </div>
       </div>
     </footer>
@@ -56,6 +59,6 @@
 </template>
 
 <script>
-  export default{}
-</script>
+  export default {}
 
+</script>

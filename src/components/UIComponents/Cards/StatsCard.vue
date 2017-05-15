@@ -14,13 +14,15 @@
         <slot name="footer"></slot>
       </div>
     </div>
-
+  
   </div>
 </template>
 <script>
-  export default{
+  export default {
     name: 'stats-card'
   }
+
 </script>
 <style>
+  
 </style>
