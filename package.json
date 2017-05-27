@@ -7,7 +7,6 @@
   "scripts": {
     "dev": "cross-env ENABLE_ESLINT=true node build/dev-server.js",
     "build": "cross-env ENABLE_ESLINT=true node build/build.js",
-    "build-demo": "cross-env ASSETS_FOLDER=docs node build/build.js ",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "unit:watch": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --watch",
     "e2e": "node test/e2e/runner.js",
@@ -20,8 +19,7 @@
     "google-maps": "^3.2.1",
     "v-click-outside": "0.0.8",
     "vue": "^2.3.0",
-    "vue-router": "^2.2.0",
-    "vuex": "^2.1.1"
+    "vue-router": "^2.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",

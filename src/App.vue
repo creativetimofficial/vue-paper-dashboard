@@ -1,21 +1,12 @@
 <template>
-  <div :class="{'nav-open': showSidebar}">
+  <div :class="{'nav-open': $sidebar.showSidebar}">
     <router-view></router-view>
-    <side-bar type="navbar"></side-bar>
+    <side-bar type="navbar" :sidebar-links="$sidebar.sidebarLinks"></side-bar>
   </div>
 </template>
 
 <script>
-  import SideBar from './components/Dashboard/Layout/SideBar.vue'
-  import { mapGetters } from 'vuex'
-  export default {
-    computed: {
-      ...mapGetters(['showSidebar', 'isSidebarMinimized'])
-    },
-    components: {
-      SideBar
-    }
-  }
+  export default {}
 </script>
 
 <style lang="scss"></style>

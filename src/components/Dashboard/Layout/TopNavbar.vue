@@ -1,14 +1,8 @@
 <template>
   <nav class="navbar navbar-default">
     <div class="container-fluid">
-      <!--<div class="navbar-minimize">
-          <button id="minimizeSidebar" class="btn btn-fill btn-icon" @click.prevent="toggleSidebarMinimize">
-            <i v-if="isSidebarMinimized" class="ti-menu-alt"></i>
-            <i v-else class="ti-more-alt"></i>
-          </button>
-        </div>-->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" :class="{toggled:showSidebar}" @click="toggleSidebar">
+        <button type="button" class="navbar-toggle" :class="{toggled: $sidebar.showSidebar}" @click="toggleSidebar">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar bar1"></span>
           <span class="icon-bar bar2"></span>
@@ -71,10 +65,8 @@
   </nav>
 </template>
 <script>
-  import { mapGetters, mapMutations } from 'vuex'
   export default {
     computed: {
-      ...mapGetters(['showSidebar', 'isSidebarMinimized']),
       routeName () {
         const { name } = this.$route
         return this.capitalizeFirstLetter(name)
@@ -86,7 +78,6 @@
       }
     },
     methods: {
-      ...mapMutations(['setShowSidebar']),
       capitalizeFirstLetter (string) {
         return string.charAt(0).toUpperCase() + string.slice(1)
       },
@@ -97,18 +88,15 @@
         this.activeNotifications = false
       },
       toggleSidebar () {
-        this.setShowSidebar(!this.showSidebar)
+        this.$sidebar.displaySidebar(!this.$sidebar.showSidebar)
       },
       hideSidebar () {
-        this.setShowSidebar(false)
-      },
-      toggleSidebarMinimize () {
-        this.setSideBarMinimized(!this.isSidebarMinimized)
+        this.$sidebar.displaySidebar(false)
       }
     }
   }
 
 </script>
 <style>
-  
+
 </style>
