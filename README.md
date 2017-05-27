@@ -17,9 +17,11 @@ Note: Work in Progress on the unchecked parts from the TODO list
   * [x] Form
   * [x] Tables
   * [x] Custom Vue Notifications (WIP on notification layout)
-* [ ] Add docs regarding implementation details
-* [x] Cleanup vuex implementantion
+* [ ] Add docs regarding implementation details (WIP)
 * [x] Unit tests for custom components
+
+## Documentation (WIP)
+Link to [Documentation](https://cristijora.github.io/vue-paper-dashboard-docs/#/)
 
 ## Build Setup
 
