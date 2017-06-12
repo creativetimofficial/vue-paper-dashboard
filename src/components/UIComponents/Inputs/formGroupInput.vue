@@ -15,11 +15,10 @@
         default: 'text'
       },
       label: String,
+      name: String,
       disabled: Boolean,
       placeholder: String,
       value: [String, Number]
-    },
-    mounted () {
     }
   }
 

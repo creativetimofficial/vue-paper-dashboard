@@ -4,12 +4,12 @@ import fgInput from 'components/UIComponents/Inputs/formGroupInput.vue'
 
 function getRenderedComponent(Component) {
   var vm = new Vue({
-    template: `<div><fg-input v-model="msg"></fg-input></div>`,
+    template: `<div><fg-input v-model='msg'></fg-input></div>`,
     components: {
       'fg-input': Component
     },
     data: {
-      msg: "hello",
+      msg: 'hello',
     }
   }).$mount()
   return vm;
@@ -31,13 +31,12 @@ describe('formGroupInput.vue', () => {
   })
 
   it('should accept input attributes', () => {
-    var vm = mount(fgInput, {attributes: {type: "password", name: "password", placeholder: "User password", required:true}});
+    const vm = mount(fgInput, {type: 'password', name: 'password', placeholder: 'User password'});
     const input = vm.$el.querySelector('input')
 
-    expect(input.type).to.equal("password")
-    expect(input.name).to.equal("password")
-    expect(input.placeholder).to.equal("User password")
-    expect(input.required).to.equal(true)
+    expect(input.type).to.equal('password')
+    expect(input.name).to.equal('password')
+    expect(input.placeholder).to.equal('User password')
   })
 
 })

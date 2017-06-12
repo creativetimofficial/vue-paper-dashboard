@@ -15,7 +15,6 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "chartist": "^0.10.1",
-    "es6-promise": "^4.1.0",
     "v-click-outside": "0.0.8",
     "vue": "^2.3.0",
     "vue-router": "^2.2.0"

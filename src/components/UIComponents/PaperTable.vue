@@ -1,8 +1,10 @@
 <template>
   <div>
     <div class="header">
-      <h4 class="title">{{title}}</h4>
-      <p class="category">{{subTitle}}</p>
+      <slot name="header">
+        <h4 class="title">{{title}}</h4>
+        <p class="category">{{subTitle}}</p>
+      </slot>
     </div>
     <div class="content table-responsive table-full-width">
       <table class="table" :class="tableClass">
@@ -10,11 +12,9 @@
           <th v-for="column in columns">{{column}}</th>
         </thead>
         <tbody>
-  
           <tr v-for="item in data">
             <td v-for="column in columns" v-if="hasValue(item, column)">{{itemValue(item, column)}}</td>
           </tr>
-  
         </tbody>
       </table>
     </div>
@@ -31,11 +31,11 @@
       },
       title: {
         type: String,
-        default: 'Striped Table'
+        default: ''
       },
       subTitle: {
         type: String,
-        default: 'Here is a subtitle for this table'
+        default: ''
 
       }
     },
@@ -56,5 +56,5 @@
 
 </script>
 <style>
-  
+
 </style>
