@@ -9,17 +9,8 @@ Live [DEMO](https://cristijora.github.io/vue-paper-dashboard)
 
 ![](http://i.imgur.com/3iC1hOs.gif)
 
-Note: Work in Progress on the unchecked parts from the TODO list
-## Todo
-* [ ] Implement all components in Vue
-  * [x] Sidebar
-  * [x] Charts
-  * [x] Form
-  * [x] Tables
-  * [x] Custom Vue Notifications (WIP on notification layout)
-* [ ] Add docs regarding implementation details
-* [x] Cleanup vuex implementantion
-* [x] Unit tests for custom components
+## Documentation
+Link to [Documentation](https://cristijora.github.io/vue-paper-dashboard-docs/#/)
 
 ## Build Setup
 
