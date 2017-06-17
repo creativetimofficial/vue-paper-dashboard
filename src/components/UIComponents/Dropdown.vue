@@ -1,6 +1,6 @@
 <template>
-  <li class="dropdown" :class="{open:isOpen}" @click="toggleOnItemClick">
-    <a href="#" class="dropdown-toggle btn-rotate" data-toggle="dropdown" @click="toggleDropDown">
+  <li class="dropdown" :class="{open:isOpen}" @click="toggleDropDown">
+    <a href="#" class="dropdown-toggle btn-rotate" data-toggle="dropdown" >
       <slot name="title">
         <i :class="icon"></i>
         <p class="notification">{{title}}
@@ -17,8 +17,7 @@
   export default{
     props: {
       title: String,
-      icon: String,
-      toggleOnItem: Boolean
+      icon: String
     },
     data () {
       return {
@@ -31,11 +30,6 @@
       },
       closeDropDown () {
         this.isOpen = false
-      },
-      toggleOnItemClick () {
-        if (this.toggleOnItem) {
-          this.toggleDropDown()
-        }
       }
     }
   }

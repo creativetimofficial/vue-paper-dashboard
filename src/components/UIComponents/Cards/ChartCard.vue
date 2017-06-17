@@ -7,7 +7,7 @@
       </p>
     </div>
     <div class="content">
-      <div :id="chartId"></div>
+      <div :id="chartId" class="ct-chart"></div>
       <div class="footer">
         <div class="chart-legend">
           <slot name="legend"></slot>
@@ -20,7 +20,7 @@
         </div>
       </div>
     </div>
-  
+
   </div>
 </template>
 <script>
@@ -57,15 +57,7 @@
     },
     data () {
       return {
-        options: {},
-        chartId: 'no-id',
-        defaultChartOptions: {
-          seriesBarDistance: 10,
-          axisX: {
-            showGrid: false
-          },
-          height: '245px'
-        }
+        chartId: 'no-id'
       }
     },
     methods: {
@@ -73,10 +65,8 @@
        * Initializes the chart by merging the chart options sent via props and the default chart options
        */
       initChart () {
-        // merge default options and options sent via props
-        Object.assign(this.options, this.defaultChartOptions, this.chartOptions)
         var chartIdQuery = `#${this.chartId}`
-        this.$Chartist[this.chartType](chartIdQuery, this.chartData, this.options)
+        this.$Chartist[this.chartType](chartIdQuery, this.chartData, this.chartOptions)
       },
       /***
        * Assigns a random id to the chart
@@ -98,5 +88,5 @@
 
 </script>
 <style>
-  
+
 </style>

@@ -33,6 +33,10 @@ button:focus {
   outline: 0 !important;
 }
 
+.navbar.navbar-default {
+  z-index: 2;
+}
+
 /*           Animations              */
 .form-control,
 .input-group-addon,
@@ -74,15 +78,14 @@ hr {
   height: 100vh;
 }
 
-
-@media (min-width: 992px){
-  .typo-line{
+@media (min-width: 992px) {
+  .typo-line {
     padding-left: 140px;
     margin-bottom: 40px;
     position: relative;
   }
 
-  .typo-line .category{
+  .typo-line .category {
     transform: translateY(-50%);
     top: 50%;
     left: 0px;
@@ -95,6 +98,7 @@ hr {
   clear: both;
   overflow: hidden;
 }
+
 .icon-container {
   width: 240px;
   padding: .7em 0;
@@ -102,6 +106,7 @@ hr {
   position: relative;
   text-align: left;
 }
+
 .icon-container [class^="ti-"],
 .icon-container [class*=" ti-"] {
   color: #000;
@@ -109,40 +114,46 @@ hr {
   margin-top: 3px;
   transition: .3s;
 }
+
 .icon-container:hover [class^="ti-"],
 .icon-container:hover [class*=" ti-"] {
   font-size: 2.2em;
   margin-top: -5px;
 }
+
 .icon-container:hover .icon-name {
   color: #000;
 }
+
 .icon-name {
   color: #aaa;
   margin-left: 35px;
   font-size: .8em;
   transition: .3s;
 }
+
 .icon-container:hover .icon-name {
   margin-left: 45px;
 }
 
-.places-buttons .btn{
+.places-buttons .btn {
   margin-bottom: 30px
 }
-.sidebar .nav > li.active-pro{
+
+.sidebar .nav > li.active-pro {
   position: absolute;
   width: 100%;
   bottom: 10px;
 }
-.sidebar .nav > li.active-pro a{
+
+.sidebar .nav > li.active-pro a {
   background: rgba(255, 255, 255, 0.14);
   opacity: 1;
   color: #FFFFFF;
 }
 
 .table-upgrade td:nth-child(2),
-.table-upgrade td:nth-child(3){
+.table-upgrade td:nth-child(3) {
   text-align: center;
 }
 

@@ -18,13 +18,13 @@
               <p>Stats</p>
             </a>
           </li>
-          <!--   <drop-down title="5 Notifications" icon="ti-bell">
+             <drop-down title="5 Notifications" icon="ti-bell">
                <li><a href="#">Notification 1</a></li>
                <li><a href="#">Notification 2</a></li>
                <li><a href="#">Notification 3</a></li>
                <li><a href="#">Notification 4</a></li>
                <li><a href="#">Another notification</a></li>
-             </drop-down>-->
+             </drop-down>
           <li>
             <a href="#" class="btn-rotate">
               <i class="ti-settings"></i>
