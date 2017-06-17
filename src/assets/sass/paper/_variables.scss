@@ -22,6 +22,7 @@ $black-hr: #444444 !default;
 
 $white-background-color: #FFFFFF !default;
 $black-background-color: #212120 !default;
+$darkblue-background-color: #35495E !default; // this is the dark blue color from Vue.js branding
 
 $light-gray: #E3E3E3 !default;
 $medium-gray: #DDDDDD !default;
@@ -41,9 +42,9 @@ $primary-color: #7A9E9F !default;
 $primary-bg: #7A9E9F !default;
 $primary-states-color: #427C89 !default;
 
-$success-color: #7AC29A !default;
-$success-bg: #7AC29A !default;
-$success-states-color: #42A084 !default;
+$success-color: #41B883 !default;   // this is the green color from Vue.js branding
+$success-bg: #41B883 !default;
+$success-states-color: #229863 !default;
 
 $info-color: #68B3C8 !default;
 $info-bg: #68B3C8 !default;

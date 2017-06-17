@@ -36,7 +36,7 @@
   font-weight: 200;
 
   .logo {
-    padding: 18px 0;
+    padding: 13px 0;
     margin: 0 20px;
 
     p {
@@ -47,13 +47,28 @@
     }
 
     .simple-text {
-      text-transform: uppercase;
       padding: $padding-small-vertical $padding-zero;
       display: block;
-      font-size: $font-size-large;
+      font-size: $font-size-base;
       text-align: center;
-      font-weight: $font-weight-normal;
-      line-height: 30px;
+      font-weight: $font-weight-bold;
+      line-height: 40px;
+      text-align: left;
+
+      .logo-img{
+          width: 40px;
+          display: inline-block;
+          height: 40px;
+          margin-left: 0px;
+          margin-right: 10px;
+          background: white;
+          border-radius: 40px;
+          text-align: center;
+
+        img{
+            max-width: 21px;
+        }
+      }
     }
   }
 
@@ -117,6 +132,9 @@
   &[data-background-color="black"] {
     @include sidebar-background-color($black-background-color, $white-color);
   }
+  &[data-background-color="darkblue"] {
+    @include sidebar-background-color($darkblue-background-color, $white-color);
+  }
 
   &[data-active-color="primary"] {
     @include sidebar-active-color($primary-color);
@@ -177,5 +195,3 @@
   overflow: hidden;
   overflow-y: hidden;
 }
-
-
