@@ -55,7 +55,7 @@
         type: String,
         default: 'success',
         validator: (value) => {
-          let acceptedValues = ['primary', 'info', ' success', 'warning', 'danger']
+          let acceptedValues = ['primary', 'info', 'success', 'warning', 'danger']
           return acceptedValues.indexOf(value) !== -1
         }
       },
