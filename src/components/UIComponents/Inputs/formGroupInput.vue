@@ -1,7 +1,7 @@
 <template>
   <div class="form-group">
-    <label v-if="attributes && attributes.label">
-      {{attributes.label}}
+    <label v-if="label">
+      {{label}}
     </label>
     <input class="form-control border-input" v-bind="$props" :value="value"
            @input="$emit('input',$event.target.value)">

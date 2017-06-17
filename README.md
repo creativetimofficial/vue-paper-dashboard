@@ -1,6 +1,6 @@
 # vue-paper-dashboard
 
-> Admin dashboard based on paper dashboard UI template + vue-router + vuex
+> Admin dashboard based on paper dashboard UI template + vue-router
 
 This project is a vue version of [Paper-dashboard](https://www.creative-tim.com/product/paper-dashboard)
 designed for vue js.The dashboard includes vue-router and vuex
@@ -36,7 +36,7 @@ Link to [Documentation](https://cristijora.github.io/vue-paper-dashboard-docs/#/
     }
   });
   ```
-* Please don't use jQuery or jQuery based plugins since there are many pure Vue alternatives  
+* Please don't use jQuery or jQuery based plugins since there are many pure Vue alternatives
 * Write unit tests for your custom components. See fgInput.spec and paper-table.spec
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
