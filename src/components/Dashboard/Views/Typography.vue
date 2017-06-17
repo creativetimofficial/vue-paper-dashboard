@@ -1,4 +1,5 @@
 <template>
+ <div class="row">
   <div class="col-md-12">
     <div class="card">
       <div class="header">
@@ -157,11 +158,12 @@
       </div>
     </div>
   </div>
+ </div>
 </template>
 <script>
   export default {}
 
 </script>
 <style>
-  
+
 </style>

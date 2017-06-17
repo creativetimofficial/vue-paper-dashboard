@@ -1,5 +1,4 @@
 <template>
-  <div class="container-fluid">
     <div class="card card-map">
       <div class="header">
         <h4 class="title">Google Maps</h4>
@@ -8,7 +7,6 @@
         <div id="map"></div>
       </div>
     </div>
-  </div>
 </template>
 <script>
   export default {

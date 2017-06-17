@@ -1,5 +1,4 @@
 <template>
-  <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
         <div class="card">
@@ -9,10 +8,10 @@
               <a target="_blank" href="https://themify.me/">Themify</a>.</p>
           </div>
           <div class="content all-icons">
-  
+
             <div class="icon-section">
               <h3>Arrows &amp; Direction Icons </h3>
-  
+
               <div class="icon-container">
                 <span class="ti-arrow-up"></span>
                 <span class="icon-name"> ti-arrow-up</span>
@@ -109,7 +108,7 @@
                 <span class="ti-split-v"></span>
                 <span class="icon-name"> ti-split-v</span>
               </div>
-  
+
               <div class="icon-container">
                 <span class="ti-split-v-alt"></span>
                 <span class="icon-name"> ti-split-v-alt</span>
@@ -146,14 +145,14 @@
                 <span class="ti-exchange-vertical"></span>
                 <span class="icon-name"> ti-exchange-vertical</span>
               </div>
-  
+
             </div>
             <!-- Arrows Icons -->
-  
+
             <h3>Web App Icons</h3>
-  
+
             <div class="icon-section">
-  
+
               <div class="icon-container">
                 <span class="ti-wand"></span>
                 <span class="icon-name"> ti-wand</span>
@@ -166,7 +165,7 @@
                 <span class="ti-save-alt"></span>
                 <span class="icon-name"> ti-save-alt</span>
               </div>
-  
+
               <div class="icon-container">
                 <span class="ti-direction"></span>
                 <span class="icon-name"> ti-direction</span>
@@ -303,7 +302,7 @@
                 <span class="ti-pencil"></span>
                 <span class="icon-name"> ti-pencil</span>
               </div>
-  
+
               <div class="icon-container">
                 <span class="ti-pencil-alt"></span>
                 <span class="icon-name"> ti-pencil-alt</span>
@@ -336,7 +335,7 @@
                 <span class="ti-marker-alt"></span>
                 <span class="icon-name"> ti-marker-alt</span>
               </div>
-  
+
               <div class="icon-container">
                 <span class="ti-lock"></span>
                 <span class="icon-name"> ti-lock</span>
@@ -441,7 +440,7 @@
                 <span class="ti-clip"></span>
                 <span class="icon-name"> ti-clip</span>
               </div>
-  
+
               <div class="icon-container">
                 <span class="ti-check"></span>
                 <span class="icon-name"> ti-check</span>
@@ -522,7 +521,7 @@
                 <span class="ti-thumb-down"></span>
                 <span class="icon-name"> ti-thumb-down</span>
               </div>
-  
+
               <div class="icon-container">
                 <span class="ti-stats-up"></span>
                 <span class="icon-name"> ti-stats-up</span>
@@ -543,7 +542,7 @@
                 <span class="ti-shift-left"></span>
                 <span class="icon-name"> ti-shift-left</span>
               </div>
-  
+
               <div class="icon-container">
                 <span class="ti-shift-right-alt"></span>
                 <span class="icon-name"> ti-shift-right-alt</span>
@@ -564,7 +563,7 @@
                 <span class="ti-server"></span>
                 <span class="icon-name"> ti-server</span>
               </div>
-  
+
               <div class="icon-container">
                 <span class="ti-pulse"></span>
                 <span class="icon-name"> ti-pulse</span>
@@ -585,7 +584,7 @@
                 <span class="ti-pie-chart"></span>
                 <span class="icon-name"> ti-pie-chart</span>
               </div>
-  
+
               <div class="icon-container">
                 <span class="ti-panel"></span>
                 <span class="icon-name"> ti-panel</span>
@@ -634,12 +633,12 @@
                 <span class="ti-map-alt"></span>
                 <span class="icon-name"> ti-map-alt</span>
               </div>
-  
+
               <div class="icon-container">
                 <span class="ti-location-pin"></span>
                 <span class="icon-name"> ti-location-pin</span>
               </div>
-  
+
               <div class="icon-container">
                 <span class="ti-light-bulb"></span>
                 <span class="icon-name"> ti-light-bulb</span>
@@ -712,7 +711,7 @@
                 <span class="ti-envelope"></span>
                 <span class="icon-name"> ti-envelope</span>
               </div>
-  
+
               <div class="icon-container">
                 <span class="ti-dashboard"></span>
                 <span class="icon-name"> ti-dashboard</span>
@@ -757,7 +756,7 @@
                 <span class="ti-bar-chart-alt"></span>
                 <span class="icon-name"> ti-bar-chart-alt</span>
               </div>
-  
+
               <div class="icon-container">
                 <span class="ti-archive"></span>
                 <span class="icon-name"> ti-archive</span>
@@ -766,7 +765,7 @@
                 <span class="ti-anchor"></span>
                 <span class="icon-name"> ti-anchor</span>
               </div>
-  
+
               <div class="icon-container">
                 <span class="ti-alert"></span>
                 <span class="icon-name"> ti-alert</span>
@@ -783,7 +782,7 @@
                 <span class="ti-write"></span>
                 <span class="icon-name"> ti-write</span>
               </div>
-  
+
               <div class="icon-container">
                 <span class="ti-wallet"></span>
                 <span class="icon-name"> ti-wallet</span>
@@ -800,7 +799,7 @@
                 <span class="ti-vector"></span>
                 <span class="icon-name"> ti-vector</span>
               </div>
-  
+
               <div class="icon-container">
                 <span class="ti-support"></span>
                 <span class="icon-name"> ti-support</span>
@@ -865,7 +864,7 @@
                 <span class="ti-line-dashed"></span>
                 <span class="icon-name"> ti-line-dashed</span>
               </div>
-  
+
               <div class="icon-container">
                 <span class="ti-ink-pen"></span>
                 <span class="icon-name"> ti-ink-pen</span>
@@ -882,7 +881,7 @@
                 <span class="ti-headphone-alt"></span>
                 <span class="icon-name"> ti-headphone-alt</span>
               </div>
-  
+
               <div class="icon-container">
                 <span class="ti-gallery"></span>
                 <span class="icon-name"> ti-gallery</span>
@@ -919,25 +918,25 @@
                 <span class="ti-rocket"></span>
                 <span class="icon-name"> ti-rocket</span>
               </div>
-  
+
               <div class="icon-container">
                 <span class="ti-new-window"></span>
                 <span class="icon-name"> ti-new-window</span>
               </div>
-  
+
               <div class="icon-container">
                 <span class="ti-rss"></span>
                 <span class="icon-name"> ti-rss</span>
               </div>
-  
+
               <div class="icon-container">
                 <span class="ti-rss-alt"></span>
                 <span class="icon-name"> ti-rss-alt</span>
               </div>
-  
+
             </div>
             <!-- Web App Icons -->
-  
+
             <div class="icon-section">
               <h3>Control Icons</h3>
               <div class="icon-container">
@@ -986,10 +985,10 @@
               </div>
             </div>
             <!-- Control Icons -->
-  
+
             <div class="icon-section">
               <h3>Text Editor</h3>
-  
+
               <div class="icon-container">
                 <span class="ti-paragraph"></span>
                 <span class="icon-name"> ti-paragraph</span>
@@ -998,7 +997,7 @@
                 <span class="ti-uppercase"></span>
                 <span class="icon-name"> ti-uppercase</span>
               </div>
-  
+
               <div class="icon-container">
                 <span class="ti-underline"></span>
                 <span class="icon-name"> ti-underline</span>
@@ -1047,10 +1046,10 @@
                 <span class="ti-quote-left"></span>
                 <span class="icon-name"> ti-quote-left</span>
               </div>
-  
+
             </div>
             <!-- Text Editor -->
-  
+
             <div class="icon-section">
               <h3>Layout Icons</h3>
               <div class="icon-container">
@@ -1301,13 +1300,13 @@
                 <span class="ti-layout-column2-alt"></span>
                 <span class="icon-name"> ti-layout-column2-alt</span>
               </div>
-  
+
             </div>
             <!-- Layout Icons -->
-  
+
             <div class="icon-section">
               <h3>Brand Icons</h3>
-  
+
               <div class="icon-container">
                 <span class="ti-flickr"></span>
                 <span class="icon-name"> ti-flickr</span>
@@ -1328,7 +1327,7 @@
                 <span class="ti-github"></span>
                 <span class="icon-name"> ti-github</span>
               </div>
-  
+
               <div class="icon-container">
                 <span class="ti-facebook"></span>
                 <span class="icon-name"> ti-facebook</span>
@@ -1381,7 +1380,7 @@
                 <span class="ti-reddit"></span>
                 <span class="icon-name"> ti-reddit</span>
               </div>
-  
+
               <div class="icon-container">
                 <span class="ti-microsoft"></span>
                 <span class="icon-name"> ti-microsoft</span>
@@ -1458,7 +1457,7 @@
                 <span class="ti-pinterest"></span>
                 <span class="icon-name"> ti-pinterest</span>
               </div>
-  
+
               <div class="icon-container">
                 <span class="ti-pinterest-alt"></span>
                 <span class="icon-name"> ti-pinterest-alt</span>
@@ -1475,20 +1474,19 @@
                 <span class="ti-themify-favicon-alt"></span>
                 <span class="icon-name"> ti-themify-favicon-alt</span>
               </div>
-  
+
             </div>
             <!-- brand Icons -->
-  
+
           </div>
         </div>
       </div>
-  
+
     </div>
-  </div>
 </template>
 <script>
   export default {}
 </script>
 <style>
-  
+
 </style>
