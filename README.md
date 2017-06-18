@@ -1,11 +1,11 @@
-# vue-paper-dashboard
+# [Vue Paper Dashboard](https://cristijora.github.io/vue-paper-dashboard/) [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
 
 > Admin dashboard based on paper dashboard UI template + vue-router
 
 This project is a vue version of [Paper-dashboard](https://www.creative-tim.com/product/paper-dashboard)
 designed for vue js.The dashboard includes vue-router and vuex
 
-Live [DEMO](https://cristijora.github.io/vue-paper-dashboard)
+Check the [Live Demo here](https://cristijora.github.io/vue-paper-dashboard).
 
 ![](http://i.imgur.com/3iC1hOs.gif)
 
@@ -40,3 +40,8 @@ Link to [Documentation](https://cristijora.github.io/vue-paper-dashboard-docs/#/
 * Write unit tests for your custom components. See fgInput.spec and paper-table.spec
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+[CHANGELOG]: ./CHANGELOG.md
+[LICENSE]: ./LICENSE.md
+[version-badge]: https://img.shields.io/badge/version-1.0.0-blue.svg
+[license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
