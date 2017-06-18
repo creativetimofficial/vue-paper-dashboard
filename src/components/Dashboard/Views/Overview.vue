@@ -24,7 +24,7 @@
 
       <div class="col-xs-12">
         <chart-card :chart-data="usersChart.data" :chart-options="usersChart.options">
-          <span slot="title">Users behavior</span>
+          <h4 class="title" slot="title">Users behavior</h4>
           <span slot="subTitle"> 24 Hours performance</span>
           <span slot="footer">
             <i class="ti-reload"></i> Updated 3 minutes ago</span>
@@ -38,7 +38,7 @@
 
       <div class="col-md-6 col-xs-12">
         <chart-card :chart-data="preferencesChart.data"  chart-type="Pie">
-          <span slot="title">Email Statistics</span>
+          <h4 class="title" slot="title">Email Statistics</h4>
           <span slot="subTitle"> Last campaign performance</span>
           <span slot="footer">
             <i class="ti-timer"></i> Campaign set 2 days ago</span>
@@ -52,7 +52,7 @@
 
       <div class="col-md-6 col-xs-12">
         <chart-card :chart-data="activityChart.data" :chart-options="activityChart.options">
-          <span slot="title">2015 Sales</span>
+          <h4 class="title" slot="title">2015 Sales</h4>
           <span slot="subTitle"> All products including Taxes</span>
           <span slot="footer">
             <i class="ti-check"></i> Data information certified</span>
