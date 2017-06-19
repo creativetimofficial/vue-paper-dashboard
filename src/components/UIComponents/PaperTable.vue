@@ -27,7 +27,7 @@
       data: Array,
       type: {
         type: String, // striped | hover
-        default: 'Striped'
+        default: 'striped'
       },
       title: {
         type: String,
