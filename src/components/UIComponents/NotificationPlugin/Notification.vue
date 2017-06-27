@@ -1,16 +1,20 @@
 <template>
-  <div data-notify="container" class="col-xs-11 col-sm-4 alert open" role="alert" :class="[verticalAlign, horizontalAlign, alertType]" :style="customPosition" data-notify-position="top-center">
-    <button type="button" aria-hidden="true" class="close" data-notify="dismiss" style="position: absolute; right: 10px; top: 5px; z-index: 1033;" @click="close">×
+  <div
+    data-notify="container"
+    class="col-xs-11 col-sm-4 alert open alert-with-icon"
+    role="alert"
+    :class="[verticalAlign, horizontalAlign, alertType]"
+    :style="customPosition"
+    data-notify-position="top-center">
+    <button
+      type="button"
+      aria-hidden="true"
+      class="close col-xs-1"
+      data-notify="dismiss"
+      @click="close">×
     </button>
-    <div class="row">
-      <span :class="icon" class="col-xs-1 alert-icon"></span>
-      <div :class="hasIcon ? 'col-xs-8' : 'col-xs-12'">
-        <slot name="message">
-          <div v-html="message"></div>
-        </slot>
-      </div>
-    </div>
-  
+    <span data-notify="icon" :class="icon" class="alert-icon"></span>
+    <span data-notify="message" v-html="message"></span>
   </div>
 </template>
 <script>
@@ -77,20 +81,20 @@
 </script>
 <style lang="scss" scoped>
   @import "../../../assets/sass/paper/variables";
-  
+
   .fade-enter-active,
   .fade-leave-active {
     transition: opacity .3s
   }
-  
+
   .fade-enter,
   .fade-leave-to
   /* .fade-leave-active in <2.1.8 */
-  
+
   {
     opacity: 0
   }
-  
+
   .alert {
     border: 0;
     border-radius: 0;
@@ -101,7 +105,7 @@
     display: inline-block;
     position: fixed;
     transition: all 0.5s ease-in-out;
-  
+
     &.center {
       left: 0px;
       right: 0px;
@@ -128,43 +132,43 @@
     .navbar:not(.navbar-transparent) & {
       top: 70px;
     }
-  
+
     .alert-icon {
       font-size: 30px;
       margin-right: 5px;
     }
-  
+
     .close~span {
       display: block;
       max-width: 89%;
     }
-  
+
     &[data-notify="container"] {
       width: 350px;
       padding: 10px 10px 10px 20px;
       border-radius: $border-radius-base;
     }
-  
+
     &.alert-with-icon {
       padding-left: 65px;
     }
   }
-  
+
   .alert-info {
     background-color: $bg-info;
     color: $info-states-color;
   }
-  
+
   .alert-success {
     background-color: $bg-success;
     color: $success-states-color;
   }
-  
+
   .alert-warning {
     background-color: $bg-warning;
     color: $warning-states-color;
   }
-  
+
   .alert-danger {
     background-color: $bg-danger;
     color: $danger-states-color;
