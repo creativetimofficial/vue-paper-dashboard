@@ -1,5 +1,5 @@
 <template>
-  <li class="dropdown" :class="{open:isOpen}" @click="toggleDropDown">
+  <li class="dropdown" :class="{open:isOpen}" @click.stop="toggleDropDown" v-click-outside="closeDropDown">
     <a class="dropdown-toggle btn-rotate" data-toggle="dropdown" >
       <slot name="title">
         <i :class="icon"></i>
