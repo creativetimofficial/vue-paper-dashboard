@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import vClickOutside from 'v-click-outside'
 
 // Plugins
-import GlobalComponents from './gloablComponents'
+import GlobalComponents from './globalComponents'
 import Notifications from './components/UIComponents/NotificationPlugin'
 import SideBar from './components/UIComponents/SidebarPlugin'
 import App from './App'
