@@ -12,7 +12,7 @@ Check the [Live Demo here](https://cristijora.github.io/vue-paper-dashboard).
 ## Documentation
 Link to [Documentation](https://cristijora.github.io/vue-paper-dashboard-docs/#/)
 
-## Scaffold an empty project
+## [Scaffold an empty project](https://github.com/cristijora/vue-paper-dashboard-cli)
 ![](https://raw.githubusercontent.com/cristijora/vue-paper-dashboard-cli/master/demo.gif)
 
 ## Build Setup
