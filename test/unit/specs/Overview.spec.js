@@ -21,6 +21,6 @@ describe('Overview.vue', () => {
     var statsCards = vm.$children.filter((child)=>child.$options.name==='stats-card').length;
     var chartCards = vm.$children.filter((child)=>child.$options.name==='chart-card').length;
     expect(statsCards).to.equal(4)
-    expect(chartCards).to.equal(1)
+    expect(chartCards).to.equal(3)
   })
 })
