@@ -1,6 +1,5 @@
-import Vue from 'vue'
 import PaperTable from 'src/components/UIComponents/PaperTable.vue'
-
+import {mount} from 'vue-test-utils'
 const tableData = [{
   id: 1,
   name: "Dakota Rice",
@@ -38,20 +37,31 @@ const tableData = [{
   }];
 
 describe("paper table",()=>{
+  beforeEach(()=>{
+
+  })
   it('should render only specified columns',()=>{
     const columns = ['id', 'name'];
-    const vm = mount(PaperTable,{data:tableData,columns:columns})
-    let headerRows = vm.$el.querySelectorAll('th');
+    const wrapper = mount(PaperTable,{
+      propsData: {
+        data:tableData,columns:columns
+      }
+    })
+    let headerRows = wrapper.findAll('th');
     expect(headerRows.length).to.equal(columns.length);
-    expect(headerRows[0].innerHTML).to.equal(columns[0])
-    expect(headerRows[1].innerHTML).to.equal(columns[1])
+    expect(headerRows.at(0).text()).to.equal(columns[0])
+    expect(headerRows.at(1).text()).to.equal(columns[1])
   })
 
   it('should render specified data',()=>{
     const columns = ['id', 'name'];
-    const vm = mount(PaperTable,{data:tableData,columns:columns})
-    let tableRows = vm.$el.querySelectorAll('tr');
+    const wrapper = mount(PaperTable,{
+      propsData: {
+        data:tableData,columns:columns
+      }
+    })
+    let tableRows = wrapper.findAll('tr');
     expect(tableRows.length).to.equal(tableData.length)
-    expect(tableRows[0].innerHTML).to.equal(`<td>${tableData[0].id}</td><td>${tableData[0].name}</td>`)
+    expect(tableRows.at(0).html()).to.equal(`<tr><td>${tableData[0].id}</td><td>${tableData[0].name}</td></tr>`)
   })
 })
