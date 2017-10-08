@@ -10,7 +10,7 @@
         </button>
         <a class="navbar-brand">{{routeName}}</a>
       </div>
-      <div class="navbar-right-menu">
+      <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li class="open">
             <a href="#" class="dropdown-toggle btn-magnify" data-toggle="dropdown">

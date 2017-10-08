@@ -65,7 +65,7 @@
     }
   }
 
-  body .navbar-collapse.collapse {
+  body .navbar-collapse.collapse.off-canvas-sidebar {
     display: none !important;
   }
 
@@ -116,7 +116,6 @@
     @include transition (0.33s, cubic-bezier(0.685, 0.0473, 0.346, 1));
     position: relative;
   }
-  .navbar .navbar-right-menu,
   .navbar .navbar-collapse.collapse,
   .navbar .navbar-collapse.collapse.in,
   .navbar .navbar-collapse.collapsing {
@@ -178,8 +177,7 @@
 
           p,
           .notification,
-          .caret
-          {
+          .caret {
             display: inline-block;
           }
 
@@ -252,9 +250,6 @@
       height: 1px;
       margin: 10px 0;
     }
-  }
-  .main-panel.push-left{
-    right:230px;
   }
   .nav-open .navbar-collapse {
     @include transform-translate-x(0px);
