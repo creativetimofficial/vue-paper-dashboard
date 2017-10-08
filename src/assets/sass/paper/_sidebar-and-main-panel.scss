@@ -1,5 +1,5 @@
 .sidebar {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -178,9 +178,6 @@
 
 .sidebar,
 .main-panel {
-  overflow: auto;
-  max-height: 100%;
-  height: 100%;
   -webkit-transition-property: top, bottom;
   transition-property: top, bottom;
   -webkit-transition-duration: .2s, .2s;
@@ -191,7 +188,8 @@
 }
 
 .sidebar {
-  position: absolute;
+  max-height: 100%;
+  height: 100%;
   overflow: hidden;
   overflow-y: hidden;
 }
