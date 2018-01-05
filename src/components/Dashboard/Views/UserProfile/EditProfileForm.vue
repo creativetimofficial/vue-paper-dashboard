@@ -1,9 +1,6 @@
 <template>
-  <div class="card">
-    <div class="header">
-      <h4 class="title">Edit Profile</h4>
-    </div>
-    <div class="content">
+  <card class="card" title="Edit Profile">
+    <div>
       <form>
         <div class="row">
           <div class="col-md-5">
@@ -102,7 +99,7 @@
         <div class="clearfix"></div>
       </form>
     </div>
-  </div>
+  </card>
 </template>
 <script>
   export default {

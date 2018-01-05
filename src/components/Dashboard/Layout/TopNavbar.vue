@@ -2,11 +2,16 @@
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" :class="{toggled: $sidebar.showSidebar}" @click="toggleSidebar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar bar1"></span>
-          <span class="icon-bar bar2"></span>
-          <span class="icon-bar bar3"></span>
+        <button type="button"
+                class="navbar-toggler navbar-toggler-right"
+                :class="{toggled: $sidebar.showSidebar}"
+                aria-controls="navigation-index"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                @click="toggleSidebar">
+          <span class="navbar-toggler-bar burger-lines"></span>
+          <span class="navbar-toggler-bar burger-lines"></span>
+          <span class="navbar-toggler-bar burger-lines"></span>
         </button>
         <a class="navbar-brand">{{routeName}}</a>
       </div>

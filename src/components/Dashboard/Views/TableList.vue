@@ -1,19 +1,24 @@
 <template>
     <div class="row">
-      <div class="col-md-12">
-        <div class="card">
-          <paper-table :title="table1.title" :sub-title="table1.subTitle" :data="table1.data" :columns="table1.columns">
+      <div class="col-12">
+        <card :title="table1.title" :subTitle="table1.subTitle">
+          <div class="table-full-width table-responsive">
+            <paper-table :data="table1.data" :columns="table1.columns">
 
-          </paper-table>
-        </div>
+            </paper-table>
+          </div>
+        </card>
       </div>
 
-      <div class="col-md-12">
-        <div class="card card-plain">
-          <paper-table type="hover" :title="table2.title" :sub-title="table2.subTitle" :data="table2.data" :columns="table2.columns">
+      <div class="col-12">
+        <card class="card-plain">
+          <div class="table-full-width table-responsive">
+            <paper-table type="hover" :title="table2.title" :sub-title="table2.subTitle" :data="table2.data"
+                         :columns="table2.columns">
 
-          </paper-table>
-        </div>
+            </paper-table>
+          </div>
+        </card>
       </div>
 
     </div>

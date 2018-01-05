@@ -21,11 +21,15 @@
       </slot>
       <ul :class="navClasses">
         <!--By default vue-router adds an active class to each route link. This way the links are colored when clicked-->
-        <router-link v-for="(link,index) in sidebarLinks" :to="link.path" tag="li" :ref="link.name" :key="link.name + index">
-          <a>
+        <router-link v-for="(link,index) in sidebarLinks"
+                     class="nav-item"
+                     :to="link.path"
+                     tag="li"
+                     :ref="link.name"
+                     :key="link.name + index">
+          <a class="nav-link">
             <i :class="link.icon"></i>
-
-            <p>{{link.name}}
+              <p>{{link.name}}
             </p>
           </a>
         </router-link>

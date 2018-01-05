@@ -1,26 +1,23 @@
 <template>
-  <div class="card">
-    <div class="header">
-      <h4 class="title">{{title}}</h4>
-    </div>
-    <div class="content">
+  <card class="card" :title="title">
+    <div>
       <ul class="list-unstyled team-members">
         <li>
           <div class="row" v-for="member in members">
-            <div class="col-xs-3">
+            <div class="col-3">
               <div class="avatar">
-                <img :src="member.image" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                <img :src="member.image" alt="Circle Image" class="rounded img-fluid">
               </div>
             </div>
-            <div class="col-xs-6">
+            <div class="col-6">
               {{member.name}}
               <br>
               <span :class="getStatusClass(member.status)">
                 <small>{{member.status}}</small>
               </span>
             </div>
-  
-            <div class="col-xs-3 text-right">
+
+            <div class="col-3">
               <button class="btn btn-sm btn-success btn-icon">
                 <i class="fa fa-envelope"></i>
               </button>
@@ -29,7 +26,7 @@
         </li>
       </ul>
     </div>
-  </div>
+  </card>
 </template>
 <script>
   export default {
@@ -73,5 +70,5 @@
 
 </script>
 <style>
-  
+
 </style>

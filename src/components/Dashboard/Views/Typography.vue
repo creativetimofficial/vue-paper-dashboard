@@ -1,12 +1,12 @@
 <template>
  <div class="row">
   <div class="col-md-12">
-    <div class="card">
-      <div class="header">
-        <h4 class="title">Paper Dashboard Headings</h4>
-        <p class="category">Created using
+    <card>
+      <template slot="header">
+        <h4 class="card-title">Paper Dashboard Headings</h4>
+        <p class="card-category">Created using
           <a href="https://www.google.com/fonts/specimen/Muli">Muli</a> Font Family</p>
-      </div>
+      </template>
       <div class="content">
         <div class="typo-line">
           <h1>
@@ -156,7 +156,7 @@
           <pre>1. #This is an example of preformatted text. 2. #Here is another line of code</pre>
         </div>
       </div>
-    </div>
+    </card>
   </div>
  </div>
 </template>

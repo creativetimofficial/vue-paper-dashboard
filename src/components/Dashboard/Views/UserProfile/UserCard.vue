@@ -1,9 +1,9 @@
 <template>
-  <div class="card card-user">
-    <div class="image">
+  <card class="card-user">
+    <div slot="image">
       <img src="static/img/background.jpg" alt="...">
     </div>
-    <div class="content">
+    <div>
       <div class="author">
         <img class="avatar border-white" src="static/img/faces/face-2.jpg" alt="...">
         <h4 class="title">Chet Faker
@@ -30,7 +30,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </card>
 </template>
 <script>
   export default {
@@ -56,11 +56,11 @@
       getClasses (index) {
         var remainder = index % 3
         if (remainder === 0) {
-          return 'col-md-3 col-md-offset-1'
+          return 'col-lg-3 offset-lg-1'
         } else if (remainder === 2) {
-          return 'col-md-4'
+          return 'col-lg-4'
         } else {
-          return 'col-md-3'
+          return 'col-lg-3'
         }
       }
     }
@@ -68,5 +68,5 @@
 
 </script>
 <style>
-  
+
 </style>

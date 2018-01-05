@@ -1,12 +1,9 @@
 <template>
-    <div class="card card-map">
-      <div class="header">
-        <h4 class="title">Google Maps</h4>
-      </div>
+    <card class="card-map" title="Google Maps">
       <div class="map">
         <div id="map"></div>
       </div>
-    </div>
+    </card>
 </template>
 <script>
   export default {

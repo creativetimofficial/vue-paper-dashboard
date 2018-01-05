@@ -952,9 +952,9 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
-bootstrap@^3.3.7:
-  version "3.3.7"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.3.7.tgz#5a389394549f23330875a3b150656574f8a9eb71"
+bootstrap@^4.0.0-beta.3:
+  version "4.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.0.0-beta.3.tgz#60f0660bc3d121176514b361f6f83201c7ff8874"
 
 brace-expansion@^1.0.0:
   version "1.1.6"
@@ -6447,6 +6447,10 @@ vue-loader@^13.6.2:
     vue-hot-reload-api "^2.2.0"
     vue-style-loader "^3.0.0"
     vue-template-es2015-compiler "^1.6.0"
+
+vue-notifyjs@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/vue-notifyjs/-/vue-notifyjs-0.3.0.tgz#943ff8a657106010ca499144e9309f6c427a779d"
 
 vue-router@^3.0.1:
   version "3.0.1"

@@ -3,7 +3,7 @@
 
     <!--Stats cards-->
     <div class="row">
-      <div class="col-lg-3 col-sm-6" v-for="stats in statsCards">
+      <div class="col-md-6 col-xl-3" v-for="stats in statsCards">
         <stats-card>
           <div class="icon-big text-center" :class="`icon-${stats.type}`" slot="header">
             <i :class="stats.icon"></i>
@@ -22,12 +22,14 @@
     <!--Charts-->
     <div class="row">
 
-      <div class="col-xs-12">
-        <chart-card :chart-data="usersChart.data" :chart-options="usersChart.options">
-          <h4 class="title" slot="title">Users behavior</h4>
-          <span slot="subTitle"> 24 Hours performance</span>
+      <div class="col-12">
+        <chart-card title="Users behavior"
+                    sub-title="24 Hours performance"
+                    :chart-data="usersChart.data"
+                    :chart-options="usersChart.options">
           <span slot="footer">
-            <i class="ti-reload"></i> Updated 3 minutes ago</span>
+            <i class="ti-reload"></i> Updated 3 minutes ago
+          </span>
           <div slot="legend">
             <i class="fa fa-circle text-info"></i> Open
             <i class="fa fa-circle text-danger"></i> Click
@@ -36,10 +38,11 @@
         </chart-card>
       </div>
 
-      <div class="col-md-6 col-xs-12">
-        <chart-card :chart-data="preferencesChart.data"  chart-type="Pie">
-          <h4 class="title" slot="title">Email Statistics</h4>
-          <span slot="subTitle"> Last campaign performance</span>
+      <div class="col-md-6 col-12">
+        <chart-card title="Email Statistics"
+                    sub-title="Last campaign performance"
+                    :chart-data="preferencesChart.data"
+                    chart-type="Pie">
           <span slot="footer">
             <i class="ti-timer"></i> Campaign set 2 days ago</span>
           <div slot="legend">
@@ -50,12 +53,14 @@
         </chart-card>
       </div>
 
-      <div class="col-md-6 col-xs-12">
-        <chart-card :chart-data="activityChart.data" :chart-options="activityChart.options">
-          <h4 class="title" slot="title">2015 Sales</h4>
-          <span slot="subTitle"> All products including Taxes</span>
+      <div class="col-md-6 col-12">
+        <chart-card title="2015 Sales"
+                    sub-title="All products including Taxes"
+                    :chart-data="activityChart.data"
+                    :chart-options="activityChart.options">
           <span slot="footer">
-            <i class="ti-check"></i> Data information certified</span>
+            <i class="ti-check"></i> Data information certified
+          </span>
           <div slot="legend">
             <i class="fa fa-circle text-info"></i> Tesla Model S
             <i class="fa fa-circle text-warning"></i> BMW 5 Series
@@ -68,8 +73,8 @@
   </div>
 </template>
 <script>
-  import StatsCard from 'components/UIComponents/Cards/StatsCard.vue'
-  import ChartCard from 'components/UIComponents/Cards/ChartCard.vue'
+  import {StatsCard, ChartCard} from 'src/components/UIComponents/index'
+
   export default {
     components: {
       StatsCard,

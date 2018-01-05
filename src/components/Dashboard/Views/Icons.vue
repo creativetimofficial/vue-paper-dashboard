@@ -1,12 +1,12 @@
 <template>
     <div class="row">
       <div class="col-md-12">
-        <div class="card">
-          <div class="header">
-            <h4 class="title">320+ Themify Icons</h4>
-            <p class="category">Handcrafted by our friends from
+        <card>
+          <template slot="header">
+            <h4 class="card-title">320+ Themify Icons</h4>
+            <p class="card-category">Handcrafted by our friends from
               <a target="_blank" href="https://themify.me/">Themify</a>.</p>
-          </div>
+          </template>
           <div class="content all-icons">
 
             <div class="icon-section">
@@ -1479,7 +1479,7 @@
             <!-- brand Icons -->
 
           </div>
-        </div>
+        </card>
       </div>
 
     </div>

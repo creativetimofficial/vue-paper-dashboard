@@ -1,10 +1,6 @@
 <template>
-  <div class="card">
-    <div class="header">
-      <h4 class="title">Notifications</h4>
-      <p class="category">Custom Vue notifications plugin</p>
-    </div>
-    <div class="content">
+  <card title="Notifications" sub-title="Custom Vue notifications plugin">
+    <div>
       <div class="row">
         <div class="col-md-6">
           <h5>Notifications Style</h5>
@@ -50,19 +46,19 @@
           </div>
         </div>
       </div>
-  
+
       <br>
       <br>
-  
+
       <div class="places-buttons">
-        <div class="row">
-          <div class="col-md-9">
+        <div class="row d-flex justify-content-center">
+          <div>
             <h5>Notifications Places
               <p class="category">Click to view notifications</p>
             </h5>
           </div>
         </div>
-        <div class="row">
+        <div class="row d-flex justify-content-center">
           <div class="col-md-3">
             <button class="btn btn-default btn-block" @click="notifyVue('top', 'left')">Top Left</button>
           </div>
@@ -73,7 +69,7 @@
             <button class="btn btn-default btn-block" @click="notifyVue('top', 'right')">Top Right</button>
           </div>
         </div>
-        <div class="row">
+        <div class="row d-flex justify-content-center">
           <div class="col-md-3">
             <button class="btn btn-default btn-block" @click="notifyVue('bottom', 'left')">Bottom Left</button>
           </div>
@@ -83,14 +79,13 @@
           <div class="col-md-3">
             <button class="btn btn-default btn-block" @click="notifyVue('bottom', 'right')">Bottom Right</button>
           </div>
-  
+
         </div>
       </div>
     </div>
-  </div>
+  </card>
 </template>
 <script>
-  import PaperNotification from 'src/components/UIComponents/NotificationPlugin/Notification.vue'
   export default {
     data () {
       return {
@@ -100,15 +95,15 @@
         }
       }
     },
-    components: {
-      PaperNotification
-    },
     methods: {
       notifyVue (verticalAlign, horizontalAlign) {
+        const notification = {
+          template: '<span>Welcome to <b>Paper Dashboard</b> - a beautiful freebie for every web developer.</span>'
+        }
         var color = Math.floor((Math.random() * 4) + 1)
-        this.$notifications.notify(
+        this.$notify(
           {
-            message: 'Welcome to <b>Paper Dashboard</b> - a beautiful freebie for every web developer.',
+            component: notification,
             icon: 'ti-gift',
             horizontalAlign: horizontalAlign,
             verticalAlign: verticalAlign,
@@ -120,5 +115,5 @@
 
 </script>
 <style>
-  
+
 </style>
