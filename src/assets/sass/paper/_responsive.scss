@@ -159,9 +159,9 @@
       margin-top: 0;
       padding: 10px $margin-base-vertical 0;
 
-      > li {
+      > .nav-item {
 
-        > a {
+        > .nav-link {
           margin: 0px 0px;
           color: $default-color;
           text-transform: uppercase;
@@ -194,7 +194,7 @@
           }
         }
 
-        &.active > a {
+        &.active > .nav-link {
 
           &:before {
             border-right: none;

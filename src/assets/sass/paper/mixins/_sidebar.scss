@@ -35,8 +35,8 @@
   }
 
   .nav {
-    li:not(.active) {
-      > a {
+    .nav-item:not(.active) {
+      > .nav-link {
         color: $font-color;
       }
     }
@@ -50,8 +50,8 @@
 
 @mixin sidebar-active-color($font-color) {
   .nav {
-    li {
-      &.active > a {
+    .nav-item {
+      &.active > .nav-link {
         color: $font-color;
         opacity: 1;
       }

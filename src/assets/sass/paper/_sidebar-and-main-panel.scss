@@ -75,8 +75,9 @@
   .nav {
     //margin-top: 20px;
 
-    li {
-      > a {
+    .nav-item {
+      width: 100%;
+      .nav-link {
         margin: 10px 0px;
         padding-left: 25px;
         padding-right: 25px;
@@ -84,11 +85,11 @@
         opacity: .7;
       }
 
-      &:hover > a {
+      &:hover > .nav-link {
         opacity: 1;
       }
 
-      &.active > a {
+      &.active > .nav-link {
         color: $primary-color;
         opacity: 1;
       }
