@@ -2,7 +2,7 @@
   "name": "vue-paper-dashboard",
   "version": "1.0.0",
   "description": "A sample admin dashboard based on paper dashboard UI template",
-  "author": "cristian.jora <cristian.jora@corebuild.eu>",
+  "author": "cristian.jora <joracristi@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "cross-env ENABLE_ESLINT=true node build/dev-server.js",
@@ -13,10 +13,11 @@
     "test": "npm run unit && npm run e2e"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^4.0.0-beta.3",
     "chartist": "^0.11.0",
     "vue": "^2.5.13",
     "vue-clickaway": "^2.1.0",
+    "vue-notifyjs": "^0.3.0",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
