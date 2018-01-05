@@ -1,6 +1,6 @@
 <template>
-  <li class="dropdown" :class="{open:isOpen}" @click="toggleDropDown" v-click-outside="closeDropDown">
-    <a class="dropdown-toggle btn-rotate" data-toggle="dropdown" href="javascript:void(0)">
+  <li class="dropdown" :class="{show:isOpen}" @click="toggleDropDown" v-click-outside="closeDropDown">
+    <a class="dropdown-toggle btn-rotate" data-toggle="dropdown">
       <slot name="title">
         <i :class="icon"></i>
         <p class="notification">{{title}}
@@ -8,7 +8,7 @@
         </p>
       </slot>
     </a>
-    <ul class="dropdown-menu">
+    <ul class="dropdown-menu" :class="{show:isOpen}">
       <slot></slot>
     </ul>
   </li>

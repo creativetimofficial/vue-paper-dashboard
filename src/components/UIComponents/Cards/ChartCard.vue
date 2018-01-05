@@ -1,12 +1,18 @@
 <template>
-  <div class="card">
-    <div class="header">
-      <slot name="title"></slot>
-      <p class="category">
-        <slot name="subTitle"></slot>
+  <card>
+    <template slot="header">
+      <h4 v-if="$slots.title || title" class="card-title">
+        <slot name="title">
+          {{title}}
+        </slot>
+      </h4>
+      <p class="card-category">
+        <slot name="subTitle">
+          {{subTitle}}
+        </slot>
       </p>
-    </div>
-    <div class="content">
+    </template>
+    <div>
       <div :id="chartId" class="ct-chart"></div>
       <div class="footer">
         <div class="chart-legend">
@@ -21,19 +27,27 @@
       </div>
     </div>
 
-  </div>
+  </card>
 </template>
 <script>
+  import Card from './Card.vue'
   export default {
     name: 'chart-card',
+    components: {
+      Card
+    },
     props: {
       footerText: {
         type: String,
         default: ''
       },
-      headerTitle: {
+      title: {
         type: String,
-        default: 'Chart title'
+        default: ''
+      },
+      subTitle: {
+        type: String,
+        default: ''
       },
       chartType: {
         type: String,

@@ -1,28 +1,32 @@
 <template>
-  <div class="card">
-    <div class="content">
+  <card>
+    <div>
       <div class="row">
-        <div class="col-xs-5">
+        <div class="col-5" v-if="$slots.header">
           <slot name="header"></slot>
         </div>
-        <div class="col-xs-7">
+        <div class="col-7" v-if="$slots.content">
           <slot name="content"></slot>
         </div>
       </div>
-      <div class="footer">
+      <div v-if="$slots.footer">
         <hr/>
         <slot name="footer"></slot>
       </div>
     </div>
-  
-  </div>
+
+  </card>
 </template>
 <script>
-  export default {
-    name: 'stats-card'
-  }
+  import Card from './Card.vue'
 
+  export default {
+    name: 'stats-card',
+    components: {
+      Card
+    }
+  }
 </script>
 <style>
-  
+
 </style>

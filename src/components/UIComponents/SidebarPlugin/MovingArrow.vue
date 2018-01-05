@@ -26,7 +26,7 @@
 </script>
 <style lang="scss">
   $bg-nude: #f4f3ef !default;
-  
+
   .moving-arrow {
     border-right: 17px solid $bg-nude;
     border-top: 17px solid transparent;
@@ -36,5 +36,10 @@
     left: 243px;
     top: 95px;
     transition: all 0.5s cubic-bezier(0.29, 1.42, 0.79, 1);
+  }
+  @media (max-width: 992px){
+    .moving-arrow{
+      display: none;
+    }
   }
 </style>
