@@ -4,8 +4,8 @@ import VueRouter from 'vue-router'
 // Plugins
 import GlobalComponents from './globalComponents'
 import GlobalDirectives from './globalDirectives'
-import Notifications from './components/UIComponents/NotificationPlugin'
 import SideBar from './components/UIComponents/SidebarPlugin'
+import Notify from 'vue-notifyjs'
 import App from './App'
 
 // router setup
@@ -16,13 +16,14 @@ import Chartist from 'chartist'
 import 'bootstrap/dist/css/bootstrap.css'
 import './assets/sass/paper-dashboard.scss'
 import 'es6-promise/auto'
+import 'vue-notifyjs/themes/default.css'
 
 // plugin setup
 Vue.use(VueRouter)
 Vue.use(GlobalComponents)
 Vue.use(GlobalDirectives)
-Vue.use(Notifications)
 Vue.use(SideBar)
+Vue.use(Notify)
 
 // configure router
 const router = new VueRouter({
