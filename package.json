@@ -13,7 +13,7 @@
     "test": "npm run unit && npm run e2e"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^4.0.0",
     "chartist": "^0.10.1",
     "vue": "^2.3.0",
     "vue-clickaway": "^2.1.0",
