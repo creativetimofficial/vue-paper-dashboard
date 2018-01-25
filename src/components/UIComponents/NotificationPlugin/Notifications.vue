@@ -1,7 +1,7 @@
 <template>
   <div class="notifications">
     <transition-group name="list">
-      <notification v-for="(notification,index) in notifications" :key="notification" :message="notification.message" :icon="notification.icon" :type="notification.type" :vertical-align="notification.verticalAlign" :horizontal-align="notification.horizontalAlign" @on-close="removeNotification(index)">
+      <notification v-for="(notification,index) in notifications" :key="index" :message="notification.message" :icon="notification.icon" :type="notification.type" :vertical-align="notification.verticalAlign" :horizontal-align="notification.horizontalAlign" @on-close="removeNotification(index)">
   
       </notification>
     </transition-group>
