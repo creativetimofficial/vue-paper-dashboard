@@ -34,3 +34,9 @@
     }
   }
 </script>
+
+<style>
+  .dropdown {
+    cursor: pointer;
+  }
+</style>
