@@ -6,6 +6,7 @@ This project is a vue version of [Paper-dashboard](https://www.creative-tim.com/
 designed for vue js.The dashboard includes vue-router and vuex
 
 Check the [Live Demo here](https://cristijora.github.io/vue-paper-dashboard).
+
 [Nuxt Version](https://github.com/cristijora/vue-paper-dashboard-nuxt)
 ![](http://i.imgur.com/3iC1hOs.gif)
 
