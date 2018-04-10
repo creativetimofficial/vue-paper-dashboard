@@ -2,6 +2,9 @@
   .navbar {
     min-height: 75px;
   }
+  .navbar-nav.nav-mobile-menu{
+    display: none;
+  }
   .navbar-form {
     margin-top: 21px;
     margin-bottom: 21px;
@@ -64,11 +67,6 @@
       }
     }
   }
-
-  body .navbar-collapse.collapse.off-canvas-sidebar {
-    display: none !important;
-  }
-
   .card {
     form {
       [class*="col-"] {
@@ -87,13 +85,26 @@
 /*          Changes for small display      */
 
 @media (max-width: 991px) {
-  .sidebar {
-    display: none;
+  .nav-open {
+    .main-panel {
+      position: absolute;
+      left: 0;
+      @include transform-translate-3d(-220px);
+      @include transition (0.5s, cubic-bezier(0.685, 0.0473, 0.346, 1));
+    }
+
+    .sidebar {
+      @include transform-translate-3d(10px);
+      @include transition (0.5s, cubic-bezier(0.685, 0.0473, 0.346, 1));
+    }
   }
 
   .main-panel {
     width: 100%;
+    @include transform-translate-3d(0px);
+    @include transition (0.5s, cubic-bezier(0.685, 0.0473, 0.346, 1));
   }
+
   .navbar-transparent {
     padding-top: 15px;
     background-color: rgba(0, 0, 0, 0.45);
@@ -128,7 +139,7 @@
     display: block;
   }
 
-  .off-canvas-sidebar {
+  .sidebar {
     position: fixed;
     display: block;
     top: 0;
@@ -143,9 +154,9 @@
     text-align: left;
     padding-right: 0px;
     padding-left: 0;
-
-    @include transform-translate-x(230px);
-    @include transition (0.33s, cubic-bezier(0.685, 0.0473, 0.346, 1));
+    left: auto;
+    @include transform-translate-3d(230px);
+    @include transition (0.5s, cubic-bezier(0.685, 0.0473, 0.346, 1));
 
     .sidebar-wrapper {
       position: relative;
@@ -254,10 +265,11 @@
   .nav-open .navbar-collapse {
     @include transform-translate-x(0px);
   }
-  .nav-open .navbar .container {
-    left: -230px;
+  .nav-open .sidebar {
+    transition: all .5s cubic-bezier(.685, .0473, .346, 1);
+    // left: -230px;
   }
-  .nav-open .wrapper {
+  .nav-open .main-panel {
     left: 0;
     @include transform-translate-x(-230px);
   }
@@ -400,7 +412,7 @@
     float: none;
   }
   .navbar-nav.nav-mobile-menu .dropdown,
-  .navbar-nav.nav-mobile-menu .dropdown-menu{
+  .navbar-nav.nav-mobile-menu .dropdown-menu {
     transition: none;
     &.show {
       transition: none;
