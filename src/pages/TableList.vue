@@ -24,7 +24,7 @@
     </div>
 </template>
 <script>
-  import PaperTable from 'components/UIComponents/PaperTable.vue'
+  import { PaperTable } from '@/components'
   const tableColumns = ['Id', 'Name', 'Salary', 'Country', 'City']
   const tableData = [{
     id: 1,

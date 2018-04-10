@@ -1,20 +1,29 @@
 <template>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button"
-                class="navbar-toggler navbar-toggler-right"
-                :class="{toggled: $sidebar.showSidebar}"
-                aria-controls="navigation-index"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-                @click="toggleSidebar">
-          <span class="navbar-toggler-bar burger-lines"></span>
-          <span class="navbar-toggler-bar burger-lines"></span>
-          <span class="navbar-toggler-bar burger-lines"></span>
-        </button>
-        <a class="navbar-brand">{{routeName}}</a>
-      </div>
+  <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--<div class="navbar-header">-->
+        <!--<button type="button"-->
+                <!--class="navbar-toggler navbar-toggler-right"-->
+                <!--:class="{toggled: $sidebar.showSidebar}"-->
+                <!--aria-controls="navigation-index"-->
+                <!--aria-expanded="false"-->
+                <!--aria-label="Toggle navigation"-->
+                <!--@click="toggleSidebar">-->
+          <!--<span class="navbar-toggler-bar burger-lines"></span>-->
+          <!--<span class="navbar-toggler-bar burger-lines"></span>-->
+          <!--<span class="navbar-toggler-bar burger-lines"></span>-->
+        <!--</button>-->
+        <!--<a class="navbar-brand">{{routeName}}</a>-->
+      <!--</div>-->
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li class="open">
@@ -40,7 +49,6 @@
           </li>
         </ul>
       </div>
-    </div>
   </nav>
 </template>
 <script>

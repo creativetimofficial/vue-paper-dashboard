@@ -1,4 +1,4 @@
-import PaperTable from 'src/components/UIComponents/PaperTable.vue'
+import PaperTable from 'src/components/PaperTable.vue'
 import {mount} from 'vue-test-utils'
 const tableData = [{
   id: 1,

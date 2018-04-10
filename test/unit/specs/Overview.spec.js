@@ -1,6 +1,6 @@
-import Overview from 'src/components/Dashboard/Views/Overview.vue'
-import StatsCard from 'src/components/UIComponents/Cards/StatsCard.vue'
-import ChartCard from 'src/components/UIComponents/Cards/ChartCard.vue'
+import Overview from 'src/pages/Overview.vue'
+import StatsCard from 'src/components/Cards/StatsCard.vue'
+import ChartCard from 'src/components/Cards/ChartCard.vue'
 import Chartist from 'chartist'
 import {mount, createLocalVue} from 'vue-test-utils'
 const localVue = createLocalVue()

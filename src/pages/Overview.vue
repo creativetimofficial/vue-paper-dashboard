@@ -73,7 +73,7 @@
   </div>
 </template>
 <script>
-  import {StatsCard, ChartCard} from 'src/components/UIComponents/index'
+  import {StatsCard, ChartCard} from 'src/components/index'
 
   export default {
     components: {

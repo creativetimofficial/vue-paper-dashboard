@@ -4,7 +4,7 @@ import VueRouter from 'vue-router'
 // Plugins
 import GlobalComponents from './globalComponents'
 import GlobalDirectives from './globalDirectives'
-import SideBar from './components/UIComponents/SidebarPlugin'
+import SideBar from './components/SidebarPlugin'
 import Notify from 'vue-notifyjs'
 import App from './App'
 

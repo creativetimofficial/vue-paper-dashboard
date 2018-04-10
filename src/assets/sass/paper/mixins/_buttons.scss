@@ -1,7 +1,50 @@
 // Mixin for generating new styles
 @mixin btn-styles($btn-color, $btn-states-color) {
+  background-color: $btn-color;
+  border-color: $btn-color;
+  color: $white-color;
+  @include opacity(1);
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .show > &.dropdown-toggle{
+    background-color: $btn-states-color;
+    color: $white-color;
+    border-color: $btn-states-color;
+  }
+
+  .caret{
+    border-top-color: $white-color;
+  }
+
+  &.btn-link {
+    color: $btn-color;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle{
+      background-color: $transparent-bg;
+      color: $btn-states-color;
+    }
+
+    .caret{
+      border-top-color: $btn-color;
+    }
+  }
+
+  .caret{
+    border-top-color: $white-color;
+  }
+}
+
+@mixin btn-outline-styles($btn-color, $btn-states-color){
   border-color: $btn-color;
   color: $btn-color;
+  @include opacity(1);
 
   &:hover,
   &:focus,
@@ -11,9 +54,13 @@
     background-color: $btn-color;
     color: $fill-font-color;
     border-color: $btn-color;
-    .caret {
+    .caret{
       border-top-color: $fill-font-color;
     }
+  }
+
+  .caret{
+    border-top-color: $white-color;
   }
 
   &.disabled,
@@ -30,53 +77,13 @@
       border-color: $btn-color;
     }
   }
-
-  &.btn-fill {
-    color: $white-color;
-    background-color: $btn-color;
-    @include opacity(1);
-
-    &:hover,
-    &:focus,
-    &:active,
-    &.active,
-    .open > &.dropdown-toggle {
-      background-color: $btn-states-color;
-      color: $white-color;
-      border-color: $btn-states-color;
-    }
-
-    .caret {
-      border-top-color: $white-color;
-    }
-  }
-
-  &.btn-simple {
-    &:hover,
-    &:focus,
-    &:active,
-    &.active,
-    .open > &.dropdown-toggle {
-      background-color: $transparent-bg;
-      color: $btn-states-color;
-    }
-
-    .caret {
-      border-top-color: $white-color;
-    }
-  }
-
-  .caret {
-    border-top-color: $btn-color;
-  }
 }
 
-@mixin btn-size($padding-vertical, $padding-horizontal, $font-size, $border, $line-height) {
+@mixin btn-size($padding-vertical, $padding-horizontal, $font-size, $line-height){
   font-size: $font-size;
-  border-radius: $border;
   padding: $padding-vertical $padding-horizontal;
 
-  &.btn-simple {
+  &.btn-simple{
     padding: $padding-vertical + 2 $padding-horizontal;
   }
 

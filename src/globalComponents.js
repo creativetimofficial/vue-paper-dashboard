@@ -1,4 +1,4 @@
-import {FormGroupInput, Card, DropDown} from './components/UIComponents/index'
+import {FormGroupInput, Card, DropDown} from './components/index'
 /**
  * You can register global components here and use them as a plugin in your main Vue instance
  */

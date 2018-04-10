@@ -47,19 +47,13 @@ const SidebarStore = {
 const SidebarPlugin = {
 
   install (Vue) {
-    Vue.mixin({
-      data () {
-        return {
-          sidebarStore: SidebarStore
-        }
+    let app = new Vue({
+      data: {
+        sidebarStore: SidebarStore
       }
     })
 
-    Object.defineProperty(Vue.prototype, '$sidebar', {
-      get () {
-        return this.$root.sidebarStore
-      }
-    })
+    Vue.prototype.$sidebar = app.sidebarStore
     Vue.component('side-bar', Sidebar)
   }
 }
