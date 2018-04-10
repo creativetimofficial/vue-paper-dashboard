@@ -161,6 +161,7 @@
   float: right;
   width: $sidebar-width;
   min-height: 100%;
+  overflow: auto;
 
   > .content {
     padding: 30px 15px;

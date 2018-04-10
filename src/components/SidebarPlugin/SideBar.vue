@@ -1,5 +1,5 @@
 <template>
-  <div :class="sidebarClasses"
+  <div class="sidebar"
        :data-background-color="backgroundColor"
        :data-active-color="activeColor">
     <!--
@@ -19,7 +19,7 @@
       <slot>
 
       </slot>
-      <ul :class="navClasses">
+      <ul class="nav">
         <!--By default vue-router adds an active class to each route link. This way the links are colored when clicked-->
         <router-link v-for="(link,index) in sidebarLinks"
                      class="nav-item"
@@ -44,14 +44,6 @@
   import MovingArrow from './MovingArrow.vue'
   export default {
     props: {
-      type: {
-        type: String,
-        default: 'sidebar',
-        validator: (value) => {
-          let acceptedValues = ['sidebar', 'navbar']
-          return acceptedValues.indexOf(value) !== -1
-        }
-      },
       backgroundColor: {
         type: String,
         default: 'black',
@@ -71,26 +63,21 @@
       sidebarLinks: {
         type: Array,
         default: () => []
+      },
+      autoClose: {
+        type: Boolean,
+        default: true
+      }
+    },
+    provide () {
+      return {
+        autoClose: this.autoClose
       }
     },
     components: {
       MovingArrow
     },
     computed: {
-      sidebarClasses () {
-        if (this.type === 'sidebar') {
-          return 'sidebar'
-        } else {
-          return 'collapse navbar-collapse off-canvas-sidebar'
-        }
-      },
-      navClasses () {
-        if (this.type === 'sidebar') {
-          return 'nav'
-        } else {
-          return 'nav navbar-nav'
-        }
-      },
       /**
        * Styles to animate the arrow near the current active sidebar link
        * @returns {{transform: string}}
@@ -101,7 +88,7 @@
     },
     data () {
       return {
-        linkHeight: 60,
+        linkHeight: 65,
         activeLinkIndex: 0,
 
         windowWidth: 0,
