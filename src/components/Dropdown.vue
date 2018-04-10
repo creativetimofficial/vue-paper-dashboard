@@ -1,6 +1,12 @@
 <template>
-  <li class="dropdown" :class="{open:isOpen}" @click="toggleDropDown" v-click-outside="closeDropDown">
-    <a class="dropdown-toggle btn-rotate" data-toggle="dropdown">
+  <component :is="tag"
+             class="dropdown"
+             :class="{show:isOpen}"
+             @click="toggleDropDown"
+             v-click-outside="closeDropDown">
+    <a class="dropdown-toggle btn-rotate"
+       :class="titleClasses"
+       data-toggle="dropdown">
       <slot name="title">
         <i :class="icon"></i>
         <p class="notification">{{title}}
@@ -11,13 +17,18 @@
     <ul class="dropdown-menu" :class="{show:isOpen}">
       <slot></slot>
     </ul>
-  </li>
+  </component>
 </template>
 <script>
   export default{
     props: {
+      tag: {
+        type: String,
+        default: 'li'
+      },
       title: String,
-      icon: String
+      icon: String,
+      titleClasses: [String, Object, Array]
     },
     data () {
       return {

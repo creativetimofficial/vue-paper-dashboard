@@ -1,46 +1,36 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">{{routeName}}</a>
+      <button class="navbar-toggler navbar-burger"
+              type="button"
+              @click="toggleSidebar"
+              :aria-expanded="$sidebar.showSidebar"
               aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-bar"></span>
+        <span class="navbar-toggler-bar"></span>
+        <span class="navbar-toggler-bar"></span>
       </button>
-
-      <!--<div class="navbar-header">-->
-        <!--<button type="button"-->
-                <!--class="navbar-toggler navbar-toggler-right"-->
-                <!--:class="{toggled: $sidebar.showSidebar}"-->
-                <!--aria-controls="navigation-index"-->
-                <!--aria-expanded="false"-->
-                <!--aria-label="Toggle navigation"-->
-                <!--@click="toggleSidebar">-->
-          <!--<span class="navbar-toggler-bar burger-lines"></span>-->
-          <!--<span class="navbar-toggler-bar burger-lines"></span>-->
-          <!--<span class="navbar-toggler-bar burger-lines"></span>-->
-        <!--</button>-->
-        <!--<a class="navbar-brand">{{routeName}}</a>-->
-      <!--</div>-->
       <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="open">
-            <a href="#" class="dropdown-toggle btn-magnify" data-toggle="dropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
               <i class="ti-panel"></i>
               <p>Stats</p>
             </a>
           </li>
-             <drop-down title="5 Notifications" icon="ti-bell">
-               <li><a href="#">Notification 1</a></li>
-               <li><a href="#">Notification 2</a></li>
-               <li><a href="#">Notification 3</a></li>
-               <li><a href="#">Notification 4</a></li>
-               <li><a href="#">Another notification</a></li>
-             </drop-down>
-          <li>
-            <a href="#" class="btn-rotate">
+          <drop-down class="nav-item"
+                     title="5 Notifications"
+                     title-classes="nav-link"
+                     icon="ti-bell">
+            <a class="dropdown-item" href="#">Notification 1</a>
+            <a class="dropdown-item" href="#">Notification 2</a>
+            <a class="dropdown-item" href="#">Notification 3</a>
+            <a class="dropdown-item" href="#">Notification 4</a>
+            <a class="dropdown-item" href="#">Another notification</a>
+          </drop-down>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
               <i class="ti-settings"></i>
               <p>
                 Settings
@@ -49,7 +39,7 @@
           </li>
         </ul>
       </div>
-  </nav>
+    </div></nav>
 </template>
 <script>
   export default {

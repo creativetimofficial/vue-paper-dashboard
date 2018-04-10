@@ -1,16 +1,23 @@
 <template>
-    <component :is="tag"
+  <component
+    :is="tag"
+    :type="nativeType"
     class="btn"
     :class="[
       {'btn-round': round},
+      {'btn-block': block},
       {'btn-just-icon': icon},
       {[`btn-${type}`]: type && !outline},
       {[`btn-outline-${type}`]: type && outline},
       {[`btn-${size}`]: size},
       {'btn-link': simple}
     ]"
-    >
-    </component>
+  >
+    <slot name="loading">
+      <i v-if="loading" class="fa fa-spinner fa-spin"></i>
+    </slot>
+    <slot></slot>
+  </component>
 </template>
 <script>
   export default {
@@ -22,9 +29,15 @@
       round: Boolean,
       icon: Boolean,
       outline: Boolean,
+      block: Boolean,
+      loading: Boolean,
       type: {
         type: String,
-        default: ''
+        default: 'default'
+      },
+      nativeType: {
+        type: String,
+        default: 'button'
       },
       size: {
         type: String,

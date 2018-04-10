@@ -4,24 +4,25 @@
     <router-view></router-view>
     <!--This sidebar appears only for screens smaller than 992px-->
     <side-bar type="navbar" :sidebar-links="$sidebar.sidebarLinks">
-      <ul class="nav navbar-nav">
-        <li>
-          <a class="dropdown-toggle" data-toggle="dropdown">
+      <ul class="nav navbar-nav nav-mobile-menu">
+        <li class="nav-item">
+          <a class="nav-link">
             <i class="ti-panel"></i>
             <p>Stats</p>
           </a>
         </li>
-        <drop-down title="5 Notifications" icon="ti-bell">
-
+        <drop-down class="nav-item"
+                   title="5 Notifications"
+                   title-classes="nav-link"
+                   icon="ti-bell">
           <a class="dropdown-item">Notification 1</a>
           <a class="dropdown-item">Notification 2</a>
           <a class="dropdown-item">Notification 3</a>
           <a class="dropdown-item">Notification 4</a>
           <a class="dropdown-item">Another notification</a>
-
         </drop-down>
-        <li>
-          <a>
+        <li class="nav-item">
+          <a class="nav-link">
             <i class="ti-settings"></i>
             <p>Settings</p>
           </a>

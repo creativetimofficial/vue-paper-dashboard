@@ -60,24 +60,24 @@
         </div>
         <div class="row d-flex justify-content-center">
           <div class="col-md-3">
-            <button class="btn btn-default btn-block" @click="notifyVue('top', 'left')">Top Left</button>
+            <p-button round outline block @click.native="notifyVue('top', 'left')">Top Left</p-button>
           </div>
           <div class="col-md-3">
-            <button class="btn btn-default btn-block" @click="notifyVue('top', 'center')">Top Center</button>
+            <p-button round outline block @click.native="notifyVue('top', 'center')">Top Center</p-button>
           </div>
           <div class="col-md-3">
-            <button class="btn btn-default btn-block" @click="notifyVue('top', 'right')">Top Right</button>
+            <p-button round outline block @click.native="notifyVue('top', 'right')">Top Right</p-button>
           </div>
         </div>
         <div class="row d-flex justify-content-center">
           <div class="col-md-3">
-            <button class="btn btn-default btn-block" @click="notifyVue('bottom', 'left')">Bottom Left</button>
+            <p-button round outline block @click.native="notifyVue('bottom', 'left')">Bottom Left</p-button>
           </div>
           <div class="col-md-3">
-            <button class="btn btn-default btn-block" @click="notifyVue('bottom', 'center')">Bottom Center</button>
+            <p-button round outline block @click.native="notifyVue('bottom', 'center')">Bottom Center</p-button>
           </div>
           <div class="col-md-3">
-            <button class="btn btn-default btn-block" @click="notifyVue('bottom', 'right')">Bottom Right</button>
+            <p-button round outline block @click.native="notifyVue('bottom', 'right')">Bottom Right</p-button>
           </div>
 
         </div>

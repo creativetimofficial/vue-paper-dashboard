@@ -1,6 +1,6 @@
 .dropdown{
   .dropdown-menu{
-    background-color: $white-color;
+    background-color: $pale-bg;
     border: 0 none;
     border-radius: $border-radius-extreme;
     display: block;
@@ -8,6 +8,7 @@
     padding: 0px;
     position: absolute;
     visibility: hidden;
+    z-index: 1000;
 
     @include opacity(0);
     @include box-shadow($dropdown-shadow);
@@ -108,6 +109,9 @@
   }
   .dropdown-divider{
     margin: 0 !important;
+  }
+  &:hover{
+    cursor: pointer;
   }
   &.show .dropdown-menu{
     @include opacity(1);

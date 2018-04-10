@@ -1,7 +1,7 @@
 <template>
   <card class="card" title="Edit Profile">
     <div>
-      <form>
+      <form @submit.prevent>
         <div class="row">
           <div class="col-md-5">
             <fg-input type="text"
@@ -92,9 +92,11 @@
           </div>
         </div>
         <div class="text-center">
-          <button type="submit" class="btn btn-info btn-fill btn-wd" @click.prevent="updateProfile">
+          <p-button type="info"
+                    round
+                    @click.native.prevent="updateProfile">
             Update Profile
-          </button>
+          </p-button>
         </div>
         <div class="clearfix"></div>
       </form>

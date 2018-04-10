@@ -9,9 +9,10 @@
         <p class="card-category" v-if="subTitle">{{subTitle}}</p>
       </slot>
     </div>
-    <div class="card-body">
+    <div class="card-body" v-if="$slots.default">
       <slot></slot>
     </div>
+    <slot name="raw-content"></slot>
     <div class="card-footer" v-if="$slots.footer">
       <hr>
       <slot name="footer"></slot>
