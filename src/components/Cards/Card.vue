@@ -20,13 +20,13 @@
   </div>
 </template>
 <script>
-  export default {
-    name: 'card',
-    props: {
-      title: String,
-      subTitle: String
-    }
+export default {
+  name: "card",
+  props: {
+    title: String,
+    subTitle: String
   }
+};
 </script>
 <style>
 </style>

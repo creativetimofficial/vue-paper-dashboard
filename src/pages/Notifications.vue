@@ -86,34 +86,32 @@
   </card>
 </template>
 <script>
-  export default {
-    data () {
-      return {
-        type: ['', 'info', 'success', 'warning', 'danger'],
-        notifications: {
-          topCenter: false
-        }
+export default {
+  data() {
+    return {
+      type: ["", "info", "success", "warning", "danger"],
+      notifications: {
+        topCenter: false
       }
-    },
-    methods: {
-      notifyVue (verticalAlign, horizontalAlign) {
-        const notification = {
-          template: '<span>Welcome to <b>Paper Dashboard</b> - a beautiful freebie for every web developer.</span>'
-        }
-        var color = Math.floor((Math.random() * 4) + 1)
-        this.$notify(
-          {
-            component: notification,
-            icon: 'ti-gift',
-            horizontalAlign: horizontalAlign,
-            verticalAlign: verticalAlign,
-            type: this.type[color]
-          })
-      }
+    };
+  },
+  methods: {
+    notifyVue(verticalAlign, horizontalAlign) {
+      const notification = {
+        template:
+          "<span>Welcome to <b>Paper Dashboard</b> - a beautiful freebie for every web developer.</span>"
+      };
+      var color = Math.floor(Math.random() * 4 + 1);
+      this.$notify({
+        component: notification,
+        icon: "ti-gift",
+        horizontalAlign: horizontalAlign,
+        verticalAlign: verticalAlign,
+        type: this.type[color]
+      });
     }
   }
-
+};
 </script>
 <style>
-
 </style>

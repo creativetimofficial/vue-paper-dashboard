@@ -11,40 +11,37 @@
   </table>
 </template>
 <script>
-  export default {
-    props: {
-      columns: Array,
-      data: Array,
-      type: {
-        type: String, // striped | hover
-        default: 'striped'
-      },
-      title: {
-        type: String,
-        default: ''
-      },
-      subTitle: {
-        type: String,
-        default: ''
-
-      }
+export default {
+  props: {
+    columns: Array,
+    data: Array,
+    type: {
+      type: String, // striped | hover
+      default: "striped"
     },
-    computed: {
-      tableClass () {
-        return `table-${this.type}`
-      }
+    title: {
+      type: String,
+      default: ""
     },
-    methods: {
-      hasValue (item, column) {
-        return item[column.toLowerCase()] !== 'undefined'
-      },
-      itemValue (item, column) {
-        return item[column.toLowerCase()]
-      }
+    subTitle: {
+      type: String,
+      default: ""
+    }
+  },
+  computed: {
+    tableClass() {
+      return `table-${this.type}`;
+    }
+  },
+  methods: {
+    hasValue(item, column) {
+      return item[column.toLowerCase()] !== "undefined";
+    },
+    itemValue(item, column) {
+      return item[column.toLowerCase()];
     }
   }
-
+};
 </script>
 <style>
-
 </style>

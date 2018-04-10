@@ -30,77 +30,79 @@
   </card>
 </template>
 <script>
-  import Card from './Card.vue'
-  export default {
-    name: 'chart-card',
-    components: {
-      Card
+import Card from "./Card.vue";
+export default {
+  name: "chart-card",
+  components: {
+    Card
+  },
+  props: {
+    footerText: {
+      type: String,
+      default: ""
     },
-    props: {
-      footerText: {
-        type: String,
-        default: ''
-      },
-      title: {
-        type: String,
-        default: ''
-      },
-      subTitle: {
-        type: String,
-        default: ''
-      },
-      chartType: {
-        type: String,
-        default: 'Line' // Line | Pie | Bar
-      },
-      chartOptions: {
-        type: Object,
-        default: () => {
-          return {}
-        }
-      },
-      chartData: {
-        type: Object,
-        default: () => {
-          return {
-            labels: [],
-            series: []
-          }
-        }
+    title: {
+      type: String,
+      default: ""
+    },
+    subTitle: {
+      type: String,
+      default: ""
+    },
+    chartType: {
+      type: String,
+      default: "Line" // Line | Pie | Bar
+    },
+    chartOptions: {
+      type: Object,
+      default: () => {
+        return {};
       }
     },
-    data () {
-      return {
-        chartId: 'no-id'
+    chartData: {
+      type: Object,
+      default: () => {
+        return {
+          labels: [],
+          series: []
+        };
       }
-    },
-    methods: {
-      /***
-       * Initializes the chart by merging the chart options sent via props and the default chart options
-       */
-      initChart () {
-        var chartIdQuery = `#${this.chartId}`
-        this.$Chartist[this.chartType](chartIdQuery, this.chartData, this.chartOptions)
-      },
-      /***
-       * Assigns a random id to the chart
-       */
-      updateChartId () {
-        var currentTime = new Date().getTime().toString()
-        var randomInt = this.getRandomInt(0, currentTime)
-        this.chartId = `div_${randomInt}`
-      },
-      getRandomInt (min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min
-      }
-    },
-    mounted () {
-      this.updateChartId()
-      this.$nextTick(this.initChart)
     }
+  },
+  data() {
+    return {
+      chartId: "no-id"
+    };
+  },
+  methods: {
+    /***
+     * Initializes the chart by merging the chart options sent via props and the default chart options
+     */
+    initChart() {
+      var chartIdQuery = `#${this.chartId}`;
+      this.$Chartist[this.chartType](
+        chartIdQuery,
+        this.chartData,
+        this.chartOptions
+      );
+    },
+    /***
+     * Assigns a random id to the chart
+     */
+    updateChartId() {
+      var currentTime = new Date().getTime().toString();
+      var randomInt = this.getRandomInt(0, currentTime);
+      this.chartId = `div_${randomInt}`;
+    },
+    getRandomInt(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+  },
+  mounted() {
+    this.updateChartId();
+    this.$nextTick(this.initChart);
   }
-
+};
 </script>
 <style>
-
 </style>

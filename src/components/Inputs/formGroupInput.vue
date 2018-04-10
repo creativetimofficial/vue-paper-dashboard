@@ -11,15 +11,13 @@
   </div>
 </template>
 <script>
-  export default {
-    inheritAttrs: false,
-    props: {
-      value: [String, Number],
-      label: String
-    }
+export default {
+  inheritAttrs: false,
+  props: {
+    value: [String, Number],
+    label: String
   }
-
+};
 </script>
 <style>
-
 </style>

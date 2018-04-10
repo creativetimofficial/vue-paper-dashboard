@@ -20,32 +20,32 @@
   </component>
 </template>
 <script>
-  export default {
-    props: {
-      tag: {
-        type: String,
-        default: 'button'
-      },
-      round: Boolean,
-      icon: Boolean,
-      outline: Boolean,
-      block: Boolean,
-      loading: Boolean,
-      type: {
-        type: String,
-        default: 'default'
-      },
-      nativeType: {
-        type: String,
-        default: 'button'
-      },
-      size: {
-        type: String,
-        default: ''
-      },
-      simple: Boolean
-    }
+export default {
+  props: {
+    tag: {
+      type: String,
+      default: "button"
+    },
+    round: Boolean,
+    icon: Boolean,
+    outline: Boolean,
+    block: Boolean,
+    loading: Boolean,
+    type: {
+      type: String,
+      default: "default"
+    },
+    nativeType: {
+      type: String,
+      default: "button"
+    },
+    size: {
+      type: String,
+      default: ""
+    },
+    simple: Boolean
   }
+};
 </script>
 <style>
 </style>

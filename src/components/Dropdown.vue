@@ -20,28 +20,28 @@
   </component>
 </template>
 <script>
-  export default{
-    props: {
-      tag: {
-        type: String,
-        default: 'li'
-      },
-      title: String,
-      icon: String,
-      titleClasses: [String, Object, Array]
+export default {
+  props: {
+    tag: {
+      type: String,
+      default: "li"
     },
-    data () {
-      return {
-        isOpen: false
-      }
+    title: String,
+    icon: String,
+    titleClasses: [String, Object, Array]
+  },
+  data() {
+    return {
+      isOpen: false
+    };
+  },
+  methods: {
+    toggleDropDown() {
+      this.isOpen = !this.isOpen;
     },
-    methods: {
-      toggleDropDown () {
-        this.isOpen = !this.isOpen
-      },
-      closeDropDown () {
-        this.isOpen = false
-      }
+    closeDropDown() {
+      this.isOpen = false;
     }
   }
+};
 </script>

@@ -29,46 +29,44 @@
   </card>
 </template>
 <script>
-  export default {
-    data () {
-      return {
-        title: 'Team members',
-        members: [
-          {
-            image: 'static/img/faces/face-0.jpg',
-            name: 'Dj Khaled',
-            status: 'Offline'
-          },
-          {
-            image: 'static/img/faces/face-1.jpg',
-            name: 'Creative Tim',
-            status: 'Available'
-          },
-          {
-            image: 'static/img/faces/face-1.jpg',
-            name: 'Flume',
-            status: 'Busy'
-          }
-        ]
-      }
-    },
-    methods: {
-      getStatusClass (status) {
-        switch (status) {
-          case 'Offline':
-            return 'text-muted'
-          case 'Available':
-            return 'text-success'
-          case 'Busy':
-            return 'text-danger'
-          default:
-            return 'text-success'
+export default {
+  data() {
+    return {
+      title: "Team members",
+      members: [
+        {
+          image: "@/assets/img/faces/face-0.jpg",
+          name: "Dj Khaled",
+          status: "Offline"
+        },
+        {
+          image: "@/assets/img/faces/face-1.jpg",
+          name: "Creative Tim",
+          status: "Available"
+        },
+        {
+          image: "@/assets/img/faces/face-1.jpg",
+          name: "Flume",
+          status: "Busy"
         }
+      ]
+    };
+  },
+  methods: {
+    getStatusClass(status) {
+      switch (status) {
+        case "Offline":
+          return "text-muted";
+        case "Available":
+          return "text-success";
+        case "Busy":
+          return "text-danger";
+        default:
+          return "text-success";
       }
     }
   }
-
+};
 </script>
 <style>
-
 </style>
