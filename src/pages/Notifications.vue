@@ -86,6 +86,8 @@
   </card>
 </template>
 <script>
+import NotificationTemplate from './Notifications/NotificationTemplate';
+
 export default {
   data() {
     return {
@@ -97,13 +99,9 @@ export default {
   },
   methods: {
     notifyVue(verticalAlign, horizontalAlign) {
-      const notification = {
-        template:
-          "<span>Welcome to <b>Paper Dashboard</b> - a beautiful freebie for every web developer.</span>"
-      };
-      var color = Math.floor(Math.random() * 4 + 1);
+      const color = Math.floor(Math.random() * 4 + 1);
       this.$notify({
-        component: notification,
+        component: NotificationTemplate,
         icon: "ti-gift",
         horizontalAlign: horizontalAlign,
         verticalAlign: verticalAlign,
