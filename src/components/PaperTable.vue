@@ -1,11 +1,17 @@
 <template>
   <table class="table" :class="tableClass">
     <thead>
-    <th v-for="column in columns">{{column}}</th>
+    <th v-for="(column, index) in columns" :key="index">
+      {{column}}
+    </th>
     </thead>
     <tbody>
-    <tr v-for="item in data">
-      <td v-for="column in columns" v-if="hasValue(item, column)">{{itemValue(item, column)}}</td>
+    <tr v-for="(item, index) in data" :key="index">
+      <td v-for="(column, index) in columns"
+          :key="index"
+          v-if="hasValue(item, column)">
+        {{itemValue(item, column)}}
+      </td>
     </tr>
     </tbody>
   </table>

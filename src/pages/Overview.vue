@@ -3,7 +3,7 @@
 
     <!--Stats cards-->
     <div class="row">
-      <div class="col-md-6 col-xl-3" v-for="stats in statsCards">
+      <div class="col-md-6 col-xl-3" v-for="stats in statsCards" :key="stats.title">
         <stats-card>
           <div class="icon-big text-center" :class="`icon-${stats.type}`" slot="header">
             <i :class="stats.icon"></i>

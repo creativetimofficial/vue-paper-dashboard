@@ -3,7 +3,7 @@
     <div>
       <ul class="list-unstyled team-members">
         <li>
-          <div class="row" v-for="member in members">
+          <div class="row" v-for="member in members" :key="member.name">
             <div class="col-3">
               <div class="avatar">
                 <img :src="member.image" alt="Circle Image" class="rounded img-fluid">
