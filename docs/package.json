@@ -1,0 +1,19 @@
+{
+  "name": "vue-material-dashboard-docs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build && npm run copy-docs",
+    "copy-docs": "ncp .vuepress/dist ../dist/documentation"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "markdown-it-container": "^2.0.0",
+    "ncp": "^2.0.0",
+    "vuepress": "^0.8.4",
+    "webpack": "^4.6.0"
+  },
+  "author": "dragosct <dragosct10@gmail.com>",
+  "description": "Vue Material Dashboard"
+}
