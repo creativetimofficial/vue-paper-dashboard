@@ -7,14 +7,11 @@ designed for vue js.The dashboard includes vue-router
 
 Check the [Live Demo here](https://cristijora.github.io/vue-paper-dashboard).
 
-[Nuxt Version](https://github.com/cristijora/vue-paper-dashboard-nuxt)
+[Nuxt Version (outdated Bootstrap 3)](https://github.com/cristijora/vue-paper-dashboard-nuxt)
 ![](http://i.imgur.com/3iC1hOs.gif)
 
 ## Documentation
 Link to [Documentation](http://vuejs.creative-tim.com/vue-paper-dashboard/documentation/)
-
-## [Scaffold an empty project](https://github.com/cristijora/vue-paper-dashboard-cli)
-![](https://raw.githubusercontent.com/cristijora/vue-paper-dashboard-cli/master/demo.gif)
 
 ## Build Setup
 
