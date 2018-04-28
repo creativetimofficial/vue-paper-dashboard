@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue Paper Dashboard | Tables</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="preload" href="/vue-paper-dashboard/documentation/assets/css/0.styles.0e1e7318.css" as="style"><link rel="preload" href="/vue-paper-dashboard/documentation/assets/js/app.1cd12c99.js" as="script"><link rel="preload" href="/vue-paper-dashboard/documentation/assets/js/2.ae9449b2.js" as="script"><link rel="prefetch" href="/vue-paper-dashboard/documentation/assets/js/1.d9c246a3.js"><link rel="prefetch" href="/vue-paper-dashboard/documentation/assets/js/3.c5bf7bfe.js"><link rel="prefetch" href="/vue-paper-dashboard/documentation/assets/js/4.0cb3d634.js"><link rel="prefetch" href="/vue-paper-dashboard/documentation/assets/js/5.bdf1bc92.js"><link rel="prefetch" href="/vue-paper-dashboard/documentation/assets/js/6.db32b887.js"><link rel="prefetch" href="/vue-paper-dashboard/documentation/assets/js/7.b5cc6375.js"><link rel="prefetch" href="/vue-paper-dashboard/documentation/assets/js/8.69832cb0.js"><link rel="prefetch" href="/vue-paper-dashboard/documentation/assets/js/9.eb13b92f.js"><link rel="prefetch" href="/vue-paper-dashboard/documentation/assets/js/10.770d5735.js">
+    <link rel="stylesheet" href="/vue-paper-dashboard/documentation/assets/css/0.styles.0e1e7318.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/vue-paper-dashboard/documentation/" class="home-link router-link-active"><!----><span class="site-name">
+      Vue Paper Dashboard
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><a href="https://github.com/cristijora/vue-paper-dashboard" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><a href="https://github.com/cristijora/vue-paper-dashboard" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav><ul class="sidebar-links"><li><a href="/vue-paper-dashboard/documentation/" class="sidebar-link">Short description and usage</a></li><li><a href="/vue-paper-dashboard/documentation/component-docs/dependencies.html" class="sidebar-link">Dependencies</a></li><li><a href="/vue-paper-dashboard/documentation/component-docs/filestructure.html" class="sidebar-link">File Structure</a></li><li><a href="/vue-paper-dashboard/documentation/component-docs/buttons.html" class="sidebar-link">Buttons</a></li><li><a href="/vue-paper-dashboard/documentation/component-docs/cards.html" class="sidebar-link">Cards</a></li><li><a href="/vue-paper-dashboard/documentation/component-docs/dropdown.html" class="sidebar-link">Dropdown</a></li><li><a href="/vue-paper-dashboard/documentation/component-docs/inputs.html" class="sidebar-link">Inputs</a></li><li><a href="/vue-paper-dashboard/documentation/component-docs/tables.html" class="active sidebar-link">Tables</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vue-paper-dashboard/documentation/component-docs/tables.html#tables" class="sidebar-link">Tables</a></li></ul></li><li><a href="/vue-paper-dashboard/documentation/component-docs/notifications.html" class="sidebar-link">Notifications</a></li></ul></div><div class="page"><div class="content"><h2 id="tables"><a href="#tables" aria-hidden="true" class="header-anchor">#</a> Tables</h2><p>We provide a small table wrapper so you can easily display table data.</p><div class="demo-block demo-box demo-component-docs demo-tables.html"><div class="source"><table class="table table-hover"><thead><th>Id</th><th>Name</th><th>Salary</th><th>Country</th><th>City</th></thead><tbody><tr><td>
+        1
+      </td><td>
+        Dakota Rice
+      </td><td>
+        $36.738
+      </td><td>
+        Niger
+      </td><td>
+        Oud-Turnhout
+      </td></tr><tr><td>
+        2
+      </td><td>
+        Minerva Hooper
+      </td><td>
+        $23,789
+      </td><td>
+        Curaçao
+      </td><td>
+        Sinaai-Waas
+      </td></tr><tr><td>
+        3
+      </td><td>
+        Sage Rodriguez
+      </td><td>
+        $56,142
+      </td><td>
+        Netherlands
+      </td><td>
+        Baileux
+      </td></tr><tr><td>
+        4
+      </td><td>
+        Philip Chaney
+      </td><td>
+        $38,735
+      </td><td>
+        Korea, South
+      </td><td>
+        Overland Park
+      </td></tr><tr><td>
+        5
+      </td><td>
+        Doris Greene
+      </td><td>
+        $63,542
+      </td><td>
+        Malawi
+      </td><td>
+        Feldkirchen in Kärnten
+      </td></tr></tbody></table></div><div class="meta"><!----><div class="highlight"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>paper-table</span> <span class="token attr-name">:data</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>tableData<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:columns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>tableColumns<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>hover<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>paper-table</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+       tableColumns<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&quot;Id&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Name&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Salary&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Country&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;City&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+       tableData<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              id<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+              name<span class="token punctuation">:</span> <span class="token string">&quot;Dakota Rice&quot;</span><span class="token punctuation">,</span>
+              salary<span class="token punctuation">:</span> <span class="token string">&quot;$36.738&quot;</span><span class="token punctuation">,</span>
+              country<span class="token punctuation">:</span> <span class="token string">&quot;Niger&quot;</span><span class="token punctuation">,</span>
+              city<span class="token punctuation">:</span> <span class="token string">&quot;Oud-Turnhout&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              id<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+              name<span class="token punctuation">:</span> <span class="token string">&quot;Minerva Hooper&quot;</span><span class="token punctuation">,</span>
+              salary<span class="token punctuation">:</span> <span class="token string">&quot;$23,789&quot;</span><span class="token punctuation">,</span>
+              country<span class="token punctuation">:</span> <span class="token string">&quot;Curaçao&quot;</span><span class="token punctuation">,</span>
+              city<span class="token punctuation">:</span> <span class="token string">&quot;Sinaai-Waas&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              id<span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+              name<span class="token punctuation">:</span> <span class="token string">&quot;Sage Rodriguez&quot;</span><span class="token punctuation">,</span>
+              salary<span class="token punctuation">:</span> <span class="token string">&quot;$56,142&quot;</span><span class="token punctuation">,</span>
+              country<span class="token punctuation">:</span> <span class="token string">&quot;Netherlands&quot;</span><span class="token punctuation">,</span>
+              city<span class="token punctuation">:</span> <span class="token string">&quot;Baileux&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              id<span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+              name<span class="token punctuation">:</span> <span class="token string">&quot;Philip Chaney&quot;</span><span class="token punctuation">,</span>
+              salary<span class="token punctuation">:</span> <span class="token string">&quot;$38,735&quot;</span><span class="token punctuation">,</span>
+              country<span class="token punctuation">:</span> <span class="token string">&quot;Korea, South&quot;</span><span class="token punctuation">,</span>
+              city<span class="token punctuation">:</span> <span class="token string">&quot;Overland Park&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              id<span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+              name<span class="token punctuation">:</span> <span class="token string">&quot;Doris Greene&quot;</span><span class="token punctuation">,</span>
+              salary<span class="token punctuation">:</span> <span class="token string">&quot;$63,542&quot;</span><span class="token punctuation">,</span>
+              country<span class="token punctuation">:</span> <span class="token string">&quot;Malawi&quot;</span><span class="token punctuation">,</span>
+              city<span class="token punctuation">:</span> <span class="token string">&quot;Feldkirchen in Kärnten&quot;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div><div class="demo-block-control"><i class="el-icon-caret-bottom"></i><span class="showText" style="display:none;">Show</span></div></div><div class="tip custom-block"><p class="custom-block-title">TIP</p><p>You can use paper table row and column slots to display more complex information</p></div><div class="demo-block demo-box demo-component-docs demo-tables.html"><div class="source"><table class="table table-hover"><thead><th>Id</th><th>Name</th><th><i class="fa fa-money"></i> Salary</th><th>Operations</th></thead><tbody><tr><td>1</td><td><b>Dakota Rice</b></td><td>$36.738</td><td><button type="button" class="btn btn-just-icon btn-info"><!----><i class="ti ti-pencil-alt"></i></button><button type="button" class="btn btn-just-icon btn-danger" style="margin-left:5px;"><!----><i class="ti ti-close"></i></button></td></tr><tr><td>2</td><td><b>Minerva Hooper</b></td><td>$23,789</td><td><button type="button" class="btn btn-just-icon btn-info"><!----><i class="ti ti-pencil-alt"></i></button><button type="button" class="btn btn-just-icon btn-danger" style="margin-left:5px;"><!----><i class="ti ti-close"></i></button></td></tr><tr><td>3</td><td><b>Sage Rodriguez</b></td><td>$56,142</td><td><button type="button" class="btn btn-just-icon btn-info"><!----><i class="ti ti-pencil-alt"></i></button><button type="button" class="btn btn-just-icon btn-danger" style="margin-left:5px;"><!----><i class="ti ti-close"></i></button></td></tr><tr><td>4</td><td><b>Philip Chaney</b></td><td>$38,735</td><td><button type="button" class="btn btn-just-icon btn-info"><!----><i class="ti ti-pencil-alt"></i></button><button type="button" class="btn btn-just-icon btn-danger" style="margin-left:5px;"><!----><i class="ti ti-close"></i></button></td></tr><tr><td>5</td><td><b>Doris Greene</b></td><td>$63,542</td><td><button type="button" class="btn btn-just-icon btn-info"><!----><i class="ti ti-pencil-alt"></i></button><button type="button" class="btn btn-just-icon btn-danger" style="margin-left:5px;"><!----><i class="ti ti-close"></i></button></td></tr></tbody></table></div><div class="meta"><!----><div class="highlight"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>paper-table</span> <span class="token attr-name">:data</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>tableData<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:columns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>tableColumns<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>hover<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">slot</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>columns<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;</span></span>Id<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;</span></span>Name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fa fa-money<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span> Salary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;</span></span>Operations<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">slot-scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>{row}<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>{{row.id}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>b</span><span class="token punctuation">&gt;</span></span>{{row.name}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>b</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>{{row.salary}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p-button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>info<span class="token punctuation">&quot;</span></span> <span class="token attr-name">icon</span> <span class="token attr-name">@click.native</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>handleEdit(row)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>ti ti-pencil-alt<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p-button</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p-button</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">margin-left</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span></span><span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>danger<span class="token punctuation">&quot;</span></span> <span class="token attr-name">icon</span> <span class="token attr-name">@click.native</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>handleDelete(row)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+           <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>ti ti-close<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p-button</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>paper-table</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+       tableColumns<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&quot;Id&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Name&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Salary&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Country&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;City&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+       tableData<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              id<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+              name<span class="token punctuation">:</span> <span class="token string">&quot;Dakota Rice&quot;</span><span class="token punctuation">,</span>
+              salary<span class="token punctuation">:</span> <span class="token string">&quot;$36.738&quot;</span><span class="token punctuation">,</span>
+              country<span class="token punctuation">:</span> <span class="token string">&quot;Niger&quot;</span><span class="token punctuation">,</span>
+              city<span class="token punctuation">:</span> <span class="token string">&quot;Oud-Turnhout&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              id<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+              name<span class="token punctuation">:</span> <span class="token string">&quot;Minerva Hooper&quot;</span><span class="token punctuation">,</span>
+              salary<span class="token punctuation">:</span> <span class="token string">&quot;$23,789&quot;</span><span class="token punctuation">,</span>
+              country<span class="token punctuation">:</span> <span class="token string">&quot;Curaçao&quot;</span><span class="token punctuation">,</span>
+              city<span class="token punctuation">:</span> <span class="token string">&quot;Sinaai-Waas&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              id<span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+              name<span class="token punctuation">:</span> <span class="token string">&quot;Sage Rodriguez&quot;</span><span class="token punctuation">,</span>
+              salary<span class="token punctuation">:</span> <span class="token string">&quot;$56,142&quot;</span><span class="token punctuation">,</span>
+              country<span class="token punctuation">:</span> <span class="token string">&quot;Netherlands&quot;</span><span class="token punctuation">,</span>
+              city<span class="token punctuation">:</span> <span class="token string">&quot;Baileux&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              id<span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+              name<span class="token punctuation">:</span> <span class="token string">&quot;Philip Chaney&quot;</span><span class="token punctuation">,</span>
+              salary<span class="token punctuation">:</span> <span class="token string">&quot;$38,735&quot;</span><span class="token punctuation">,</span>
+              country<span class="token punctuation">:</span> <span class="token string">&quot;Korea, South&quot;</span><span class="token punctuation">,</span>
+              city<span class="token punctuation">:</span> <span class="token string">&quot;Overland Park&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              id<span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+              name<span class="token punctuation">:</span> <span class="token string">&quot;Doris Greene&quot;</span><span class="token punctuation">,</span>
+              salary<span class="token punctuation">:</span> <span class="token string">&quot;$63,542&quot;</span><span class="token punctuation">,</span>
+              country<span class="token punctuation">:</span> <span class="token string">&quot;Malawi&quot;</span><span class="token punctuation">,</span>
+              city<span class="token punctuation">:</span> <span class="token string">&quot;Feldkirchen in Kärnten&quot;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token function">handleEdit</span><span class="token punctuation">(</span>row<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`You want to edit row with id: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>row<span class="token punctuation">.</span>id<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">handleDelete</span><span class="token punctuation">(</span>row<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`You want to delete row with id: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>row<span class="token punctuation">.</span>id<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre><h3 id="table-attributes"><a href="#table-attributes" aria-hidden="true" class="header-anchor">#</a> Table Attributes</h3><table><thead><tr><th>Attribute</th><th>Description</th><th>Type</th><th>Accepted values</th><th>Default</th></tr></thead><tbody><tr><td>columns</td><td>Array of column values</td><td>Array</td><td>Lower case and uppper case key values</td><td>—</td></tr><tr><td>data</td><td>Array of data objects</td><td>Array</td><td>Any data object</td><td>—</td></tr><tr><td>type</td><td>Table type</td><td>string</td><td>striped</td><td>hover</td></tr><tr><td>title</td><td>Table title</td><td>string</td><td>-</td><td>-</td></tr><tr><td>subTitle</td><td>Table sub title</td><td>string</td><td>-</td><td>-</td></tr></tbody></table><h3 id="table-slots"><a href="#table-slots" aria-hidden="true" class="header-anchor">#</a> Table Slots</h3><table><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>default</td><td>Content for table data. Can be used as a scoped slot and sends {row} as slot data</td></tr><tr><td>columns</td><td>Content for columns</td></tr></tbody></table></div></div><div class="demo-block-control"><i class="el-icon-caret-bottom"></i><span class="showText" style="display:none;">Show</span></div></div></div><div class="content edit-link"><a href="https://github.com/cristijora/vue-paper-dashboard/edit/master//component-docs/tables.md" target="_blank" rel="noopener noreferrer">Edit this page</a><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/vue-paper-dashboard/documentation/component-docs/inputs.html" class="prev">
+          Inputs
+        </a></span><span class="next"><a href="/vue-paper-dashboard/documentation/component-docs/notifications.html">
+          Notifications
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/vue-paper-dashboard/documentation/assets/js/2.ae9449b2.js" defer></script><script src="/vue-paper-dashboard/documentation/assets/js/app.1cd12c99.js" defer></script>
+  </body>
+</html>
