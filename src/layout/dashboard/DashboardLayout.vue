@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <side-bar>
+    <side-bar :active-color="activeColor" :background-color="backgroundColor">
       <template slot="links">
         <sidebar-link to="/dashboard" name="Dashboard" icon="ti-panel"/>
         <sidebar-link to="/stats" name="User Profile" icon="ti-user"/>
@@ -36,6 +36,8 @@
         <li class="divider"></li>
       </mobile-menu>
     </side-bar>
+    <sidebar-share :background-color.sync="backgroundColor" :active-color.sync="activeColor">
+    </sidebar-share>
     <div class="main-panel">
       <top-navbar></top-navbar>
 
@@ -54,12 +56,21 @@ import TopNavbar from "./TopNavbar.vue";
 import ContentFooter from "./ContentFooter.vue";
 import DashboardContent from "./Content.vue";
 import MobileMenu from "./MobileMenu";
+import SidebarShare from "./SidebarSharePlugin";
+
 export default {
   components: {
     TopNavbar,
     ContentFooter,
     DashboardContent,
-    MobileMenu
+    MobileMenu,
+    SidebarShare
+  },
+  data() {
+    return {
+      backgroundColor: "black",
+      activeColor: "success"
+    };
   },
   methods: {
     toggleSidebar() {
