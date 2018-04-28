@@ -1,18 +1,20 @@
 <template>
   <component :is="tag"
              @click.native="hideSidebar"
+             class="nav-item"
              v-bind="$attrs"
              tag="li">
     <a class="nav-link">
       <slot>
-        <i v-if="link.icon" :class="link.icon"></i>
-        <p>{{link.name}}</p>
+        <i v-if="icon" :class="icon"></i>
+        <p>{{name}}</p>
       </slot>
     </a>
   </component>
 </template>
 <script>
 export default {
+  name: "sidebar-link",
   inheritAttrs: false,
   inject: {
     autoClose: {
@@ -20,16 +22,8 @@ export default {
     }
   },
   props: {
-    link: {
-      type: [String, Object],
-      default: () => {
-        return {
-          name: "",
-          path: "",
-          icon: ""
-        };
-      }
-    },
+    name: String,
+    icon: String,
     tag: {
       type: String,
       default: "router-link"
@@ -42,6 +36,7 @@ export default {
         this.$sidebar &&
         this.$sidebar.showSidebar === true
       ) {
+        debugger
         this.$sidebar.displaySidebar(false);
       }
     }
