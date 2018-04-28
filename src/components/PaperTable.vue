@@ -1,23 +1,26 @@
 <template>
   <table class="table" :class="tableClass">
     <thead>
-    <th v-for="(column, index) in columns" :key="index">
-      {{column}}
-    </th>
+    <slot name="columns">
+      <th v-for="column in columns" :key="column">{{column}}</th>
+    </slot>
     </thead>
     <tbody>
     <tr v-for="(item, index) in data" :key="index">
-      <td v-for="(column, index) in columns"
-          :key="index"
-          v-if="hasValue(item, column)">
-        {{itemValue(item, column)}}
-      </td>
+      <slot :row="item">
+        <td v-for="(column, index) in columns"
+            :key="index"
+            v-if="hasValue(item, column)">
+          {{itemValue(item, column)}}
+        </td>
+      </slot>
     </tr>
     </tbody>
   </table>
 </template>
 <script>
 export default {
+  name: 'paper-table',
   props: {
     columns: Array,
     data: Array,

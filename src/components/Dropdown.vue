@@ -9,9 +9,9 @@
        data-toggle="dropdown">
       <slot name="title">
         <i :class="icon"></i>
-        <p class="notification">{{title}}
+        <span class="notification">{{title}}
           <b class="caret"></b>
-        </p>
+        </span>
       </slot>
     </a>
     <ul class="dropdown-menu" :class="{show:isOpen}">
@@ -38,9 +38,11 @@ export default {
   methods: {
     toggleDropDown() {
       this.isOpen = !this.isOpen;
+      this.$emit("change", this.isOpen);
     },
     closeDropDown() {
       this.isOpen = false;
+      this.$emit('change', false);
     }
   }
 };
