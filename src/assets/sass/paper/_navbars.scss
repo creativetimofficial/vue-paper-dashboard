@@ -65,6 +65,10 @@
       text-transform: uppercase;
       font-weight: 600;
       color: $default-color;
+
+      &:hover{
+        color: $font-color;
+      }
     }
     .nav-item .nav-link.btn{
       margin: $navbar-margin-a-btn;

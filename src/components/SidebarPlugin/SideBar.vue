@@ -13,7 +13,7 @@
             <div class="logo-img">
                 <img src="@/assets/img/vue-logo.png" alt="">
             </div>
-          Paper Dashboard
+          {{title}}
         </a>
       </div>
       <slot>
@@ -38,9 +38,13 @@
 </template>
 <script>
 import MovingArrow from "./MovingArrow.vue";
-import SidebarLink from "./SidebarLink"
+import SidebarLink from "./SidebarLink";
 export default {
   props: {
+    title: {
+      type: String,
+      default: "Paper Dashboard"
+    },
     backgroundColor: {
       type: String,
       default: "black",
