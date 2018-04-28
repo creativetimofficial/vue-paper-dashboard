@@ -38,9 +38,45 @@ module.exports = {
 }
 </script>
 
+## Cards
+
+::: tip
+Cards are a very simple and intuitive way of displaying rich content
+:::
+
+:::demo
+```html
+<template>
+  <card class="card-user">
+      <div slot="image">
+        <img src="@/assets/img/background.jpg" alt="...">
+      </div>
+      <div>
+        <div class="author">
+          <img class="avatar border-white" src="@/assets/img/faces/face-2.jpg" alt="...">
+          <h4 class="title">Chet Faker
+            <br>
+            <a href="#">
+              <small>@chetfaker</small>
+            </a>
+          </h4>
+        </div>
+      </div>
+    </card>
+</template>
+
+<script>
+  export default {}
+</script>
+```
+:::
+
 ## Stats cards
+
+::: tip
 Stats cards are a nice way to display visually important statistics in your dashboard such as
 number of online users, log count, error count or other relevant information.
+:::
 
 :::demo
 ```html
@@ -67,7 +103,9 @@ number of online users, log count, error count or other relevant information.
 
 ## Chart cards
 
+::: tip
 Chart cards are small wrapper cards over [Chartist library](https://gionkunz.github.io/chartist-js/)
+:::
 
 :::demo
 ```html
@@ -126,17 +164,34 @@ Chart cards are small wrapper cards over [Chartist library](https://gionkunz.git
 ```
 :::
 
-### StatsCard Attributes
+### Card Attributes
 | Attribute      | Description    | Type      | Accepted values       | Default   |
 |---------- |-------- |---------- |-------------  |-------- |
-| type     | Card type   | string  |   primary/danger/success/info/warning        |     primary     |
-| icon     | Card icon   | string  |   -        |     -     |
 | title     | Card title   | string  |   -        |     —     |
 | subTitle     | Card subtitle (displayed above with smaller font)  | string  |      -        |     -     |
+
+### Card Slots
+| Name | Description |
+|---------- |-------- |
+|  header  | Content for card header |
+|  content  | Default card content |
+|  footer  | Content for card footer |
+
 
 ### StatsCard Slots
 | Name | Description |
 |---------- |-------- |
-|  icon  | Content for card icon |
-|  default  | Default card content |
+|  header  | Content for card header |
+|  content  | Default card content |
 |  footer  | Content for card footer |
+
+
+### ChartCard Attributes
+| Attribute      | Description    | Type      | Accepted values       | Default   |
+|---------- |-------- |---------- |-------------  |-------- |
+| title     | Card title   | string  |   -        |     —     |
+| subTitle     | Card subtitle (displayed above with smaller font)  | string  |      -        |     -     |
+| footerText     | Card footer text  | string  |      -        |     -     |
+| chartType     | Chart type  | string  |      Line | Pie | Bar        |     Line     |
+| chartOptions     | Chartist chart options  | object  |      Chartist Options        |     {}     |
+| chartData     | Chartist chart data  | object  |      Chartist Data        |     {lines: [], series: []}     |
