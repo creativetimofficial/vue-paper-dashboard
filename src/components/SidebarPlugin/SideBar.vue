@@ -11,7 +11,7 @@
       <div class="logo">
         <a href="#" class="simple-text">
             <div class="logo-img">
-                <img src="static/img/vue-logo.png" alt="">
+                <img src="@/assets/img/vue-logo.png" alt="">
             </div>
           Paper Dashboard
         </a>

@@ -35,17 +35,17 @@ export default {
       title: "Team members",
       members: [
         {
-          image: "@/assets/img/faces/face-0.jpg",
+          image: require("@/assets/img/faces/face-0.jpg"),
           name: "Dj Khaled",
           status: "Offline"
         },
         {
-          image: "@/assets/img/faces/face-1.jpg",
+          image: require("@/assets/img/faces/face-1.jpg"),
           name: "Creative Tim",
           status: "Available"
         },
         {
-          image: "@/assets/img/faces/face-1.jpg",
+          image: require("@/assets/img/faces/face-1.jpg"),
           name: "Flume",
           status: "Busy"
         }
