@@ -19,6 +19,12 @@ export default {
   inject: {
     autoClose: {
       default: true
+    },
+    addLink: {
+      default: ()=>{}
+    },
+    removeLink: {
+      default: ()=>{}
     }
   },
   props: {
@@ -34,6 +40,22 @@ export default {
       if (this.autoClose) {
         this.$sidebar.displaySidebar(false);
       }
+    },
+    isActive() {
+      return this.$el.classList.contains("active");
+    }
+  },
+  mounted() {
+    if (this.addLink) {
+      this.addLink(this);
+    }
+  },
+  beforeDestroy() {
+    if (this.$el && this.$el.parentNode) {
+      this.$el.parentNode.removeChild(this.$el)
+    }
+    if (this.removeLink) {
+      this.removeLink(this);
     }
   }
 };
