@@ -3,6 +3,8 @@ import App from "./App";
 import router from "./router/index";
 import liveDemo from './plugins/liveDemo';
 import PaperDashboard from "./plugins/paperDashboard";
+import "vue-notifyjs/themes/default.css";
+
 Vue.use(PaperDashboard);
 Vue.use(liveDemo);
 
