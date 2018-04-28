@@ -31,12 +31,7 @@ export default {
   },
   methods: {
     hideSidebar() {
-      if (
-        this.autoClose &&
-        this.$sidebar &&
-        this.$sidebar.showSidebar === true
-      ) {
-        debugger
+      if (this.autoClose) {
         this.$sidebar.displaySidebar(false);
       }
     }
