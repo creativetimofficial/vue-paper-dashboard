@@ -1,5 +1,29 @@
 ## Cards
 
+We've created three types of cards, one is for simple use,
+one is for creating stats cards and the last one is for creating chart cards.
+They have to be imported where you use them like this:
+
+```js
+import {Card, StatsCard, ChartCard} from '@/components'
+```
+
+## Local usage
+```js
+components: {
+  Card,
+  StatsCard,
+  ChartCard
+}
+```
+
+## Global usage
+```js
+Vue.component(Card)
+Vue.component(StatsCard)
+Vue.component(ChartCard)
+```
+
 <script>
 module.exports = {
   data(){

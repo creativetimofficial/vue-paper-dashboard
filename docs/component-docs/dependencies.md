@@ -1,3 +1,4 @@
+## Dependencies
 
 Vue-paper-dashboard repo depends on the following packages as seen in package.json:
 
