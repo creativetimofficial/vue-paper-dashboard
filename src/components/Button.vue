@@ -2,6 +2,7 @@
   <component
     :is="tag"
     :type="nativeType"
+    :disabled="disabled || loading"
     class="btn"
     :class="[
       {'btn-round': round},
@@ -11,8 +12,7 @@
       {[`btn-outline-${type}`]: type && outline},
       {[`btn-${size}`]: size},
       {'btn-link': simple}
-    ]"
-  >
+    ]">
     <slot name="loading">
       <i v-if="loading" class="fa fa-spinner fa-spin"></i>
     </slot>
@@ -21,6 +21,7 @@
 </template>
 <script>
 export default {
+  name: 'p-button',
   props: {
     tag: {
       type: String,
@@ -31,6 +32,7 @@ export default {
     outline: Boolean,
     block: Boolean,
     loading: Boolean,
+    disabled: Boolean,
     type: {
       type: String,
       default: "default"
