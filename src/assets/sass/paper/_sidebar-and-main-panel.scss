@@ -1,4 +1,4 @@
-.sidebar {
+.wrapper .sidebar {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -29,7 +29,7 @@
 
 }
 
-.sidebar {
+.wrapper .sidebar {
   width: 260px;
   display: block;
   font-weight: 200;
@@ -177,7 +177,7 @@
   }
 }
 
-.sidebar,
+.wrapper .sidebar,
 .main-panel {
   -webkit-transition-property: top, bottom;
   transition-property: top, bottom;
@@ -188,7 +188,7 @@
   -webkit-overflow-scrolling: touch;
 }
 
-.sidebar {
+.wrapper .sidebar {
   max-height: 100%;
   height: 100%;
   overflow: hidden;
