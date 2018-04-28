@@ -74,7 +74,7 @@
 </template>
 <script>
 import { StatsCard, ChartCard } from "@/components/index";
-
+import Chartist from 'chartist';
 export default {
   components: {
     StatsCard,
@@ -145,7 +145,7 @@ export default {
           axisX: {
             showGrid: false
           },
-          lineSmooth: this.$Chartist.Interpolation.simple({
+          lineSmooth: Chartist.Interpolation.simple({
             divisor: 3
           }),
           showLine: true,
