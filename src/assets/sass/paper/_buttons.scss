@@ -1,20 +1,25 @@
-.btn,
-.navbar .navbar-nav > li > a.btn {
-  border-radius: $border-radius-btn-base;
+.btn{
   box-sizing: border-box;
   border-width: $border-thick;
-  background-color: $transparent-bg;
-  font-size: $font-size-base;
-  font-weight: $font-weight-semi;
+  font-size: $font-size-small;
+  font-weight: $font-weight-bold;
+  padding: .5rem $padding-base-horizontal;
+  line-height: 1.75;
+  cursor: pointer;
+  text-transform: uppercase;
 
-  padding: $padding-base-vertical $padding-base-horizontal;
+  &.btn-border,
+  &.btn-link{
+    background-color: $transparent-bg;
+  }
 
   @include btn-styles($default-color, $default-states-color);
   @include transition($fast-transition-time, linear);
 
   &:hover,
-  &:focus {
+  &:focus{
     outline: 0 !important;
+    @include box-shadow(none);
   }
   &:active,
   &.active,
@@ -23,114 +28,193 @@
     outline: 0 !important;
   }
 
-  &.btn-icon {
-    padding: $padding-base-vertical;
+  &[class*="btn-outline-"]{
+    background-image: none;
+    background-color: transparent;
   }
+}
+.btn-just-icon{
+  border-radius: $border-radius-btn-large;
+  height: 40px;
+  width: 40px;
+  min-width: 40px;
+  padding: 8px;
+
+  &.btn-sm{
+    padding: 4px !important;
+  }
+  i{
+    font-size: $font-size-medium;
+    padding: 2px 0px;
+  }
+}
+.upgrade-pro{
+  .btn{
+    margin-top: 30px;
+  }
+}
+.btn-link.btn-just-icon{
+  padding: 8px;
 }
 
 .btn-group .btn + .btn,
 .btn-group .btn + .btn-group,
 .btn-group .btn-group + .btn,
-.btn-group .btn-group + .btn-group {
+.btn-group .btn-group + .btn-group{
   margin-left: -2px;
 }
 
+
 // Apply the mixin to the buttons
-//.btn-default { @include btn-styles($default-color, $default-states-color); }
-.navbar .navbar-nav > li > a.btn-primary, .btn-primary {
-  @include btn-styles($primary-color, $primary-states-color);
-}
+.btn-primary { @include btn-styles($primary-color, $primary-states-color); }
+.btn-success { @include btn-styles($success-color, $success-states-color); }
+.btn-info    { @include btn-styles($info-color, $info-states-color); }
+.btn-warning { @include btn-styles($warning-color, $warning-states-color); }
+.btn-danger  { @include btn-styles($danger-color, $danger-states-color); }
+.btn-neutral  { @include btn-styles($white-color, $default-states-color); }
 
-.navbar .navbar-nav > li > a.btn-success, .btn-success {
-  @include btn-styles($success-color, $success-states-color);
+.btn-outline-default { @include btn-outline-styles($default-color, $default-states-color); }
+.btn-outline-primary { @include btn-outline-styles($primary-color, $primary-states-color); }
+.btn-outline-success { @include btn-outline-styles($success-color, $success-states-color); }
+.btn-outline-info    { @include btn-outline-styles($info-color, $info-states-color); }
+.btn-outline-warning { @include btn-outline-styles($warning-color, $warning-states-color); }
+.btn-outline-danger  { @include btn-outline-styles($danger-color, $danger-states-color); }
+.btn-outline-neutral { @include btn-outline-styles($white-color, $default-states-color);
+  &:hover,
+  &:focus{
+    color: $default-states-color;
+    background-color: $white-color;
+  }
 }
-
-.navbar .navbar-nav > li > a.btn-info, .btn-info {
-  @include btn-styles($info-color, $info-states-color);
-}
-
-.navbar .navbar-nav > li > a.btn-warning, .btn-warning {
-  @include btn-styles($warning-color, $warning-states-color);
-}
-
-.navbar .navbar-nav > li > a.btn-danger, .btn-danger {
-  @include btn-styles($danger-color, $danger-states-color);
-}
-
 .btn-neutral {
   @include btn-styles($white-color, $white-color);
-
+  color: $default-color;
   &:hover,
-  &:focus {
-    color: $default-color;
-  }
-
-  &:active,
-  &.active,
-  .open > &.dropdown-toggle {
-    background-color: $white-color;
-    color: $default-color;
-  }
-
-  &.btn-fill {
-    color: $default-color;
-  }
-  &.btn-fill:hover,
-  &.btn-fill:focus {
+  &:focus{
     color: $default-states-color;
   }
 
-  &.btn-simple:active,
-  &.btn-simple.active {
+  &.btn-border{
+    &:hover,
+    &:focus{
+      color: $default-color;
+    }
+
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle{
+      background-color: $white-color;
+      color: $default-color;
+    }
+  }
+
+  &.btn-link:active,
+  &.btn-link.active{
     background-color: transparent;
   }
 }
 
-.btn {
+.btn{
   &:disabled,
   &[disabled],
-  &.disabled {
+  &.disabled{
     @include opacity(.5);
   }
 }
-
-.btn-simple {
-  border: $none;
+.btn-link{
+  border-color: transparent !important;
   padding: $padding-base-vertical $padding-base-horizontal;
 
-  &.btn-icon {
+  &:hover,
+  &:focus,
+  &:active{
+    text-decoration: none;
+    border-color: transparent;
+  }
+
+  &.btn-icon{
     padding: $padding-base-vertical;
   }
 }
 
-.btn-lg {
-  @include btn-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $border-radius-btn-large, $line-height-small);
-  font-weight: $font-weight-normal;
+.btn-lg{
+  @include btn-size($padding-large-vertical, $padding-large-horizontal, $font-size-base, $line-height-small);
 }
-
-.btn-sm {
-  @include btn-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $border-radius-btn-small, $line-height-small);
+.btn-sm{
+  @include btn-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small);
 }
-
-.btn-xs {
-  @include btn-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-xs, $border-radius-btn-small, $line-height-small);
-}
-
 .btn-wd {
   min-width: 140px;
 }
 
-.btn-group.select {
+.btn-group.select{
   width: 100%;
 }
-
-.btn-group.select .btn {
+.btn-group.select .btn{
   text-align: left;
 }
-
-.btn-group.select .caret {
+.btn-group.select .caret{
   position: absolute;
   top: 50%;
   margin-top: -1px;
   right: 8px;
+}
+.btn-just-icon{
+  &.btn-sm{
+    height: 30px;
+    width: 30px;
+    min-width: 30px;
+    padding: 0;
+
+    i{
+      font-size: $font-size-small;
+
+    }
+  }
+  &.btn-lg{
+    height: 50px;
+    width: 50px;
+    min-width: 50px;
+    padding: 13px;
+
+    i{
+      font-size: 18px;
+      padding: 0;
+    }
+
+  }
+
+}
+.btn-round{
+  border-radius: 30px;
+}
+.btn.btn-link:focus{
+  box-shadow: none !important;
+  text-decoration: none;
+}
+
+.column .btn-link{
+  padding: 7px 0;
+}
+.share-buttons .btn-outline-default{
+  margin-top: 24px;
+}
+#modals .btn-outline-neutral{
+  margin-bottom: 10px;
+}
+.btn-group.select{
+  overflow: visible !important;
+}
+.media{
+  .media-body{
+    .media-footer{
+      .btn-neutral{
+        margin: $navbar-margin-btn;
+        font-size: $font-size-base;
+        i{
+          margin-right: 0 !important;
+        }
+      }
+    }
+  }
 }

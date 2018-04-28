@@ -7,6 +7,10 @@
       border-top: 1px solid $table-line-color;
     }
   }
+  thead th {
+    border-bottom: 1px solid $table-line-color;
+    border-top: 0;
+  }
   > thead > tr > th {
     border-bottom-width: 0;
     font-size: $font-size-h5;

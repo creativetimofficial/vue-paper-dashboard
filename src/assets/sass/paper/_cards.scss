@@ -6,8 +6,9 @@
   margin-bottom: 20px;
   position: relative;
   z-index: 1;
+  border: none;
 
-  .image {
+  .card-image {
     width: 100%;
     overflow: hidden;
     height: 260px;
@@ -21,11 +22,13 @@
       width: 100%;
     }
   }
-  .content {
+  .card-body {
     padding: 15px 15px 10px 15px;
   }
-  .header {
+  .card-header {
     padding: 20px 20px 0;
+    border-bottom: 0;
+    background-color: transparent;
   }
   .description {
     font-size: $font-paragraph;
@@ -36,7 +39,7 @@
     font-size: $font-size-small;
     margin: 0;
   }
-  .category,
+  .card-category,
   label {
     font-size: $font-size-base;
     font-weight: $font-weight-normal;
@@ -52,7 +55,7 @@
     margin-bottom: 5px;
   }
 
-  .title {
+  .card-title {
     margin: $none;
     color: $card-black-color;
     font-weight: $font-weight-light;
@@ -195,14 +198,14 @@
       border: 5px solid $card-muted-color;
     }
   }
-  .title {
+  .card-title {
     font-weight: 600;
     line-height: 24px;
   }
   .description {
     margin-top: 10px;
   }
-  .content {
+  .card-body {
     min-height: 200px;
   }
 
@@ -227,7 +230,7 @@
 
 .card-user,
 .card-price {
-  .footer {
+  .card-footer {
     padding: 5px 15px 10px;
   }
   hr {
