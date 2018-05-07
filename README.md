@@ -1,4 +1,4 @@
-# [Vue Paper Dashboard](https://cristijora.github.io/vue-paper-dashboard/) [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
+# [Vue Paper Dashboard](https://cristijora.github.io/vue-paper-dashboard/)
 
 > Admin dashboard based on paper dashboard UI template + vue-router
 
