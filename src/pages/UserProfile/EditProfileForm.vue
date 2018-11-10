@@ -111,11 +111,12 @@ export default {
         company: "Paper Dashboard",
         username: "michael23",
         email: "",
+        firstName: "Chet",
         lastName: "Faker",
         address: "Melbourne, Australia",
         city: "melbourne",
         postalCode: "",
-        aboutMe: `Oh so, your weak rhyme. You doubt I'll bother, reading into it.I'll probably won't, left to my own devicesBut that's the difference in our opinions.`
+        aboutMe: `We must accept finite disappointment, but hold on to infinite hope.`
       }
     };
   },
