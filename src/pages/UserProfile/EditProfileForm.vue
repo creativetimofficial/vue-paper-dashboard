@@ -114,7 +114,7 @@ export default {
         firstName: "Chet",
         lastName: "Faker",
         address: "Melbourne, Australia",
-        city: "melbourne",
+        city: "Melbourne",
         postalCode: "",
         aboutMe: `We must accept finite disappointment, but hold on to infinite hope.`
       }
