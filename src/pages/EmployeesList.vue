@@ -1,9 +1,9 @@
 <template>
     <div class="row">
       <div class="col-12">
-        <card :title="tableClient.title" :subTitle="tableClient.subTitle">
+        <card :title="tableEmployees.title" :subTitle="tableEmployees.subTitle">
           <div slot="raw-content" class="table-responsive">
-            <paper-table :data="tableClient.data" :attrs="tableClient.attrs" :columns="tableClient.columns">
+            <paper-table :data="tableEmployees.data" :attrs="tableEmployees.attrs" :columns="tableEmployees.columns">
             </paper-table>
           </div>
         </card>
@@ -12,8 +12,9 @@
 </template>
 <script>
 import { PaperTable } from "@/components";
-const tableColumns = ["Nombre", "Apellidos", "Cédula", "Ciudad", 'Teléfono', 'Email', 'Negocio', 'Dirección'];
-const tableAttrs = ["name", "lastName", "document", "city", 'phone', 'email', 'business', 'address'];
+import api  from '@/api/api.js';
+const tableColumns = ['Nombre', 'Apellidos', 'Cédula', 'Teléfono', 'Email', 'Salario', 'Dirección'];
+const tableAttrs = ['name', 'lastName', 'document', 'phone', 'email', 'salary', 'address'];
 
 
 export default {
@@ -21,11 +22,13 @@ export default {
     PaperTable
   },
   created() {
-    
+    api.getEmployees().then(employees => {
+      this.tableEmployees.data = employees;
+    });
   },
   data() {
     return {
-      tableClient: {
+      tableEmployees: {
         title: "Lista de empleados",
         subTitle: "Here is a subtitle for this table",
         columns: [...tableColumns],

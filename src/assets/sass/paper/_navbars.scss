@@ -16,7 +16,7 @@
   box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
 
   &.navbar-light {
-    background-color: $bg-nude;
+    background-color: #79208a;
     box-shadow: none;
     border-bottom: 1px solid $medium-gray;
   }
@@ -29,7 +29,7 @@
     margin: $navbar-margin-brand;
     padding: $navbar-padding-brand;
     font-size: $font-size-base;
-    color: $default-color;
+    color: $white-color;
     text-transform: uppercase;
   }
   .nav-link{
@@ -44,7 +44,7 @@
     }
     p{
       margin: 0px 0px;
-      color: #9A9A9A !important;
+      color: $white-color !important;
       text-transform: uppercase;
       font-weight: 600;
       font-size: 12px;
@@ -64,7 +64,7 @@
       font-size: $font-size-small;
       text-transform: uppercase;
       font-weight: 600;
-      color: $default-color;
+      color: $white-color;
 
       &:hover{
         color: $font-color;
@@ -211,7 +211,7 @@
     .open .nav-link:hover,
     .open .nav-link:focus {
       background-color: transparent;
-      color: $default-color;
+      color: $white-color;
       @include opacity(1);
     }
   }
@@ -243,7 +243,7 @@
   }
   .navbar-nav{
     .nav-item .nav-link:not(.btn){
-      color: $dark-gray;
+      color: $white-color;
     }
 
     .active .nav-link,
@@ -268,7 +268,7 @@
     .open .nav-link:hover,
     .open .nav-link:focus{
       background-color: transparent;
-      color: $info-color;
+      color: $white-color;
     }
 
     .navbar-toggler:hover,.navbar-toggler:focus {
@@ -352,7 +352,7 @@
 // stefan making edits
 
 .navbar-light .navbar-nav .nav-link:hover{
-  color: $light-gray;
+  color: $white-color;
 }
 
 .red{
@@ -379,7 +379,7 @@
 .nav-tabs-navigation{
   &:last-child{
     .nav-stacked{
-      border-right: 1px solid #F1EAE0;
+      border-right: 1px solid $white-color;
       font-size: 16px;
       font-weight: 600;
       padding: 20px 0;
@@ -411,7 +411,7 @@
 
   .navbar[class*="bg-"] & .navbar-toggler-bar,
   .navbar.navbar-transparent & .navbar-toggler-bar{
-    background: #fff;
+    background: $white-color;;
   }
 
   .navbar-toggler-bar{

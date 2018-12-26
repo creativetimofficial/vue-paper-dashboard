@@ -26,6 +26,15 @@ const api = {
 			throw error;
 			}
 	},
+
+	getEmployees: async () => {
+		try {
+			const response = await axios(API_ROOT.concat('employees'))
+				return response.data;
+			} catch (error) {
+			throw error;
+			}
+	},
 	getServices: async() => {
 		try {
 			const response = await axios(API_ROOT.concat('services'))
