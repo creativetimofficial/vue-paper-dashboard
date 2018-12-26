@@ -14,7 +14,7 @@ import ClientsList from "@/pages/ClientsList.vue";
 import BusinessesList from "@/pages/BusinessList.vue";
 import ActivityList from "@/pages/ActivityList.vue";
 import EmployeesList from '@/pages/EmployeesList.vue';
-import PartnersList from '@/pages/ParnetsList.vue';
+import PartnersList from '@/pages/PartnersList.vue';
 import ServicesList from '@/pages/ServicesList.vue';
 import SuscribedCustomerList from '@/pages/SuscribedCustomerList';
 

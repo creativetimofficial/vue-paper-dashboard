@@ -20,7 +20,7 @@ const api = {
 	},
 	getPartners: async () => {
 		try {
-			const response = await fetch(API_ROOT.concat('partners'))
+			const response = await axios(API_ROOT.concat('partners'))
 				return response.data;
 			} catch (error) {
 			throw error;

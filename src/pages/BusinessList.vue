@@ -4,7 +4,6 @@
         <card :title="tableClient.title" :subTitle="tableClient.subTitle">
           <div slot="raw-content" class="table-responsive">
             <paper-table :data="tableClient.data" :attrs="tableClient.attrs" :columns="tableClient.columns">
-
             </paper-table>
           </div>
         </card>
@@ -23,7 +22,7 @@ export default {
     PaperTable
   },
   created() {
-    
+
   },
   data() {
     return {
