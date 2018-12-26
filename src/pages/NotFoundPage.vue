@@ -5,7 +5,7 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only">Cambia la navegación</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>

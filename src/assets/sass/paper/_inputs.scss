@@ -18,6 +18,7 @@
   background-color: $gray-input-bg;
   border: medium none;
   border-radius: $border-radius-base;
+  border-bottom: solid $font-color 1.0px;
   color: $font-color;
   font-size: $font-size-base;
   transition: background-color 0.3s ease 0s;

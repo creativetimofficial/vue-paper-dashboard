@@ -16,11 +16,11 @@
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="ti-panel"></i>
-              <p>Stats</p>
+              <p>Estadisticas</p>
             </a>
           </li>
           <drop-down class="nav-item"
-                     title="5 Notifications"
+                     title="5 Notificaciones"
                      title-classes="nav-link"
                      icon="ti-bell">
             <a class="dropdown-item" href="#">Notification 1</a>
@@ -33,7 +33,7 @@
             <a href="#" class="nav-link">
               <i class="ti-settings"></i>
               <p>
-                Settings
+                Configuraciones
               </p>
             </a>
           </li>

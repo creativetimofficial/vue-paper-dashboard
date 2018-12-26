@@ -10,6 +10,13 @@ import Icons from "@/pages/Icons.vue";
 import Maps from "@/pages/Maps.vue";
 import Typography from "@/pages/Typography.vue";
 import TableList from "@/pages/TableList.vue";
+import ClientsList from "@/pages/ClientsList.vue";
+import BusinessesList from "@/pages/BusinessList.vue";
+import ActivityList from "@/pages/ActivityList.vue";
+import EmployeesList from '@/pages/EmployeesList.vue';
+import PartnersList from '@/pages/ParnetsList.vue';
+import ServicesList from '@/pages/ServicesList.vue';
+import SuscribedCustomerList from '@/pages/SuscribedCustomerList';
 
 const routes = [
   {
@@ -51,6 +58,41 @@ const routes = [
         path: "table-list",
         name: "table-list",
         component: TableList
+      },
+      {
+        path: "clients-list",
+        name: "clientes",
+        component: ClientsList
+      },
+      {
+        path: "businesses-list",
+        name: "Negocios",
+        component: BusinessesList
+      },
+      {
+        path: "services-list",
+        name: "Servicios",
+        component: ServicesList
+      },
+      {
+        path: "partners-list",
+        name: "Socios",
+        component: PartnersList
+      },
+      {
+        path: "employees-list",
+        name: "Empleados",
+        component: EmployeesList
+      },
+      {
+        path: "suscribedCustomer-list",
+        name: "Clientes suscritos",
+        component: SuscribedCustomerList
+      },
+      {
+        path: "activity-list",
+        name: "Lista de Actividades",
+        component: ActivityList
       }
     ]
   },

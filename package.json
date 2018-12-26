@@ -10,13 +10,15 @@
     "dev": "vue-cli-service serve --open"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "bootstrap": "^4.0.0",
     "chartist": "^0.11.0",
     "es6-promise": "^4.2.4",
     "vue": "^2.5.13",
     "vue-clickaway": "^2.1.0",
     "vue-notifyjs": "^0.3.0",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.5.21"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-beta.9",

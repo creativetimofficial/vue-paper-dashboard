@@ -1,50 +1,37 @@
 <template>
-  <card class="card" title="Edit Profile">
+  <card class="card" title="Editar Perfil">
     <div>
       <form @submit.prevent>
         <div class="row">
-          <div class="col-md-5">
-            <fg-input type="text"
-                      label="Company"
-                      :disabled="true"
-                      placeholder="Paper dashboard"
-                      v-model="user.company">
-            </fg-input>
-          </div>
-          <div class="col-md-3">
-
-            <fg-input type="text"
-                      label="Username"
-                      placeholder="Username"
-                      v-model="user.username">
-            </fg-input>
-          </div>
-          <div class="col-md-4">
-            <fg-input type="email"
-                      label="Username"
-                      placeholder="Email"
-                      v-model="user.email">
-            </fg-input>
-          </div>
-        </div>
-
-        <div class="row">
           <div class="col-md-6">
             <fg-input type="text"
-                      label="First Name"
+                      label="Nombre"
                       placeholder="First Name"
                       v-model="user.firstName">
             </fg-input>
           </div>
           <div class="col-md-6">
             <fg-input type="text"
-                      label="Last Name"
+                      label="Apellidos"
                       placeholder="Last Name"
                       v-model="user.lastName">
             </fg-input>
           </div>
         </div>
-
+        <div class="row">
+          <div class="col-md-6">
+            <fg-input type="email"
+                      label="Email"
+                      placeholder="Email"
+                      v-model="user.email">
+            </fg-input>
+          </div>
+        </div>
+         <fg-input type="tel"
+                      label="Phone"
+                      placeholder="Email"
+                      v-model="user.email">
+            </fg-input>
         <div class="row">
           <div class="col-md-12">
             <fg-input type="text"
@@ -108,7 +95,7 @@ export default {
   data() {
     return {
       user: {
-        company: "Paper Dashboard",
+        company: "Compañia",
         username: "michael23",
         email: "",
         lastName: "Faker",

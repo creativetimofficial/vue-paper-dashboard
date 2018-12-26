@@ -43,7 +43,7 @@ export default {
   props: {
     title: {
       type: String,
-      default: "Paper Dashboard"
+      default: "Shewylab"
     },
     backgroundColor: {
       type: String,
@@ -55,7 +55,7 @@ export default {
     },
     activeColor: {
       type: String,
-      default: "success",
+      default: "warning",
       validator: value => {
         let acceptedValues = [
           "primary",

@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <!--Stats cards-->
     <div class="row">
       <div class="col-md-6 col-xl-3" v-for="stats in statsCards" :key="stats.title">
@@ -88,34 +87,66 @@ export default {
       statsCards: [
         {
           type: "warning",
-          icon: "ti-server",
-          title: "Capacity",
-          value: "105GB",
-          footerText: "Updated now",
+          icon: "ti-face-smile",
+          title: "Clientes",
+          value: "0",
+          footerText: "Actualizar ahora",
           footerIcon: "ti-reload"
         },
         {
           type: "success",
           icon: "ti-wallet",
-          title: "Revenue",
+          title: "Ingresos",
           value: "$1,345",
-          footerText: "Last day",
+          footerText: "Último día",
+          footerIcon: "ti-calendar"
+        },
+        {
+          type: "info",
+          icon: "ti-stats-up",
+          title: "Suscripciones",
+          value: "+45",
+          footerText: "Último día",
           footerIcon: "ti-calendar"
         },
         {
           type: "danger",
           icon: "ti-pulse",
-          title: "Errors",
+          title: "Actividades",
           value: "23",
-          footerText: "In the last hour",
+          footerText: "En las últimas horas",
           footerIcon: "ti-timer"
         },
         {
           type: "info",
           icon: "ti-twitter-alt",
-          title: "Followers",
+          title: "Seguidores",
           value: "+45",
-          footerText: "Updated now",
+          footerText: "Actualizar ahora",
+          footerIcon: "ti-reload"
+        },
+        {
+          type: "danger",
+          icon: "ti-instagram",
+          title: "Seguidores",
+          value: "+45",
+          footerText: "Actualizar ahora",
+          footerIcon: "ti-reload"
+        },
+        {
+          type: "info",
+          icon: "ti-facebook",
+          title: "Likes",
+          value: "+45",
+          footerText: "Actualizar ahora",
+          footerIcon: "ti-reload"
+        },
+        {
+          type: "danger",
+          icon: "ti-google",
+          title: "Email",
+          value: "+45",
+          footerText: "Actualizar ahora",
           footerIcon: "ti-reload"
         }
       ],

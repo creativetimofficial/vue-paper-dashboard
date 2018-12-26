@@ -1,17 +1,17 @@
 <template>
   <table class="table" :class="tableClass">
     <thead>
-    <slot name="columns">
+    <slot name="attrs">
       <th v-for="column in columns" :key="column">{{column}}</th>
     </slot>
     </thead>
     <tbody>
     <tr v-for="(item, index) in data" :key="index">
       <slot :row="item">
-        <td v-for="(column, index) in columns"
+        <td v-for="(attr, index) in attrs"
             :key="index"
-            v-if="hasValue(item, column)">
-          {{itemValue(item, column)}}
+            v-if="hasValue(item, attr)">
+          {{itemValue(item, attr)}}
         </td>
       </slot>
     </tr>
@@ -23,6 +23,7 @@ export default {
   name: 'paper-table',
   props: {
     columns: Array,
+    attrs: Array,
     data: Array,
     type: {
       type: String, // striped | hover
@@ -43,11 +44,11 @@ export default {
     }
   },
   methods: {
-    hasValue(item, column) {
-      return item[column.toLowerCase()] !== "undefined";
+    hasValue(item, attr) {
+      return item[attr] !== "undefined";
     },
-    itemValue(item, column) {
-      return item[column.toLowerCase()];
+    itemValue(item, attr) {
+      return item[attr];
     }
   }
 };
