@@ -18,7 +18,7 @@
       </div>
     </div>
 
-    <!--Charts-->
+    <!--Charts
     <div class="row">
 
       <div class="col-12">
@@ -68,12 +68,13 @@
       </div>
 
     </div>
-
+    -->
   </div>
 </template>
 <script>
 import { StatsCard, ChartCard } from "@/components/index";
 import Chartist from 'chartist';
+import api  from '@/api/api.js';
 export default {
   components: {
     StatsCard,
@@ -82,6 +83,15 @@ export default {
   /**
    * Chart data used to render stats, charts. Should be replaced with server data
    */
+  created() {
+    api.getClients().then(clients => {
+      this.statsCards[0].value = clients.length;
+    });
+
+    api.getSuscribedCustomers().then(suscribedCustomers => {
+      this.statsCards[3].value = suscribedCustomers.length;
+    });
+  },
   data() {
     return {
       statsCards: [
@@ -89,8 +99,8 @@ export default {
           type: "warning",
           icon: "ti-face-smile",
           title: "Clientes",
-          value: "0",
-          footerText: "Actualizar ahora",
+          value: 0,
+          footerText: "Actualizado ahora",
           footerIcon: "ti-reload"
         },
         {
@@ -113,7 +123,7 @@ export default {
           type: "danger",
           icon: "ti-pulse",
           title: "Actividades",
-          value: "23",
+          value: 0,
           footerText: "En las últimas horas",
           footerIcon: "ti-timer"
         },
@@ -122,7 +132,7 @@ export default {
           icon: "ti-twitter-alt",
           title: "Seguidores",
           value: "+45",
-          footerText: "Actualizar ahora",
+          footerText: "Actualizado ahora",
           footerIcon: "ti-reload"
         },
         {
@@ -130,7 +140,7 @@ export default {
           icon: "ti-instagram",
           title: "Seguidores",
           value: "+45",
-          footerText: "Actualizar ahora",
+          footerText: "Actualizado ahora",
           footerIcon: "ti-reload"
         },
         {
@@ -138,7 +148,7 @@ export default {
           icon: "ti-facebook",
           title: "Likes",
           value: "+45",
-          footerText: "Actualizar ahora",
+          footerText: "Actualizado ahora",
           footerIcon: "ti-reload"
         },
         {
@@ -146,7 +156,7 @@ export default {
           icon: "ti-google",
           title: "Email",
           value: "+45",
-          footerText: "Actualizar ahora",
+          footerText: "Actualizado ahora",
           footerIcon: "ti-reload"
         }
       ],

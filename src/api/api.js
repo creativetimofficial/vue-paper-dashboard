@@ -42,7 +42,23 @@ const api = {
 			} catch (error) {
 			throw error;
 			}
-	},	
+	},
+	getActivities: async() => {
+		try {
+			const response = await axios(API_ROOT.concat('activities'))
+				return response.data;
+			} catch (error) {
+			throw error;
+			}
+	},
+	getSuscribedCustomers: async() => {
+		try {
+			const response = await axios(API_ROOT.concat('suscribedCustomers'))
+				return response.data;
+			} catch (error) {
+			throw error;
+			}
+	},
 }
 
 export default api;
