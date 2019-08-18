@@ -34,7 +34,7 @@
 
         <li class="button-container">
           <div class="">
-            <a href="https://github.com/creativetimofficial/vue-paper-dashboard/documentation/" class="btn btn-danger btn-block btn-fill btn-round">Documentation</a>
+            <a href="https://demos.creative-tim.com/vue-paper-dashboard/documentation/" class="btn btn-danger btn-block btn-fill btn-round">Documentation</a>
           </div>
         </li>
 
