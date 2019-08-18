@@ -1,8 +1,5 @@
 # Change Log
 
-## [1.0.0] 2017-06-18
-### Stable Original Release
-
 ## [2.0.0] 2018-05-01
 ## Vue Paper Dashboard Version 2
 - Bootstrap 4 update
@@ -24,3 +21,7 @@
   - Use of `vue-notifyjs` for notifications
   - Improvements for Sidebar. Option to declare links as children inside Sidebar slot. SSR support.
   - Minor improvements for other components and SSR support for them
+
+
+## [1.0.0] 2017-06-18
+### Stable Original Release
