@@ -27,21 +27,21 @@
 
         <li class="button-container">
           <div class="">
-            <a href="https://github.com/cristijora/vue-paper-dashboard/archive/master.zip"
+            <a href="https://github.com/creativetimofficial/vue-paper-dashboard/archive/master.zip"
                class="btn btn-info btn-block btn-fill btn-round">Free Download</a>
           </div>
         </li>
 
         <li class="button-container">
           <div class="">
-            <a href="http://vuejs.creative-tim.com/vue-paper-dashboard/documentation/" class="btn btn-danger btn-block btn-fill btn-round">Documentation</a>
+            <a href="https://github.com/creativetimofficial/vue-paper-dashboard/documentation/" class="btn btn-danger btn-block btn-fill btn-round">Documentation</a>
           </div>
         </li>
 
         <li class="header-title">Thank you for sharing!</li>
 
         <li class="button-container">
-          <social-sharing url="https://cristijora.github.io/vue-paper-dashboard/" inline-template
+          <social-sharing url="https://github.com/creativetimofficial/vue-paper-dashboard" inline-template
                           title="Vue Paper Dashboard - Free Bootstrap Admin Template for Vue.js"
                           hashtags="vuejs, dashboard, bootstrap" twitter-user="creativetim">
             <div>
@@ -59,8 +59,8 @@
         </li>
 
         <li class="button-container">
-          <gh-btns-star slug="cristijora/vue-paper-dashboard" show-count></gh-btns-star>
-          <gh-btns-fork slug="cristijora/vue-paper-dashboard" show-count></gh-btns-fork>
+          <gh-btns-star slug="creativetimofficial/vue-paper-dashboard" show-count></gh-btns-star>
+          <gh-btns-fork slug="creativetimofficial/vue-paper-dashboard" show-count></gh-btns-fork>
         </li>
 
       </ul>

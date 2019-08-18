@@ -1,4 +1,5 @@
+const isProd = process.env.NODE_ENV === 'production'
 module.exports = {
   lintOnSave: false,
-  baseUrl: "/vue-paper-dashboard/"
+  publicPath: isProd ? "/vue-paper-dashboard/" : ""
 };
