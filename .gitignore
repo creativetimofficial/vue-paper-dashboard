@@ -3,3 +3,11 @@ node_modules/
 npm-debug.log
 .idea/
 dist/
+
+# WebdriverIO Specific Files
+errorShots/
+screenshots/
+.reg
+
+reportKitFree.html
+reg.json
