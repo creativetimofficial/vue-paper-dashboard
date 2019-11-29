@@ -16,7 +16,7 @@ before_install:
 before_script:
   - "npm install"
   - "npm install -g reg-suit"
-  - npm start &
+  - npm run dev &
 
 script:
   - npm run e2e
