@@ -15,5 +15,5 @@ export default {
     Vue.use(GlobalDirectives);
     Vue.use(SideBar);
     Vue.use(Notify);
-  }
-}
+  },
+};

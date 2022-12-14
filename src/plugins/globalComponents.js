@@ -9,7 +9,7 @@ const GlobalComponents = {
     Vue.component("drop-down", DropDown);
     Vue.component("card", Card);
     Vue.component("p-button", Button);
-  }
+  },
 };
 
 export default GlobalComponents;

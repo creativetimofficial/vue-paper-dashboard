@@ -1,46 +1,48 @@
 <template>
   <table class="table" :class="tableClass">
     <thead>
-    <slot name="columns">
-      <th v-for="column in columns" :key="column">{{column}}</th>
-    </slot>
+      <slot name="columns">
+        <th v-for="column in columns" :key="column">{{ column }}</th>
+      </slot>
     </thead>
     <tbody>
-    <tr v-for="(item, index) in data" :key="index">
-      <slot :row="item">
-        <td v-for="(column, index) in columns"
+      <tr v-for="(item, index) in data" :key="index">
+        <slot :row="item">
+          <td
+            v-for="(column, index) in columns"
             :key="index"
-            v-if="hasValue(item, column)">
-          {{itemValue(item, column)}}
-        </td>
-      </slot>
-    </tr>
+            v-if="hasValue(item, column)"
+          >
+            {{ itemValue(item, column) }}
+          </td>
+        </slot>
+      </tr>
     </tbody>
   </table>
 </template>
 <script>
 export default {
-  name: 'paper-table',
+  name: "paper-table",
   props: {
     columns: Array,
     data: Array,
     type: {
       type: String, // striped | hover
-      default: "striped"
+      default: "striped",
     },
     title: {
       type: String,
-      default: ""
+      default: "",
     },
     subTitle: {
       type: String,
-      default: ""
-    }
+      default: "",
+    },
   },
   computed: {
     tableClass() {
       return `table-${this.type}`;
-    }
+    },
   },
   methods: {
     hasValue(item, column) {
@@ -48,9 +50,8 @@ export default {
     },
     itemValue(item, column) {
       return item[column.toLowerCase()];
-    }
-  }
+    },
+  },
 };
 </script>
-<style>
-</style>
+<style></style>

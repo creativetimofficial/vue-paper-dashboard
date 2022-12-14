@@ -25,5 +25,5 @@ Vue.use(PaperDashboard);
 /* eslint-disable no-new */
 new Vue({
   router,
-  render: h => h(App)
+  render: (h) => h(App),
 }).$mount("#app");

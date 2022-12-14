@@ -6,14 +6,18 @@
           <div class="row" v-for="member in members" :key="member.name">
             <div class="col-3">
               <div class="avatar">
-                <img :src="member.image" alt="Circle Image" class="rounded img-fluid">
+                <img
+                  :src="member.image"
+                  alt="Circle Image"
+                  class="rounded img-fluid"
+                />
               </div>
             </div>
             <div class="col-6">
-              {{member.name}}
-              <br>
+              {{ member.name }}
+              <br />
               <span :class="getStatusClass(member.status)">
-                <small>{{member.status}}</small>
+                <small>{{ member.status }}</small>
               </span>
             </div>
 
@@ -37,19 +41,19 @@ export default {
         {
           image: require("@/assets/img/faces/face-0.jpg"),
           name: "Dj Khaled",
-          status: "Offline"
+          status: "Offline",
         },
         {
           image: require("@/assets/img/faces/face-1.jpg"),
           name: "Creative Tim",
-          status: "Available"
+          status: "Available",
         },
         {
           image: require("@/assets/img/faces/face-1.jpg"),
           name: "Flume",
-          status: "Busy"
-        }
-      ]
+          status: "Busy",
+        },
+      ],
     };
   },
   methods: {
@@ -64,9 +68,8 @@ export default {
         default:
           return "text-success";
       }
-    }
-  }
+    },
+  },
 };
 </script>
-<style>
-</style>
+<style></style>

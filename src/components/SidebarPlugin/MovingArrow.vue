@@ -1,14 +1,13 @@
 <template>
-  <div class="moving-arrow" :style="arrowStyle">
-  </div>
+  <div class="moving-arrow" :style="arrowStyle"></div>
 </template>
 <script>
 export default {
   props: {
     moveY: {
       type: Number,
-      default: 0
-    }
+      default: 0,
+    },
   },
   computed: {
     /**
@@ -17,10 +16,10 @@ export default {
      */
     arrowStyle() {
       return {
-        transform: `translate3d(0px, ${this.moveY}px, 0px)`
+        transform: `translate3d(0px, ${this.moveY}px, 0px)`,
       };
-    }
-  }
+    },
+  },
 };
 </script>
 <style lang="scss">
