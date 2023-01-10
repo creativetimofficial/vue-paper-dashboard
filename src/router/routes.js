@@ -20,41 +20,41 @@ const routes = [
       {
         path: "dashboard",
         name: "dashboard",
-        component: Dashboard
+        component: Dashboard,
       },
       {
         path: "stats",
         name: "stats",
-        component: UserProfile
+        component: UserProfile,
       },
       {
         path: "notifications",
         name: "notifications",
-        component: Notifications
+        component: Notifications,
       },
       {
         path: "icons",
         name: "icons",
-        component: Icons
+        component: Icons,
       },
       {
         path: "maps",
         name: "maps",
-        component: Maps
+        component: Maps,
       },
       {
         path: "typography",
         name: "typography",
-        component: Typography
+        component: Typography,
       },
       {
         path: "table-list",
         name: "table-list",
-        component: TableList
-      }
-    ]
+        component: TableList,
+      },
+    ],
   },
-  { path: "*", component: NotFound }
+  { path: "*", component: NotFound },
 ];
 
 /**

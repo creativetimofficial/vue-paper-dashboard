@@ -17,7 +17,7 @@ let components = {
   StatsCard,
   PaperTable,
   DropDown,
-  SidebarPlugin
+  SidebarPlugin,
 };
 
 export default components;
@@ -30,5 +30,5 @@ export {
   PaperTable,
   DropDown,
   Button,
-  SidebarPlugin
+  SidebarPlugin,
 };

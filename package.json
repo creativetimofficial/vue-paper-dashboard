@@ -1,6 +1,6 @@
 {
   "name": "vue-paper-dashboard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "build": "vue-cli-service build",
@@ -11,22 +11,23 @@
     "dev": "npm run serve"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0",
-    "chartist": "^0.11.0",
-    "es6-promise": "^4.2.4",
-    "vue": "^2.6.10",
-    "vue-clickaway": "^2.1.0",
-    "vue-notifyjs": "^0.3.0",
-    "vue-router": "^3.0.1"
+    "bootstrap": "4.6.2",
+    "chartist": "0.11.0",
+    "es6-promise": "4.2.8",
+    "eslint-plugin-vue": "^9.8.0",
+    "vue": "2.7.14",
+    "vue-clickaway": "2.2.2",
+    "vue-notifyjs": "0.3.0",
+    "vue-router": "3.0.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.10.0",
-    "@vue/cli-plugin-eslint": "^3.10.0",
-    "@vue/cli-service": "^3.10.0",
-    "@vue/eslint-config-prettier": "^5.0.0",
-    "node-sass": "^4.8.3",
-    "sass-loader": "^6.0.7",
-    "vue-template-compiler": "^2.6.10"
+    "@vue/cli-plugin-babel": "3.12.1",
+    "@vue/cli-plugin-eslint": "3.12.1",
+    "@vue/cli-service": "3.12.1",
+    "@vue/eslint-config-prettier": "5.1.0",
+    "sass": "1.56.2",
+    "sass-loader": "10.2.0",
+    "vue-template-compiler": "2.7.14"
   },
   "description": "A sample admin dashboard based on paper dashboard UI template",
   "author": "cristian.jora <joracristi@gmail.com>",

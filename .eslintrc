@@ -3,5 +3,12 @@
   "extends": [
     "plugin:vue/essential",
     "@vue/prettier"
-  ]
+  ],
+  "rules": {
+    "vue/multi-word-component-names": "off"
+  },
+  "env": {
+    "node": true,
+    "amd": true
+  }
 }

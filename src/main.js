@@ -1,11 +1,11 @@
 /*!
 
  =========================================================
- * Vue Paper Dashboard - v2.0.0
+ * Vue Paper Dashboard - v1.0.1
  =========================================================
 
  * Product Page: http://www.creative-tim.com/product/paper-dashboard
- * Copyright 2019 Creative Tim (http://www.creative-tim.com)
+ * Copyright 2023 Creative Tim (http://www.creative-tim.com)
  * Licensed under MIT (https://github.com/creativetimofficial/paper-dashboard/blob/master/LICENSE.md)
 
  =========================================================
@@ -25,5 +25,5 @@ Vue.use(PaperDashboard);
 /* eslint-disable no-new */
 new Vue({
   router,
-  render: h => h(App)
+  render: (h) => h(App),
 }).$mount("#app");
