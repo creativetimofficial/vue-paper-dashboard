@@ -1,15 +1,23 @@
 # Change Log
 
+## [1.0.1] 2023-01-10
+
+- Update dependencies
+- Fix the installation issue when running `npm install`
+
 ## [2.0.0] 2018-05-01
+
 ## Vue Paper Dashboard Version 2
+
 - Bootstrap 4 update
   - Migrate components to support BS4 as well as existing scss assets
 - Vue CLI 3 update
   - Get rid of old webpack template and make use of newest vue-cli 3. The project has almost no configuration files and
-  should work out of the box if you copy paste the `src` folder into a newly scaffolded Vue CLI 3 project.
+    should work out of the box if you copy paste the `src` folder into a newly scaffolded Vue CLI 3 project.
 - Overall project structure improvements
+
   - The project structure resembles a default [nuxt project structure](https://nuxtjs.org/)
-  We have a breakdown of
+    We have a breakdown of
   - `components` folder (only UI components)
   - `pages` folder which contains pages/views
   - `layout` folder which contains layout related components
@@ -22,6 +30,6 @@
   - Improvements for Sidebar. Option to declare links as children inside Sidebar slot. SSR support.
   - Minor improvements for other components and SSR support for them
 
-
 ## [1.0.0] 2017-06-18
+
 ### Stable Original Release
