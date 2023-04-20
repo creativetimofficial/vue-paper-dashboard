@@ -1,7 +1,7 @@
 /*!
 
  =========================================================
- * Vue Paper Dashboard - v1.0.1
+ * Vue Paper Dashboard - v1.0.2
  =========================================================
 
  * Product Page: http://www.creative-tim.com/product/paper-dashboard
