@@ -14,20 +14,20 @@
     "bootstrap": "4.6.2",
     "chartist": "0.11.0",
     "es6-promise": "4.2.8",
-    "eslint-plugin-vue": "9.11.0",
     "vue": "2.7.14",
     "vue-clickaway": "2.2.2",
     "vue-notifyjs": "0.3.0",
-    "vue-router": "3.5.4"
+    "vue-router": "3.6.5"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "5.0.8",
     "@vue/cli-plugin-eslint": "5.0.8",
     "@vue/cli-service": "5.0.8",
     "@vue/eslint-config-prettier": "7.1.0",
-    "eslint": "8.38.0",
-    "sass": "1.62.0",
-    "sass-loader": "10.4.1",
+    "eslint-plugin-vue": "9.14.1",
+    "eslint": "8.41.0",
+    "sass": "1.62.1",
+    "sass-loader": "13.3.1",
     "prettier": "2.8.7",
     "vue-template-compiler": "2.7.14"
   },
