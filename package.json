@@ -3,11 +3,11 @@
   "version": "1.0.1",
   "private": true,
   "scripts": {
-    "build": "vue-cli-service build",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider; gatsby build",
     "e2e": "node test/e2e/runner.js",
     "lint": "vue-cli-service lint",
     "lint-fix": "vue-cli-service lint --fix",
-    "serve": "vue-cli-service serve --open",
+    "serve": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
     "dev": "npm run serve"
   },
   "dependencies": {
