@@ -5,3 +5,5 @@ package-lock.json
 npm-debug.log
 .idea/
 dist/
+*.pyc
+*.sqlite3
