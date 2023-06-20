@@ -10,6 +10,7 @@ import Icons from "@/pages/Icons.vue";
 import Maps from "@/pages/Maps.vue";
 import Typography from "@/pages/Typography.vue";
 import TableList from "@/pages/TableList.vue";
+import Posts from "@/pages/Posts.vue"
 
 const routes = [
   {
@@ -17,6 +18,11 @@ const routes = [
     component: DashboardLayout,
     redirect: "/dashboard",
     children: [
+      {
+        path: "posts",
+        name: "posts",
+        component: Posts,
+      },
       {
         path: "dashboard",
         name: "dashboard",
