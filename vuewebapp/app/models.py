@@ -9,3 +9,11 @@ class Posts(models.Model):
     def __str__(self):
         return self.title
     
+class Tests(models.Model):
+
+    title = models.CharField(max_length=250)
+    content = models.TextField()
+
+    def __str__(self):
+        return self.title
+    

@@ -11,6 +11,7 @@ import Maps from "@/pages/Maps.vue";
 import Typography from "@/pages/Typography.vue";
 import TableList from "@/pages/TableList.vue";
 import Posts from "@/pages/Posts.vue"
+import Tests from "@/pages/Tests.vue"
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     component: DashboardLayout,
     redirect: "/dashboard",
     children: [
+      {
+        path: "tests",
+        name: "tests",
+        component: Tests,
+      },
       {
         path: "posts",
         name: "posts",
