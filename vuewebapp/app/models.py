@@ -16,4 +16,14 @@ class Tests(models.Model):
 
     def __str__(self):
         return self.title
-    
+  
+class Image(models.Model):
+    image = models.ImageField()
+
+class ImageNew(models.Model):
+    title = models.CharField(max_length=250)
+    image = models.ImageField()
+
+    def __str__(self):
+        return self.title
+  
