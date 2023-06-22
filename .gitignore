@@ -7,4 +7,4 @@ npm-debug.log
 dist/
 *.pyc
 *.sqlite3
-./vuewebapp/djangorestapi/settings.py
+vuewebapp/djangorestapi/settings.py
