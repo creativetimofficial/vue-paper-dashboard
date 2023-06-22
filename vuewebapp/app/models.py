@@ -22,7 +22,7 @@ class Image(models.Model):
 
 class ImageNew(models.Model):
     title = models.CharField(max_length=250)
-    image = models.ImageField()
+    image = models.ImageField(upload_to ='image/')
 
     def __str__(self):
         return self.title

@@ -12,6 +12,7 @@ import Typography from "@/pages/Typography.vue";
 import TableList from "@/pages/TableList.vue";
 import Posts from "@/pages/Posts.vue"
 import Tests from "@/pages/Tests.vue"
+import ImageNew from "@/pages/ImageNew.vue"
 
 const routes = [
   {
@@ -19,6 +20,11 @@ const routes = [
     component: DashboardLayout,
     redirect: "/dashboard",
     children: [
+      {
+        path: "image",
+        name: "image",
+        component: ImageNew,
+      },
       {
         path: "tests",
         name: "tests",
