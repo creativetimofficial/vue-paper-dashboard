@@ -6,10 +6,10 @@
               <div class="row">
                 <div v-for="image in APIData" :key="image.id" class="col-md-4">
                   <div class="card mb-4 box-shadow">
-                    <img >{{image.image}} >
+                    <!-- <img >{{image.image}} > -->
                     <!-- <html> $imagename = {{image.image}} </html> -->
-                    <!-- <img src="@/../vuewebapp/Stop_1_-_Fall_05.jpg"/> -->
-                    <!-- <img :src="require('@/../vuewebapp/' + image.image)" /> -->
+                    <img src="@/media/img05.jpg"/>
+                    <!-- <img :src="require('@' + image.image)" /> -->
                     <div class="card-body">
                         <h4 class=""><a class="text-secondary" href="">{{image.title}}</a></h4>
                         <p class="card-text">{{image.title}}</p>
