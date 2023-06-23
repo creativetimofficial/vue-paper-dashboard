@@ -2,20 +2,13 @@ from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework import generics
 from .models import Posts, Tests, Image, ImageNew
-from .serializers import PostSerializer, TestSerializer, ImageSerializer, ImageNewSerializer
+from .serializers import PostSerializer, TestSerializer, ImageSerializer, ImageNewSerializer, PredSerializer
 from django.shortcuts import render
 from django.http import JsonResponse
 from .models import PredResults
 import numpy as np
 # Create your views here.
 
-class PostsView(generics.RetrieveAPIView):
-    queryset = Posts.objects.all()
-
-    def get(self, request, *args, **kwargs):
-        queryset = self.get_queryset()
-        serializer = PostSerializer(queryset, many=True)
-        return Response(serializer.data)
     
 class TestsView(generics.RetrieveAPIView):
     queryset = Tests.objects.all()
@@ -41,38 +34,23 @@ class ImageNewView(generics.RetrieveAPIView):
         serializer = ImageNewSerializer(queryset, many=True)
         return Response(serializer.data)
 
+class PostsView(generics.ListCreateAPIView):
 
-def predict(request):
-    return render(request, 'predict.html')
+    serializer_class = PredSerializer
 
+    def get(self, request, *args, **kwargs):
 
-def predict_chances(request):
+        sepal_length = float(self.request.GET.get('sepal_length'))
+        sepal_width = float(self.request.GET.get('sepal_width'))
+        petal_length = float(self.request.GET.get('petal_length'))
+        petal_width = float(self.request.GET.get('petal_width'))
 
-    if request.POST.get('action') == 'post':
-
-        # Receive data from client
-        sepal_length = float(request.POST.get('sepal_length'))
-        sepal_width = float(request.POST.get('sepal_width'))
-        petal_length = float(request.POST.get('petal_length'))
-        petal_width = float(request.POST.get('petal_width'))
-
-        
-        # Make prediction
-        result = np.sum([sepal_length, sepal_width, petal_length, petal_width])
-
-        classification = result
-
-        PredResults.objects.create(sepal_length=sepal_length, sepal_width=sepal_width, petal_length=petal_length,
-                                   petal_width=petal_width, classification=classification)
-
-        return JsonResponse({'result': classification, 'sepal_length': sepal_length,
-                             'sepal_width': sepal_width, 'petal_length': petal_length, 'petal_width': petal_width},
-                            safe=False)
+        result = str(np.sum([sepal_length, sepal_width, petal_length, petal_width]))
 
 
-def view_results(request):
-    # Submit prediction and show all
-    data = {"dataset": PredResults.objects.all()}
-    return render(request, "results.html", data)
+        serializer = PredSerializer(data=self.request.GET)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(result)
+        return Response(serializer.errors, status=400)
 
-    

@@ -10,7 +10,7 @@ import Icons from "@/pages/Icons.vue";
 import Maps from "@/pages/Maps.vue";
 import Typography from "@/pages/Typography.vue";
 import TableList from "@/pages/TableList.vue";
-import Posts from "@/pages/Posts.vue"
+import Prediction from "@/pages/Prediction.vue"
 import Tests from "@/pages/Tests.vue"
 import ImageNew from "@/pages/ImageNew.vue"
 
@@ -33,7 +33,7 @@ const routes = [
       {
         path: "posts",
         name: "posts",
-        component: Posts,
+        component: Prediction,
       },
       {
         path: "dashboard",

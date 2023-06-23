@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Posts, Tests, Image, ImageNew
+from .models import Posts, Tests, Image, ImageNew, PredResults
 
 
 class PostSerializer(serializers.ModelSerializer):
@@ -21,3 +21,8 @@ class ImageNewSerializer(serializers.ModelSerializer):
     class Meta:
         model = ImageNew
         fields = '__all__' 
+
+class PredSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = PredResults
+        fields = '__all__'
