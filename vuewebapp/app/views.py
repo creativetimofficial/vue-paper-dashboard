@@ -7,6 +7,7 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from .models import PredResults
 import numpy as np
+import sys
 # Create your views here.
 
     
@@ -46,8 +47,6 @@ class PostsView(generics.ListCreateAPIView):
         petal_width = float(self.request.GET.get('petal_width'))
 
         result = str(np.sum([sepal_length, sepal_width, petal_length, petal_width]))
-
-
         serializer = PredSerializer(data=self.request.GET)
         if serializer.is_valid():
             serializer.save()

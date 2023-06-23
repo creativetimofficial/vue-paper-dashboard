@@ -7,12 +7,9 @@
                 <div v-for="image in APIData" :key="image.id" class="col-md-4">
                   <div class="card mb-4 box-shadow">
                     <!-- <img class="card-img-top" :src="'@/../vuewebapp>{{image.image}}'"> -->
-                    <!--<img
-                      class="avatar border-white"
-                      src="@/../vuewebapp/Stop_1_-_Fall_05.jpg"
-                      alt="..."
-                    />-->
-                    <img :src="'@/../vuewebapp' + image.image ">
+                    <!-- <html> $imagename = {{image.image}} </html> -->
+                    <img src="@/../vuewebapp/Stop_1_-_Fall_05.jpg"/>
+                    <!-- <img :src="require('@/../vuewebapp/' + image.image)" /> -->
                     <div class="card-body">
                         <h4 class=""><a class="text-secondary" href="">{{image.title}}</a></h4>
                         <p class="card-text">{{image.title}}</p>
@@ -50,6 +47,7 @@
             .then(response => {
               console.log('Post API has recieved data')
               this.APIData = response.data
+
             })
             .catch(err => {
               console.log(err)
