@@ -15,7 +15,7 @@
     "chartist": "0.11.0",
     "es6-promise": "4.2.8",
     "eslint-plugin-vue": "^9.8.0",
-    "vue": "2.7.14",
+    "vue": "3.0.0",
     "vue-clickaway": "2.2.2",
     "vue-notifyjs": "0.3.0",
     "vue-router": "3.0.1"
